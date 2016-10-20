@@ -1,5 +1,5 @@
 //
-//  addBankAccountViewController.swift
+//  bankAccountListTVC.swift
 //  AA-tableview-version-1
 //
 //  Created by James Wilson on 10/20/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class addBankAccountTableViewController: UITableViewController {
+class bankAccountListTVC: UITableViewController {
 
     var selectedIndexPath:IndexPath? = nil
     
@@ -28,9 +28,13 @@ class addBankAccountTableViewController: UITableViewController {
         let navbar = self.navigationController?.navigationBar
         navbar?.shadowImage = UIImage()
         navbar?.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
+//        self.navigationController?.setNavigationBarHidden(false, animated: true)
         
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+                navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     
@@ -60,9 +64,24 @@ class addBankAccountTableViewController: UITableViewController {
         
         if selectedIndexPath?.row == 2 {
             performSegue(withIdentifier: "makeNewAccountSegue", sender: self)
+            
         }
         
     }
+    
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
+        
+    }
+    
+    
+    
     
     @IBAction func unwindToAccountList(segue: UIStoryboardSegue) {}
 

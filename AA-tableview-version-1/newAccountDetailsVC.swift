@@ -1,5 +1,5 @@
 //
-//  newBankAccountDetailsViewController.swift
+//  newAccountDetailsVC.swift
 //  AA-tableview-version-1
 //
 //  Created by James Wilson on 10/20/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class newBankAccountDetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class newAccountDetailsVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
 
     
@@ -21,9 +21,11 @@ class newBankAccountDetailsViewController: UIViewController, UITableViewDataSour
         
         
         
-        tableView.register(UINib(nibName:"whichAccountTableViewCell", bundle:nil), forCellReuseIdentifier: "cellWhichAccount")
-        tableView.register(UINib(nibName:"amountTableViewCell", bundle:nil), forCellReuseIdentifier: "cellAmount")
-        tableView.register(UINib(nibName:"paymentDateTableViewCell", bundle:nil), forCellReuseIdentifier: "cellDate")
+        tableView.register(UINib(nibName:"routingTableViewCell", bundle:nil), forCellReuseIdentifier: "cellRouting")
+        tableView.register(UINib(nibName:"accountTableViewCell", bundle:nil), forCellReuseIdentifier: "cellAccount")
+        tableView.register(UINib(nibName:"reaccountTableViewCell", bundle:nil), forCellReuseIdentifier: "cellReAccount")
+        tableView.register(UINib(nibName:"typeTableViewCell", bundle:nil), forCellReuseIdentifier: "cellType")
+        tableView.register(UINib(nibName:"nicknameTableViewCell", bundle:nil), forCellReuseIdentifier: "cellNickname")
         
         tableView.tableFooterView = UIView()
         
@@ -34,29 +36,32 @@ class newBankAccountDetailsViewController: UIViewController, UITableViewDataSour
         
         navigationController?.setNavigationBarHidden(false, animated: false)
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(true, animated: false)
-    }
+
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cellWhichAccount") as! whichAccountTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cellRouting") as! routingTableViewCell
             return cell
         } else if indexPath.row == 1 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cellAmount") as! amountTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cellAccount") as! accountTableViewCell
             return cell
         } else if indexPath.row == 2 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cellDate") as! paymentDateTableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cellReAccount") as! reaccountTableViewCell
+            return cell
+        } else if indexPath.row == 3 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cellType") as! typeTableViewCell
+            return cell
+        } else if indexPath.row == 4 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cellNickname") as! nicknameTableViewCell
             return cell
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cellAddress") as! addressUITableViewCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cellType") as! typeTableViewCell
             return cell
         }
     }
@@ -68,13 +73,19 @@ class newBankAccountDetailsViewController: UIViewController, UITableViewDataSour
         
         switch index.row {
         case 0:
-            maxHeight = 50
+            maxHeight = 120
             break
         case 1:
-            maxHeight = 50
+            maxHeight = 120
             break
         case 2:
+            maxHeight = 120
+            break
+        case 3:
             maxHeight = 50
+            break
+        case 4:
+            maxHeight = 120
             break
         default:
             maxHeight = 50
@@ -109,17 +120,25 @@ class newBankAccountDetailsViewController: UIViewController, UITableViewDataSour
             }
         }
         
-        if selectedIndexPath?.row == 0 {
-            performSegue(withIdentifier: "addNewBankAccountSegue", sender: self)
+//
+//        Special button actions based on Index
+//
+        if selectedIndexPath?.row == 3 {
+//            performSegue(withIdentifier: "addNewBankAccountSegue", sender: self)
         }
-        //        else if selectedIndexPath?.row == 3 {
-        //            performSegue(withIdentifier: "countriesListSegue", sender: self)
-        //        }
+//        if selectedIndexPath?.row == 0 {
+//            performSegue(withIdentifier: "addNewBankAccountSegue", sender: self)
+//        } else if selectedIndexPath?.row == 3 {
+//            performSegue(withIdentifier: "countriesListSegue", sender: self)
+//        }
         
         tableView.reloadRows(at: [indexPath], with: .automatic)
         
         
     }
+    
+    
+    @IBAction func unwindToAccountDetails(segue: UIStoryboardSegue) {}
     
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -131,12 +150,9 @@ class newBankAccountDetailsViewController: UIViewController, UITableViewDataSour
         navigationItem.backBarButtonItem = backItem
         
     }
-    
 
     
-    @IBAction func unwindToAddUser(segue: UIStoryboardSegue) {}
-    
-    
+  
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
