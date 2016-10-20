@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="274" id="KGk-i7-Jjw" customClass="fullNameUITableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="274"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="273"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdQ-5T-hxX" userLabel="nameLabel">
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="First name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LUT-op-EeQ" customClass="formUITextField" customModule="AA_tableview_version_1" customModuleProvider="target">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="ego-AC-RTt"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="MI" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zmf-IL-3v8" customClass="formUITextField" customModule="AA_tableview_version_1" customModuleProvider="target">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="ghG-vl-sOx"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Last name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YTU-SK-3sT" customClass="formUITextField" customModule="AA_tableview_version_1" customModuleProvider="target">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="f9e-Gf-OT3"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Suffix" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="syg-3L-MBl" customClass="formUITextField" customModule="AA_tableview_version_1" customModuleProvider="target">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="gPD-UM-SM5"/>
+                        </constraints>
+                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL5-Hk-GtP">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="5j1-cI-Odz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <color key="textColor" red="0.21176470589999999" green="0.28627450980000002" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EdQ-5T-hxX" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="0LW-FA-dWR"/>
+                    <constraint firstItem="cL5-Hk-GtP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="4Ix-oU-0Ra"/>
+                    <constraint firstItem="YTU-SK-3sT" firstAttribute="top" secondItem="Zmf-IL-3v8" secondAttribute="bottom" constant="-1" id="7XC-X6-OMJ"/>
+                    <constraint firstItem="syg-3L-MBl" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="DUA-Mn-wxN"/>
+                    <constraint firstItem="LUT-op-EeQ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="E7l-Fm-6QV"/>
+                    <constraint firstItem="YTU-SK-3sT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="FTu-9B-RfT"/>
+                    <constraint firstItem="cL5-Hk-GtP" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Ksh-rg-iYt"/>
+                    <constraint firstItem="syg-3L-MBl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="M5B-6r-vti"/>
+                    <constraint firstItem="EdQ-5T-hxX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="PLS-Um-8vE"/>
+                    <constraint firstItem="syg-3L-MBl" firstAttribute="top" secondItem="YTU-SK-3sT" secondAttribute="bottom" constant="-1" id="bNG-zU-mjT"/>
+                    <constraint firstItem="LUT-op-EeQ" firstAttribute="top" secondItem="EdQ-5T-hxX" secondAttribute="bottom" id="bS9-xW-mI9"/>
+                    <constraint firstItem="cL5-Hk-GtP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="ecd-tJ-PAt"/>
+                    <constraint firstItem="Zmf-IL-3v8" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="gYW-sZ-Hrg"/>
+                    <constraint firstItem="LUT-op-EeQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="iEu-n4-DFa"/>
+                    <constraint firstItem="YTU-SK-3sT" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="iX1-uE-NYU"/>
+                    <constraint firstItem="Zmf-IL-3v8" firstAttribute="top" secondItem="LUT-op-EeQ" secondAttribute="bottom" constant="-1" id="keB-90-al2"/>
+                    <constraint firstItem="Zmf-IL-3v8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="o3X-Kg-wwE"/>
+                    <constraint firstItem="EdQ-5T-hxX" firstAttribute="top" secondItem="cL5-Hk-GtP" secondAttribute="bottom" constant="2" id="zyk-aO-kUs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="EdQ-5T-hxX" id="beq-Da-NvY"/>
+            </connections>
+            <point key="canvasLocation" x="36" y="169"/>
+        </tableViewCell>
+    </objects>
+</document>
