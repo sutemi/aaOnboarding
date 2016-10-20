@@ -22,7 +22,6 @@
 		33C9DDF41DB6EB8200D29065 /* relationshipUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDF21DB6EB8200D29065 /* relationshipUITableViewCell.swift */; };
 		33C9DDF51DB6EB8200D29065 /* relationshipUITableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DDF31DB6EB8200D29065 /* relationshipUITableViewCell.xib */; };
 		33C9DDF71DB7120300D29065 /* relationshipUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDF61DB7120300D29065 /* relationshipUITableViewController.swift */; };
-		33C9DDFA1DB7999600D29065 /* aaUINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDF91DB7999600D29065 /* aaUINavigationController.swift */; };
 		33C9DDFD1DB79FB800D29065 /* citizenUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDFB1DB79FB800D29065 /* citizenUITableViewCell.swift */; };
 		33C9DDFE1DB79FB800D29065 /* citizenUITableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DDFC1DB79FB800D29065 /* citizenUITableViewCell.xib */; };
 		33C9DE011DB7A58F00D29065 /* addressUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDFF1DB7A58F00D29065 /* addressUITableViewCell.swift */; };
@@ -31,6 +30,15 @@
 		33C9DE071DB7C9F900D29065 /* countriesListUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE061DB7C9F900D29065 /* countriesListUITableViewController.swift */; };
 		33C9DE091DB828B500D29065 /* btnBottomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE081DB828B500D29065 /* btnBottomUIButton.swift */; };
 		33C9DE0B1DB82CE900D29065 /* delayedSuccessScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE0A1DB82CE900D29065 /* delayedSuccessScreenViewController.swift */; };
+		33C9DE0E1DB92AE200D29065 /* repeatPaymentsUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE0D1DB92AE200D29065 /* repeatPaymentsUIViewController.swift */; };
+		33C9DE121DB92EFA00D29065 /* whichAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE101DB92EFA00D29065 /* whichAccountTableViewCell.swift */; };
+		33C9DE131DB92EFA00D29065 /* whichAccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DE111DB92EFA00D29065 /* whichAccountTableViewCell.xib */; };
+		33C9DE161DB933CA00D29065 /* amountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE141DB933CA00D29065 /* amountTableViewCell.swift */; };
+		33C9DE171DB933CB00D29065 /* amountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DE151DB933CA00D29065 /* amountTableViewCell.xib */; };
+		33C9DE1A1DB9352E00D29065 /* paymentDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE181DB9352E00D29065 /* paymentDateTableViewCell.swift */; };
+		33C9DE1B1DB9352E00D29065 /* paymentDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DE191DB9352E00D29065 /* paymentDateTableViewCell.xib */; };
+		33C9DE1D1DB9393F00D29065 /* addBankAccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE1C1DB9393F00D29065 /* addBankAccountTableViewController.swift */; };
+		33C9DE1F1DB93DB700D29065 /* newBankAccountDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE1E1DB93DB700D29065 /* newBankAccountDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +59,6 @@
 		33C9DDF21DB6EB8200D29065 /* relationshipUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = relationshipUITableViewCell.swift; sourceTree = "<group>"; };
 		33C9DDF31DB6EB8200D29065 /* relationshipUITableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = relationshipUITableViewCell.xib; sourceTree = "<group>"; };
 		33C9DDF61DB7120300D29065 /* relationshipUITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = relationshipUITableViewController.swift; sourceTree = "<group>"; };
-		33C9DDF91DB7999600D29065 /* aaUINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aaUINavigationController.swift; sourceTree = "<group>"; };
 		33C9DDFB1DB79FB800D29065 /* citizenUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = citizenUITableViewCell.swift; sourceTree = "<group>"; };
 		33C9DDFC1DB79FB800D29065 /* citizenUITableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = citizenUITableViewCell.xib; sourceTree = "<group>"; };
 		33C9DDFF1DB7A58F00D29065 /* addressUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addressUITableViewCell.swift; sourceTree = "<group>"; };
@@ -60,6 +67,15 @@
 		33C9DE061DB7C9F900D29065 /* countriesListUITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = countriesListUITableViewController.swift; sourceTree = "<group>"; };
 		33C9DE081DB828B500D29065 /* btnBottomUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = btnBottomUIButton.swift; sourceTree = "<group>"; };
 		33C9DE0A1DB82CE900D29065 /* delayedSuccessScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = delayedSuccessScreenViewController.swift; sourceTree = "<group>"; };
+		33C9DE0D1DB92AE200D29065 /* repeatPaymentsUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = repeatPaymentsUIViewController.swift; sourceTree = "<group>"; };
+		33C9DE101DB92EFA00D29065 /* whichAccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = whichAccountTableViewCell.swift; sourceTree = "<group>"; };
+		33C9DE111DB92EFA00D29065 /* whichAccountTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = whichAccountTableViewCell.xib; sourceTree = "<group>"; };
+		33C9DE141DB933CA00D29065 /* amountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = amountTableViewCell.swift; sourceTree = "<group>"; };
+		33C9DE151DB933CA00D29065 /* amountTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = amountTableViewCell.xib; sourceTree = "<group>"; };
+		33C9DE181DB9352E00D29065 /* paymentDateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paymentDateTableViewCell.swift; sourceTree = "<group>"; };
+		33C9DE191DB9352E00D29065 /* paymentDateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = paymentDateTableViewCell.xib; sourceTree = "<group>"; };
+		33C9DE1C1DB9393F00D29065 /* addBankAccountTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addBankAccountTableViewController.swift; sourceTree = "<group>"; };
+		33C9DE1E1DB93DB700D29065 /* newBankAccountDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newBankAccountDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +114,9 @@
 				33C9DDD11DB6597700D29065 /* Assets.xcassets */,
 				33C9DDF81DB7993600D29065 /* NavigationControllers */,
 				33C9DDE91DB68BBC00D29065 /* ViewControllers - Add User */,
+				33C9DE0C1DB92AA700D29065 /* ViewControllers - Repeat Payments */,
 				33C9DDDF1DB67D7F00D29065 /* Cells - Add User */,
+				33C9DE0F1DB92CF100D29065 /* Cells - Repeat Payments */,
 				33C9DDDE1DB65CFF00D29065 /* Buttons */,
 				33C9DDE41DB6820B00D29065 /* TextFields */,
 				33C9DDD31DB6597700D29065 /* LaunchScreen.storyboard */,
@@ -156,9 +174,31 @@
 		33C9DDF81DB7993600D29065 /* NavigationControllers */ = {
 			isa = PBXGroup;
 			children = (
-				33C9DDF91DB7999600D29065 /* aaUINavigationController.swift */,
 			);
 			name = NavigationControllers;
+			sourceTree = "<group>";
+		};
+		33C9DE0C1DB92AA700D29065 /* ViewControllers - Repeat Payments */ = {
+			isa = PBXGroup;
+			children = (
+				33C9DE0D1DB92AE200D29065 /* repeatPaymentsUIViewController.swift */,
+				33C9DE1C1DB9393F00D29065 /* addBankAccountTableViewController.swift */,
+				33C9DE1E1DB93DB700D29065 /* newBankAccountDetailsViewController.swift */,
+			);
+			name = "ViewControllers - Repeat Payments";
+			sourceTree = "<group>";
+		};
+		33C9DE0F1DB92CF100D29065 /* Cells - Repeat Payments */ = {
+			isa = PBXGroup;
+			children = (
+				33C9DE101DB92EFA00D29065 /* whichAccountTableViewCell.swift */,
+				33C9DE111DB92EFA00D29065 /* whichAccountTableViewCell.xib */,
+				33C9DE141DB933CA00D29065 /* amountTableViewCell.swift */,
+				33C9DE151DB933CA00D29065 /* amountTableViewCell.xib */,
+				33C9DE181DB9352E00D29065 /* paymentDateTableViewCell.swift */,
+				33C9DE191DB9352E00D29065 /* paymentDateTableViewCell.xib */,
+			);
+			name = "Cells - Repeat Payments";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,6 +266,9 @@
 				33C9DDE31DB67DDB00D29065 /* fullNameUITableViewCell.xib in Resources */,
 				33C9DDEF1DB6C07C00D29065 /* dobUITableViewCell.xib in Resources */,
 				33C9DDD21DB6597700D29065 /* Assets.xcassets in Resources */,
+				33C9DE1B1DB9352E00D29065 /* paymentDateTableViewCell.xib in Resources */,
+				33C9DE131DB92EFA00D29065 /* whichAccountTableViewCell.xib in Resources */,
+				33C9DE171DB933CB00D29065 /* amountTableViewCell.xib in Resources */,
 				33C9DDD01DB6597700D29065 /* Main.storyboard in Resources */,
 				33C9DDF51DB6EB8200D29065 /* relationshipUITableViewCell.xib in Resources */,
 			);
@@ -240,20 +283,25 @@
 			files = (
 				33C9DDEE1DB6C07C00D29065 /* dobUITableViewCell.swift in Sources */,
 				33C9DDEB1DB691C300D29065 /* fullNameUIViewController.swift in Sources */,
+				33C9DE1F1DB93DB700D29065 /* newBankAccountDetailsViewController.swift in Sources */,
+				33C9DE0E1DB92AE200D29065 /* repeatPaymentsUIViewController.swift in Sources */,
 				33C9DE011DB7A58F00D29065 /* addressUITableViewCell.swift in Sources */,
 				33C9DE0B1DB82CE900D29065 /* delayedSuccessScreenViewController.swift in Sources */,
 				33C9DDDD1DB65CF900D29065 /* primaryEnabledUIButton.swift in Sources */,
 				33C9DDE21DB67DDB00D29065 /* fullNameUITableViewCell.swift in Sources */,
 				33C9DE071DB7C9F900D29065 /* countriesListUITableViewController.swift in Sources */,
+				33C9DE1A1DB9352E00D29065 /* paymentDateTableViewCell.swift in Sources */,
 				33C9DDF71DB7120300D29065 /* relationshipUITableViewController.swift in Sources */,
+				33C9DE161DB933CA00D29065 /* amountTableViewCell.swift in Sources */,
+				33C9DE121DB92EFA00D29065 /* whichAccountTableViewCell.swift in Sources */,
 				33C9DDE61DB6825B00D29065 /* formUITextField.swift in Sources */,
 				33C9DE091DB828B500D29065 /* btnBottomUIButton.swift in Sources */,
 				33C9DDCD1DB6597700D29065 /* MainViewController.swift in Sources */,
 				33C9DDFD1DB79FB800D29065 /* citizenUITableViewCell.swift in Sources */,
 				33C9DE041DB7B02300D29065 /* pillLightUIButton.swift in Sources */,
 				33C9DDCB1DB6597700D29065 /* AppDelegate.swift in Sources */,
+				33C9DE1D1DB9393F00D29065 /* addBankAccountTableViewController.swift in Sources */,
 				33C9DDF41DB6EB8200D29065 /* relationshipUITableViewCell.swift in Sources */,
-				33C9DDFA1DB7999600D29065 /* aaUINavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
