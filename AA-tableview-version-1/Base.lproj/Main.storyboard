@@ -1057,6 +1057,9 @@
                                             <constraint firstAttribute="height" constant="65" id="T1F-mk-g98"/>
                                         </constraints>
                                         <state key="normal" title="Set up my fraud alerts"/>
+                                        <connections>
+                                            <segue destination="XBA-8E-0ex" kind="show" identifier="mobileTextSegue" id="jn8-9f-oPI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1619,7 +1622,7 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <inset key="separatorInset" minX="8" minY="0.0" maxX="15" maxY="0.0"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="U3L-Gn-NDf" customClass="whichAccountTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="U3L-Gn-NDf" customClass="whichAccountTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U3L-Gn-NDf" id="OC8-RM-9Vg">
@@ -1630,7 +1633,7 @@
                                                             <segue destination="4HH-1z-yt5" kind="show" identifier="fromWhichSegue" id="efK-D1-E2g"/>
                                                         </connections>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="yrf-4n-4A4" customClass="amountTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="yrf-4n-4A4" customClass="amountTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="78" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yrf-4n-4A4" id="1BD-bJ-Pnm">
@@ -1641,7 +1644,7 @@
                                                             <segue destination="7FG-uo-ayB" kind="show" identifier="amountSegue" id="g8V-Vs-Auy"/>
                                                         </connections>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="TrF-Ya-GPu" customClass="paymentDateTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="TrF-Ya-GPu" customClass="paymentDateTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="128" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TrF-Ya-GPu" id="S7n-wz-3pY">
@@ -1879,7 +1882,7 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <inset key="separatorInset" minX="8" minY="0.0" maxX="15" maxY="0.0"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="NaM-9G-Dkw" customClass="routingTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="NaM-9G-Dkw" customClass="routingTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NaM-9G-Dkw" id="e5O-eK-TXG">
@@ -1887,7 +1890,7 @@
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fyB-YD-IhX" customClass="accountTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="fyB-YD-IhX" customClass="accountTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="78" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fyB-YD-IhX" id="VfA-bY-z3X">
@@ -1895,7 +1898,7 @@
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="LCM-sa-Dil" customClass="reaccountTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="LCM-sa-Dil" customClass="reaccountTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="128" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LCM-sa-Dil" id="MB3-jI-m2C">
@@ -1903,7 +1906,7 @@
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="yfk-ZI-obQ" customClass="typeTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="yfk-ZI-obQ" customClass="typeTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="178" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yfk-ZI-obQ" id="etv-x3-bfL">
@@ -1914,7 +1917,7 @@
                                                             <segue destination="X5R-Ty-j11" kind="show" identifier="selectTypeSegue" id="VUv-QJ-6cG"/>
                                                         </connections>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Qbj-cp-jvm" customClass="nicknameTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="Qbj-cp-jvm" customClass="nicknameTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="228" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qbj-cp-jvm" id="zF3-Qu-pSm">
@@ -2613,7 +2616,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UeI-Ls-M3g">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCHEDULE REPEAT PAYMENTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMI-5M-GwN">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FRAUD ALERTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMI-5M-GwN">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="RLp-64-3Oj"/>
                                             <constraint firstAttribute="height" constant="20" id="d1A-m2-wyf"/>
@@ -2622,9 +2625,9 @@
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Always be on time. Just enter the information below and your payment will be made automatically every month." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b35-T7-NYX">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activate your mobile phone number to sign up for fraud alerts. Standard text messaging and/or calling charges may apply." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b35-T7-NYX">
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="325" id="t4c-wK-KIS"/>
+                                            <constraint firstAttribute="width" constant="360" id="t4c-wK-KIS"/>
                                             <constraint firstAttribute="height" constant="43" id="x4b-hM-45l"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -2665,25 +2668,27 @@
                                             <constraint firstAttribute="width" constant="335" id="RjO-WH-zdC"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6i5-dK-LgJ">
-                                        <frame key="frameInset" minX="20" minY="235" width="335" height="104"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6i5-dK-LgJ">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="335" id="6fS-Og-6VA"/>
-                                            <constraint firstAttribute="height" constant="43" id="PzE-1I-KKf"/>
+                                            <constraint firstAttribute="height" constant="80" id="PzE-1I-KKf"/>
                                         </constraints>
                                         <string key="text">By providing your telephone number, you authorize Barclays Bank Deleware (Barclaycard) and its affiliates, agents, and independent contractors, to contact you regarding your accounts. This includes but is not limited to calls placed to your mobile/cell or other phone using an automated dialing service.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Please note:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abY-LK-ex7">
-                                        <frame key="frameInset" minX="20" minY="235" width="70" height="15"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please note:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abY-LK-ex7">
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.21176470589999999" green="0.28627450980000002" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="I have read and agree to the mobile Terms and Conditions for text message." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5X-kL-BNe">
-                                        <frame key="frameInset" minX="20" minY="336" width="335" height="37"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Frm-QV-qS8" customClass="btnBottomUIButton" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                        <frame key="frameInset" minY="496" width="375" height="78"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have read and agree to the mobile Terms and Conditions for text message." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5X-kL-BNe">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="335" id="73T-UP-Fhr"/>
                                             <constraint firstAttribute="height" constant="30" id="aYF-mD-B4t"/>
@@ -2696,12 +2701,17 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="On7-y3-a0w" firstAttribute="top" secondItem="b35-T7-NYX" secondAttribute="bottom" constant="52" id="7Ba-Bh-2X8"/>
+                                    <constraint firstItem="X5X-kL-BNe" firstAttribute="top" secondItem="6i5-dK-LgJ" secondAttribute="bottom" constant="10" id="CyO-qD-keA"/>
                                     <constraint firstItem="b35-T7-NYX" firstAttribute="top" secondItem="OMI-5M-GwN" secondAttribute="bottom" constant="15" id="GOt-hU-XyX"/>
                                     <constraint firstItem="gRa-cG-oq9" firstAttribute="centerX" secondItem="UeI-Ls-M3g" secondAttribute="centerX" id="LFe-a3-dfn"/>
+                                    <constraint firstItem="X5X-kL-BNe" firstAttribute="leading" secondItem="UeI-Ls-M3g" secondAttribute="leading" constant="20" id="Qi6-70-aRY"/>
                                     <constraint firstItem="abY-LK-ex7" firstAttribute="top" secondItem="gRa-cG-oq9" secondAttribute="bottom" constant="27" id="Qnq-Hv-6NW"/>
                                     <constraint firstItem="On7-y3-a0w" firstAttribute="centerX" secondItem="UeI-Ls-M3g" secondAttribute="centerX" id="cdW-9z-2eN"/>
                                     <constraint firstItem="OMI-5M-GwN" firstAttribute="top" secondItem="UeI-Ls-M3g" secondAttribute="top" constant="30" id="dmp-yL-LjJ"/>
                                     <constraint firstItem="b35-T7-NYX" firstAttribute="centerX" secondItem="UeI-Ls-M3g" secondAttribute="centerX" id="i8B-af-70A"/>
+                                    <constraint firstItem="6i5-dK-LgJ" firstAttribute="leading" secondItem="UeI-Ls-M3g" secondAttribute="leading" constant="20" id="j4U-nV-aXb"/>
+                                    <constraint firstItem="6i5-dK-LgJ" firstAttribute="top" secondItem="abY-LK-ex7" secondAttribute="bottom" constant="8" id="kxo-a2-fK2"/>
+                                    <constraint firstItem="abY-LK-ex7" firstAttribute="leading" secondItem="UeI-Ls-M3g" secondAttribute="leading" constant="20" id="oc2-Dv-Gat"/>
                                     <constraint firstItem="OMI-5M-GwN" firstAttribute="centerX" secondItem="UeI-Ls-M3g" secondAttribute="centerX" id="tzD-Pw-f9u"/>
                                     <constraint firstItem="gRa-cG-oq9" firstAttribute="top" secondItem="On7-y3-a0w" secondAttribute="bottom" constant="10" id="xeI-4p-Pxc"/>
                                 </constraints>
