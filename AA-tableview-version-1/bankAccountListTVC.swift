@@ -62,10 +62,9 @@ class bankAccountListTVC: UITableViewController {
         //            cell.accessoryType = .checkmark
         //        }
         
-        if selectedIndexPath?.row == 2 {
-            performSegue(withIdentifier: "makeNewAccountSegue", sender: self)
-            
-        }
+//        if selectedIndexPath?.row == 2 {
+//            performSegue(withIdentifier: "makeNewAccountSegue", sender: self)
+//        }
         
     }
     

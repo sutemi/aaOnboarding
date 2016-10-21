@@ -8,7 +8,7 @@
 
 import UIKit
 
-class countriesListUIViewController: UITableViewController {
+class countriesListUIViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

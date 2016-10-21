@@ -52,7 +52,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="routingLabel" destination="8rL-uE-Frb" id="4ih-Rm-Ceo"/>
+                <outlet property="acctLabel" destination="8rL-uE-Frb" id="kSr-Zl-T9w"/>
             </connections>
         </tableViewCell>
     </objects>

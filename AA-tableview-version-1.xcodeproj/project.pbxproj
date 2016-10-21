@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		334B6E781DB9B95A002FF8B7 /* paymentDaysTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B6E771DB9B95A002FF8B7 /* paymentDaysTVC.swift */; };
+		335116BA1DB99B68005FD2F4 /* autoFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335116B91DB99B68005FD2F4 /* autoFunctions.swift */; };
+		335116BC1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335116BB1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift */; };
 		33C9DDCB1DB6597700D29065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDCA1DB6597700D29065 /* AppDelegate.swift */; };
 		33C9DDCD1DB6597700D29065 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDCC1DB6597700D29065 /* MainViewController.swift */; };
 		33C9DDD01DB6597700D29065 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DDCE1DB6597700D29065 /* Main.storyboard */; };
@@ -27,7 +30,7 @@
 		33C9DE011DB7A58F00D29065 /* addressUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDFF1DB7A58F00D29065 /* addressUITableViewCell.swift */; };
 		33C9DE021DB7A58F00D29065 /* addressUITableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DE001DB7A58F00D29065 /* addressUITableViewCell.xib */; };
 		33C9DE041DB7B02300D29065 /* pillLightUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE031DB7B02300D29065 /* pillLightUIButton.swift */; };
-		33C9DE071DB7C9F900D29065 /* countriesListUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE061DB7C9F900D29065 /* countriesListUITableViewController.swift */; };
+		33C9DE071DB7C9F900D29065 /* countriesListUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE061DB7C9F900D29065 /* countriesListUIViewController.swift */; };
 		33C9DE091DB828B500D29065 /* btnBottomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE081DB828B500D29065 /* btnBottomUIButton.swift */; };
 		33C9DE0B1DB82CE900D29065 /* delayedSuccessScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE0A1DB82CE900D29065 /* delayedSuccessScreenViewController.swift */; };
 		33C9DE0E1DB92AE200D29065 /* repeatPaymentsUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE0D1DB92AE200D29065 /* repeatPaymentsUIViewController.swift */; };
@@ -54,6 +57,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		334B6E771DB9B95A002FF8B7 /* paymentDaysTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paymentDaysTVC.swift; sourceTree = "<group>"; };
+		335116B91DB99B68005FD2F4 /* autoFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = autoFunctions.swift; sourceTree = "<group>"; };
+		335116BB1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+TextFieldDelegate.swift"; sourceTree = "<group>"; };
 		33C9DDC71DB6597700D29065 /* AA-tableview-version-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AA-tableview-version-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C9DDCA1DB6597700D29065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33C9DDCC1DB6597700D29065 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -76,7 +82,7 @@
 		33C9DDFF1DB7A58F00D29065 /* addressUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addressUITableViewCell.swift; sourceTree = "<group>"; };
 		33C9DE001DB7A58F00D29065 /* addressUITableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = addressUITableViewCell.xib; sourceTree = "<group>"; };
 		33C9DE031DB7B02300D29065 /* pillLightUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pillLightUIButton.swift; sourceTree = "<group>"; };
-		33C9DE061DB7C9F900D29065 /* countriesListUITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = countriesListUITableViewController.swift; sourceTree = "<group>"; };
+		33C9DE061DB7C9F900D29065 /* countriesListUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = countriesListUIViewController.swift; sourceTree = "<group>"; };
 		33C9DE081DB828B500D29065 /* btnBottomUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = btnBottomUIButton.swift; sourceTree = "<group>"; };
 		33C9DE0A1DB82CE900D29065 /* delayedSuccessScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = delayedSuccessScreenViewController.swift; sourceTree = "<group>"; };
 		33C9DE0D1DB92AE200D29065 /* repeatPaymentsUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = repeatPaymentsUIViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +119,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		335116B81DB99B4A005FD2F4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				335116B91DB99B68005FD2F4 /* autoFunctions.swift */,
+				335116BB1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
 		33C9DDBE1DB6597700D29065 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +151,7 @@
 				33C9DDCC1DB6597700D29065 /* MainViewController.swift */,
 				33C9DDCE1DB6597700D29065 /* Main.storyboard */,
 				33C9DDD11DB6597700D29065 /* Assets.xcassets */,
+				335116B81DB99B4A005FD2F4 /* Utilities */,
 				33C9DDF81DB7993600D29065 /* NavigationControllers */,
 				33C9DDE91DB68BBC00D29065 /* ViewControllers - Add User */,
 				33C9DE0C1DB92AA700D29065 /* ViewControllers - Repeat Payments */,
@@ -189,7 +205,7 @@
 			children = (
 				33C9DDEA1DB691C300D29065 /* fullNameUIViewController.swift */,
 				33C9DDF61DB7120300D29065 /* relationshipUITableViewController.swift */,
-				33C9DE061DB7C9F900D29065 /* countriesListUITableViewController.swift */,
+				33C9DE061DB7C9F900D29065 /* countriesListUIViewController.swift */,
 				33C9DE0A1DB82CE900D29065 /* delayedSuccessScreenViewController.swift */,
 			);
 			name = "ViewControllers - Add User";
@@ -210,6 +226,7 @@
 				33C9DE1E1DB93DB700D29065 /* newAccountDetailsVC.swift */,
 				33C9DE341DB9658000D29065 /* newAcctTypeTVC.swift */,
 				33C9DE361DB96E5700D29065 /* paymentAmountsTVC.swift */,
+				334B6E771DB9B95A002FF8B7 /* paymentDaysTVC.swift */,
 			);
 			name = "ViewControllers - Repeat Payments";
 			sourceTree = "<group>";
@@ -327,20 +344,23 @@
 				33C9DE371DB96E5700D29065 /* paymentAmountsTVC.swift in Sources */,
 				33C9DE221DB959C600D29065 /* routingTableViewCell.swift in Sources */,
 				33C9DE1F1DB93DB700D29065 /* newAccountDetailsVC.swift in Sources */,
+				334B6E781DB9B95A002FF8B7 /* paymentDaysTVC.swift in Sources */,
 				33C9DE0E1DB92AE200D29065 /* repeatPaymentsUIViewController.swift in Sources */,
 				33C9DE011DB7A58F00D29065 /* addressUITableViewCell.swift in Sources */,
+				335116BC1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift in Sources */,
 				33C9DE0B1DB82CE900D29065 /* delayedSuccessScreenViewController.swift in Sources */,
 				33C9DE321DB960F900D29065 /* nicknameTableViewCell.swift in Sources */,
 				33C9DDDD1DB65CF900D29065 /* primaryEnabledUIButton.swift in Sources */,
 				33C9DE2E1DB95F6A00D29065 /* typeTableViewCell.swift in Sources */,
 				33C9DDE21DB67DDB00D29065 /* fullNameUITableViewCell.swift in Sources */,
-				33C9DE071DB7C9F900D29065 /* countriesListUITableViewController.swift in Sources */,
+				33C9DE071DB7C9F900D29065 /* countriesListUIViewController.swift in Sources */,
 				33C9DE1A1DB9352E00D29065 /* paymentDateTableViewCell.swift in Sources */,
 				33C9DDF71DB7120300D29065 /* relationshipUITableViewController.swift in Sources */,
 				33C9DE161DB933CA00D29065 /* amountTableViewCell.swift in Sources */,
 				33C9DE121DB92EFA00D29065 /* whichAccountTableViewCell.swift in Sources */,
 				33C9DDE61DB6825B00D29065 /* formUITextField.swift in Sources */,
 				33C9DE091DB828B500D29065 /* btnBottomUIButton.swift in Sources */,
+				335116BA1DB99B68005FD2F4 /* autoFunctions.swift in Sources */,
 				33C9DDCD1DB6597700D29065 /* MainViewController.swift in Sources */,
 				33C9DDFD1DB79FB800D29065 /* citizenUITableViewCell.swift in Sources */,
 				33C9DE041DB7B02300D29065 /* pillLightUIButton.swift in Sources */,
@@ -511,6 +531,7 @@
 				33C9DDDB1DB6597700D29065 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

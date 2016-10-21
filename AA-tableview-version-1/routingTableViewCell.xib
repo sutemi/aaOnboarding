@@ -52,7 +52,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="routingLabel" destination="d2e-v5-K0V" id="lFL-Jh-75y"/>
+                <outlet property="routingLabel" destination="d2e-v5-K0V" id="Eo6-6U-guW"/>
             </connections>
         </tableViewCell>
     </objects>

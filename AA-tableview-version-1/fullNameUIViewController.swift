@@ -132,9 +132,9 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
         if selectedIndexPath?.row == 2 {
             performSegue(withIdentifier: "showRelationshipSegue", sender: self)
         }
-//        else if selectedIndexPath?.row == 3 {
-//            performSegue(withIdentifier: "countriesListSegue", sender: self)
-//        }
+        else if selectedIndexPath?.row == 3 {
+            performSegue(withIdentifier: "countriesListSegue", sender: self)
+        }
         
         tableView.reloadRows(at: [indexPath], with: .automatic)
         

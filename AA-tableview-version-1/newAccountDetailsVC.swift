@@ -124,7 +124,7 @@ class newAccountDetailsVC: UIViewController, UITableViewDataSource, UITableViewD
 //        Special button actions based on Index
 //
         if selectedIndexPath?.row == 3 {
-//            performSegue(withIdentifier: "addNewBankAccountSegue", sender: self)
+            performSegue(withIdentifier: "selectTypeSegue", sender: self)
         }
 //        if selectedIndexPath?.row == 0 {
 //            performSegue(withIdentifier: "addNewBankAccountSegue", sender: self)

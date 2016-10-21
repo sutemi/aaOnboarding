@@ -57,7 +57,7 @@ class relationshipUITableViewController: UITableViewController {
 //            cell.accessoryType = .checkmark
 //        }
         
-        self.performSegue(withIdentifier: "showRelationshipSegue", sender: self)
+//        self.performSegue(withIdentifier: "showRelationshipSegue", sender: self)
  
     }
         

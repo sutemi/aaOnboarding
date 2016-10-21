@@ -111,10 +111,11 @@ class repeatPaymentsUIViewController: UIViewController, UITableViewDataSource, U
         
         if selectedIndexPath?.row == 0 {
             performSegue(withIdentifier: "fromWhichSegue", sender: self)
+        } else if selectedIndexPath?.row == 1 {
+            performSegue(withIdentifier: "amountSegue", sender: self)
+        } else if selectedIndexPath?.row == 2 {
+            performSegue(withIdentifier: "daysSegue", sender: self)
         }
-        //        else if selectedIndexPath?.row == 3 {
-        //            performSegue(withIdentifier: "countriesListSegue", sender: self)
-        //        }
         
         tableView.reloadRows(at: [indexPath], with: .automatic)
         
