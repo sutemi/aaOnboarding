@@ -10,6 +10,10 @@
 		334B6E781DB9B95A002FF8B7 /* paymentDaysTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B6E771DB9B95A002FF8B7 /* paymentDaysTVC.swift */; };
 		335116BA1DB99B68005FD2F4 /* autoFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335116B91DB99B68005FD2F4 /* autoFunctions.swift */; };
 		335116BC1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335116BB1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift */; };
+		3363F74B1DBE5E8400F375F3 /* paperlessDisclosuresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F74A1DBE5E8400F375F3 /* paperlessDisclosuresVC.swift */; };
+		3363F74D1DBE7ED600F375F3 /* paperlessStatementsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F74C1DBE7ED600F375F3 /* paperlessStatementsVC.swift */; };
+		3363F74F1DBE8CE200F375F3 /* customNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F74E1DBE8CE200F375F3 /* customNavigationBar.swift */; };
+		337D04991DBBE338001AAABF /* splashOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337D04981DBBE338001AAABF /* splashOneVC.swift */; };
 		33C9DDCB1DB6597700D29065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDCA1DB6597700D29065 /* AppDelegate.swift */; };
 		33C9DDCD1DB6597700D29065 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDCC1DB6597700D29065 /* MainViewController.swift */; };
 		33C9DDD01DB6597700D29065 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DDCE1DB6597700D29065 /* Main.storyboard */; };
@@ -63,6 +67,10 @@
 		334B6E771DB9B95A002FF8B7 /* paymentDaysTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paymentDaysTVC.swift; sourceTree = "<group>"; };
 		335116B91DB99B68005FD2F4 /* autoFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = autoFunctions.swift; sourceTree = "<group>"; };
 		335116BB1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+TextFieldDelegate.swift"; sourceTree = "<group>"; };
+		3363F74A1DBE5E8400F375F3 /* paperlessDisclosuresVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paperlessDisclosuresVC.swift; sourceTree = "<group>"; };
+		3363F74C1DBE7ED600F375F3 /* paperlessStatementsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paperlessStatementsVC.swift; sourceTree = "<group>"; };
+		3363F74E1DBE8CE200F375F3 /* customNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customNavigationBar.swift; sourceTree = "<group>"; };
+		337D04981DBBE338001AAABF /* splashOneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splashOneVC.swift; sourceTree = "<group>"; };
 		33C9DDC71DB6597700D29065 /* AA-tableview-version-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AA-tableview-version-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C9DDCA1DB6597700D29065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33C9DDCC1DB6597700D29065 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -130,8 +138,26 @@
 			children = (
 				335116B91DB99B68005FD2F4 /* autoFunctions.swift */,
 				335116BB1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift */,
+				3363F74E1DBE8CE200F375F3 /* customNavigationBar.swift */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		3363F7491DBE5E5500F375F3 /* ViewControllers - Paperless */ = {
+			isa = PBXGroup;
+			children = (
+				3363F74A1DBE5E8400F375F3 /* paperlessDisclosuresVC.swift */,
+				3363F74C1DBE7ED600F375F3 /* paperlessStatementsVC.swift */,
+			);
+			name = "ViewControllers - Paperless";
+			sourceTree = "<group>";
+		};
+		337D04971DBBE2F6001AAABF /* splash page animation classes */ = {
+			isa = PBXGroup;
+			children = (
+				337D04981DBBE338001AAABF /* splashOneVC.swift */,
+			);
+			name = "splash page animation classes";
 			sourceTree = "<group>";
 		};
 		33C9DDBE1DB6597700D29065 = {
@@ -158,10 +184,12 @@
 				33C9DDCE1DB6597700D29065 /* Main.storyboard */,
 				33C9DDD11DB6597700D29065 /* Assets.xcassets */,
 				335116B81DB99B4A005FD2F4 /* Utilities */,
+				337D04971DBBE2F6001AAABF /* splash page animation classes */,
 				33C9DDF81DB7993600D29065 /* NavigationControllers */,
 				33C9DDE91DB68BBC00D29065 /* ViewControllers - Add User */,
 				33C9DE0C1DB92AA700D29065 /* ViewControllers - Repeat Payments */,
 				33F3EFC51DBA534500DFCFF6 /* ViewControllers - Servicing Alerts */,
+				3363F7491DBE5E5500F375F3 /* ViewControllers - Paperless */,
 				33C9DDDF1DB67D7F00D29065 /* Cells - Add User */,
 				33C9DE0F1DB92CF100D29065 /* Cells - Repeat Payments */,
 				33F3EFC81DBA564E00DFCFF6 /* Cells - Servicing Alerts */,
@@ -370,6 +398,7 @@
 				33C9DDEB1DB691C300D29065 /* fullNameUIViewController.swift in Sources */,
 				33C9DE371DB96E5700D29065 /* paymentAmountsTVC.swift in Sources */,
 				33C9DE221DB959C600D29065 /* routingTableViewCell.swift in Sources */,
+				337D04991DBBE338001AAABF /* splashOneVC.swift in Sources */,
 				33C9DE1F1DB93DB700D29065 /* newAccountDetailsVC.swift in Sources */,
 				334B6E781DB9B95A002FF8B7 /* paymentDaysTVC.swift in Sources */,
 				33C9DE0E1DB92AE200D29065 /* repeatPaymentsUIViewController.swift in Sources */,
@@ -385,14 +414,17 @@
 				33C9DDF71DB7120300D29065 /* relationshipUITableViewController.swift in Sources */,
 				33C9DE161DB933CA00D29065 /* amountTableViewCell.swift in Sources */,
 				33C9DE121DB92EFA00D29065 /* whichAccountTableViewCell.swift in Sources */,
+				3363F74F1DBE8CE200F375F3 /* customNavigationBar.swift in Sources */,
 				33C9DDE61DB6825B00D29065 /* formUITextField.swift in Sources */,
 				33C9DE091DB828B500D29065 /* btnBottomUIButton.swift in Sources */,
 				335116BA1DB99B68005FD2F4 /* autoFunctions.swift in Sources */,
 				33C9DDCD1DB6597700D29065 /* MainViewController.swift in Sources */,
 				33C9DDFD1DB79FB800D29065 /* citizenUITableViewCell.swift in Sources */,
 				33C9DE041DB7B02300D29065 /* pillLightUIButton.swift in Sources */,
+				3363F74B1DBE5E8400F375F3 /* paperlessDisclosuresVC.swift in Sources */,
 				33C9DE261DB95D9A00D29065 /* accountTableViewCell.swift in Sources */,
 				33C9DDCB1DB6597700D29065 /* AppDelegate.swift in Sources */,
+				3363F74D1DBE7ED600F375F3 /* paperlessStatementsVC.swift in Sources */,
 				33C9DE1D1DB9393F00D29065 /* bankAccountListTVC.swift in Sources */,
 				33C9DE2A1DB95E8700D29065 /* reaccountTableViewCell.swift in Sources */,
 				33F3EFCB1DBA568600DFCFF6 /* servicingAlertTableViewCell.swift in Sources */,

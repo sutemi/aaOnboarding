@@ -20,8 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor(colorLiteralRed: 54/255, green: 73/255, blue: 90/255, alpha: 1)
         
 //        UINavigationBar.appearance().tintColor = UIColor(colorLiteralRed: 255/255, green: 255/255, blue: 255/255, alpha: 0)
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName:UIColor(colorLiteralRed: 54/255, green: 73/255, blue: 90/255, alpha: 1)
-]
+        UINavigationBar.appearance().titleTextAttributes = [ NSFontAttributeName: UIFont.systemFont(ofSize: 14), NSForegroundColorAttributeName: UIColor(colorLiteralRed: 54/255, green: 73/255, blue: 90/255, alpha: 1)]
+        
+        UINavigationItem
+        navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
+
         
         return true
     }
