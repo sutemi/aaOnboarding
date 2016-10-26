@@ -16,22 +16,32 @@ class btnBottomUIButton: UIButton {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        if self.isEnabled {
-            self.setTitleColor(bcuxWhite, for: .normal)
-            self.layer.cornerRadius = 0
-            self.layer.backgroundColor = bcuxBlue.cgColor
-            self.contentHorizontalAlignment = UIControlContentHorizontalAlignment.center
-            self.titleLabel!.font =  UIFont(name: "System Bold", size: 17)
-        } else {
-            self.setTitleColor(bcuxWhite, for: .normal)
-            self.layer.cornerRadius = 0
-            self.layer.backgroundColor = bcuxBlue.cgColor
-            self.contentHorizontalAlignment = UIControlContentHorizontalAlignment.center
-            self.titleLabel!.font =  UIFont(name: "System Bold", size: 17)
-        }
+        
+        self.setTitleColor(UIColor.aaWhite(), for: .normal)
+        self.setTitleColor(UIColor.aaWhite(), for: .disabled)
+        
+        self.setBackgroundImage(imageFromColor(color: UIColor.aaPrimaryBlue()), for: .normal)
+        self.setBackgroundImage(imageFromColor(color: UIColor.aaLtGray()), for: .disabled)
         
         
         
+        self.layer.cornerRadius = 0
+        self.contentHorizontalAlignment = UIControlContentHorizontalAlignment.center
+        self.titleLabel!.font =  UIFont(name: "System Bold", size: 17)
+        
+    }
+    
+    
+    func imageFromColor(color: UIColor) -> UIImage {
+        let rect = CGRect(x: 0, y: 0, width: 100, height: 100)
+        //        let rect = CGRect(0, 0, 1, 1)
+        UIGraphicsBeginImageContext(rect.size)
+        let context = UIGraphicsGetCurrentContext()
+        context!.setFillColor(color.cgColor)
+        context!.fill(rect)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image!
     }
 
 }

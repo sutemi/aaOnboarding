@@ -18,6 +18,7 @@
 		3363F7551DBFE5B900F375F3 /* UIViewControllerBaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F7541DBFE5B900F375F3 /* UIViewControllerBaseClass.swift */; };
 		3363F7581DC0F36800F375F3 /* touchIDSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F7571DC0F36800F375F3 /* touchIDSettingsVC.swift */; };
 		3363F75B1DC0F5F800F375F3 /* ficoSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F75A1DC0F5F800F375F3 /* ficoSettingsVC.swift */; };
+		3363F75D1DC10C3E00F375F3 /* customColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F75C1DC10C3E00F375F3 /* customColors.swift */; };
 		337D04991DBBE338001AAABF /* splashOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337D04981DBBE338001AAABF /* splashOneVC.swift */; };
 		33C9DDCB1DB6597700D29065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDCA1DB6597700D29065 /* AppDelegate.swift */; };
 		33C9DDCD1DB6597700D29065 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDCC1DB6597700D29065 /* MainViewController.swift */; };
@@ -80,6 +81,7 @@
 		3363F7541DBFE5B900F375F3 /* UIViewControllerBaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerBaseClass.swift; sourceTree = "<group>"; };
 		3363F7571DC0F36800F375F3 /* touchIDSettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = touchIDSettingsVC.swift; sourceTree = "<group>"; };
 		3363F75A1DC0F5F800F375F3 /* ficoSettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ficoSettingsVC.swift; sourceTree = "<group>"; };
+		3363F75C1DC10C3E00F375F3 /* customColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customColors.swift; sourceTree = "<group>"; };
 		337D04981DBBE338001AAABF /* splashOneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splashOneVC.swift; sourceTree = "<group>"; };
 		33C9DDC71DB6597700D29065 /* AA-tableview-version-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AA-tableview-version-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C9DDCA1DB6597700D29065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				3363F74E1DBE8CE200F375F3 /* customNavigationBar.swift */,
 				3363F7521DBFD62C00F375F3 /* UIView+SuccessScreen.swift */,
 				3363F7541DBFE5B900F375F3 /* UIViewControllerBaseClass.swift */,
+				3363F75C1DC10C3E00F375F3 /* customColors.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 			files = (
 				3363F7551DBFE5B900F375F3 /* UIViewControllerBaseClass.swift in Sources */,
 				33F3EFC71DBA538B00DFCFF6 /* servicingAlertsVC.swift in Sources */,
+				3363F75D1DC10C3E00F375F3 /* customColors.swift in Sources */,
 				33C9DDEE1DB6C07C00D29065 /* dobUITableViewCell.swift in Sources */,
 				33C9DDEB1DB691C300D29065 /* fullNameUIViewController.swift in Sources */,
 				33C9DE371DB96E5700D29065 /* paymentAmountsTVC.swift in Sources */,
