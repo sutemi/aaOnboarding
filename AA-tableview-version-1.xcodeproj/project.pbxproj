@@ -13,6 +13,11 @@
 		3363F74B1DBE5E8400F375F3 /* paperlessDisclosuresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F74A1DBE5E8400F375F3 /* paperlessDisclosuresVC.swift */; };
 		3363F74D1DBE7ED600F375F3 /* paperlessStatementsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F74C1DBE7ED600F375F3 /* paperlessStatementsVC.swift */; };
 		3363F74F1DBE8CE200F375F3 /* customNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F74E1DBE8CE200F375F3 /* customNavigationBar.swift */; };
+		3363F7511DBFA4D200F375F3 /* customNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F7501DBFA4D200F375F3 /* customNavigationController.swift */; };
+		3363F7531DBFD62C00F375F3 /* UIView+SuccessScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F7521DBFD62C00F375F3 /* UIView+SuccessScreen.swift */; };
+		3363F7551DBFE5B900F375F3 /* UIViewControllerBaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F7541DBFE5B900F375F3 /* UIViewControllerBaseClass.swift */; };
+		3363F7581DC0F36800F375F3 /* touchIDSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F7571DC0F36800F375F3 /* touchIDSettingsVC.swift */; };
+		3363F75B1DC0F5F800F375F3 /* ficoSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F75A1DC0F5F800F375F3 /* ficoSettingsVC.swift */; };
 		337D04991DBBE338001AAABF /* splashOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337D04981DBBE338001AAABF /* splashOneVC.swift */; };
 		33C9DDCB1DB6597700D29065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDCA1DB6597700D29065 /* AppDelegate.swift */; };
 		33C9DDCD1DB6597700D29065 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDCC1DB6597700D29065 /* MainViewController.swift */; };
@@ -70,6 +75,11 @@
 		3363F74A1DBE5E8400F375F3 /* paperlessDisclosuresVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paperlessDisclosuresVC.swift; sourceTree = "<group>"; };
 		3363F74C1DBE7ED600F375F3 /* paperlessStatementsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paperlessStatementsVC.swift; sourceTree = "<group>"; };
 		3363F74E1DBE8CE200F375F3 /* customNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customNavigationBar.swift; sourceTree = "<group>"; };
+		3363F7501DBFA4D200F375F3 /* customNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customNavigationController.swift; sourceTree = "<group>"; };
+		3363F7521DBFD62C00F375F3 /* UIView+SuccessScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SuccessScreen.swift"; sourceTree = "<group>"; };
+		3363F7541DBFE5B900F375F3 /* UIViewControllerBaseClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerBaseClass.swift; sourceTree = "<group>"; };
+		3363F7571DC0F36800F375F3 /* touchIDSettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = touchIDSettingsVC.swift; sourceTree = "<group>"; };
+		3363F75A1DC0F5F800F375F3 /* ficoSettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ficoSettingsVC.swift; sourceTree = "<group>"; };
 		337D04981DBBE338001AAABF /* splashOneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splashOneVC.swift; sourceTree = "<group>"; };
 		33C9DDC71DB6597700D29065 /* AA-tableview-version-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AA-tableview-version-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C9DDCA1DB6597700D29065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +149,8 @@
 				335116B91DB99B68005FD2F4 /* autoFunctions.swift */,
 				335116BB1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift */,
 				3363F74E1DBE8CE200F375F3 /* customNavigationBar.swift */,
+				3363F7521DBFD62C00F375F3 /* UIView+SuccessScreen.swift */,
+				3363F7541DBFE5B900F375F3 /* UIViewControllerBaseClass.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -150,6 +162,22 @@
 				3363F74C1DBE7ED600F375F3 /* paperlessStatementsVC.swift */,
 			);
 			name = "ViewControllers - Paperless";
+			sourceTree = "<group>";
+		};
+		3363F7561DC0F33400F375F3 /* ViewControllers - TouchID */ = {
+			isa = PBXGroup;
+			children = (
+				3363F7571DC0F36800F375F3 /* touchIDSettingsVC.swift */,
+			);
+			name = "ViewControllers - TouchID";
+			sourceTree = "<group>";
+		};
+		3363F7591DC0F5D300F375F3 /* ViewControllers - fico */ = {
+			isa = PBXGroup;
+			children = (
+				3363F75A1DC0F5F800F375F3 /* ficoSettingsVC.swift */,
+			);
+			name = "ViewControllers - fico";
 			sourceTree = "<group>";
 		};
 		337D04971DBBE2F6001AAABF /* splash page animation classes */ = {
@@ -183,6 +211,7 @@
 				33C9DDCC1DB6597700D29065 /* MainViewController.swift */,
 				33C9DDCE1DB6597700D29065 /* Main.storyboard */,
 				33C9DDD11DB6597700D29065 /* Assets.xcassets */,
+				33C9DE0A1DB82CE900D29065 /* delayedSuccessScreenViewController.swift */,
 				335116B81DB99B4A005FD2F4 /* Utilities */,
 				337D04971DBBE2F6001AAABF /* splash page animation classes */,
 				33C9DDF81DB7993600D29065 /* NavigationControllers */,
@@ -190,6 +219,8 @@
 				33C9DE0C1DB92AA700D29065 /* ViewControllers - Repeat Payments */,
 				33F3EFC51DBA534500DFCFF6 /* ViewControllers - Servicing Alerts */,
 				3363F7491DBE5E5500F375F3 /* ViewControllers - Paperless */,
+				3363F7561DC0F33400F375F3 /* ViewControllers - TouchID */,
+				3363F7591DC0F5D300F375F3 /* ViewControllers - fico */,
 				33C9DDDF1DB67D7F00D29065 /* Cells - Add User */,
 				33C9DE0F1DB92CF100D29065 /* Cells - Repeat Payments */,
 				33F3EFC81DBA564E00DFCFF6 /* Cells - Servicing Alerts */,
@@ -242,7 +273,6 @@
 				33C9DDEA1DB691C300D29065 /* fullNameUIViewController.swift */,
 				33C9DDF61DB7120300D29065 /* relationshipUITableViewController.swift */,
 				33C9DE061DB7C9F900D29065 /* countriesListUIViewController.swift */,
-				33C9DE0A1DB82CE900D29065 /* delayedSuccessScreenViewController.swift */,
 			);
 			name = "ViewControllers - Add User";
 			sourceTree = "<group>";
@@ -250,6 +280,7 @@
 		33C9DDF81DB7993600D29065 /* NavigationControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3363F7501DBFA4D200F375F3 /* customNavigationController.swift */,
 			);
 			name = NavigationControllers;
 			sourceTree = "<group>";
@@ -393,6 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3363F7551DBFE5B900F375F3 /* UIViewControllerBaseClass.swift in Sources */,
 				33F3EFC71DBA538B00DFCFF6 /* servicingAlertsVC.swift in Sources */,
 				33C9DDEE1DB6C07C00D29065 /* dobUITableViewCell.swift in Sources */,
 				33C9DDEB1DB691C300D29065 /* fullNameUIViewController.swift in Sources */,
@@ -404,6 +436,7 @@
 				33C9DE0E1DB92AE200D29065 /* repeatPaymentsUIViewController.swift in Sources */,
 				33C9DE011DB7A58F00D29065 /* addressUITableViewCell.swift in Sources */,
 				335116BC1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift in Sources */,
+				3363F7581DC0F36800F375F3 /* touchIDSettingsVC.swift in Sources */,
 				33C9DE0B1DB82CE900D29065 /* delayedSuccessScreenViewController.swift in Sources */,
 				33C9DE321DB960F900D29065 /* nicknameTableViewCell.swift in Sources */,
 				33C9DDDD1DB65CF900D29065 /* primaryEnabledUIButton.swift in Sources */,
@@ -411,10 +444,13 @@
 				33C9DDE21DB67DDB00D29065 /* fullNameUITableViewCell.swift in Sources */,
 				33C9DE071DB7C9F900D29065 /* countriesListUIViewController.swift in Sources */,
 				33C9DE1A1DB9352E00D29065 /* paymentDateTableViewCell.swift in Sources */,
+				3363F75B1DC0F5F800F375F3 /* ficoSettingsVC.swift in Sources */,
 				33C9DDF71DB7120300D29065 /* relationshipUITableViewController.swift in Sources */,
 				33C9DE161DB933CA00D29065 /* amountTableViewCell.swift in Sources */,
+				3363F7511DBFA4D200F375F3 /* customNavigationController.swift in Sources */,
 				33C9DE121DB92EFA00D29065 /* whichAccountTableViewCell.swift in Sources */,
 				3363F74F1DBE8CE200F375F3 /* customNavigationBar.swift in Sources */,
+				3363F7531DBFD62C00F375F3 /* UIView+SuccessScreen.swift in Sources */,
 				33C9DDE61DB6825B00D29065 /* formUITextField.swift in Sources */,
 				33C9DE091DB828B500D29065 /* btnBottomUIButton.swift in Sources */,
 				335116BA1DB99B68005FD2F4 /* autoFunctions.swift in Sources */,

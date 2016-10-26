@@ -29,16 +29,15 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
         
         tableView.tableFooterView = UIView()
         
-        // Set navbar style
-        let navbar = self.navigationController?.navigationBar
-        navbar?.shadowImage = UIImage()
-        navbar?.setBackgroundImage(UIImage(), for: .default)
-        
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(true, animated: false)
+        
     }
     
     

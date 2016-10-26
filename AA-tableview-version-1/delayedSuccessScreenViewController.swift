@@ -26,13 +26,6 @@ class delayedSuccessScreenViewController: UIViewController, delayedSuccessVCDele
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        // Set navbar style
-        let navbar = self.navigationController?.navigationBar
-        navbar?.shadowImage = UIImage()
-        navbar?.setBackgroundImage(UIImage(), for: .default)
-        
-        navigationController?.setNavigationBarHidden(true, animated: false)
 
         self.delegate = self
         
@@ -56,6 +49,13 @@ class delayedSuccessScreenViewController: UIViewController, delayedSuccessVCDele
         }
         
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: false)
+
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

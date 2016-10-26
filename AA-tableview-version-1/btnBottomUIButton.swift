@@ -16,13 +16,21 @@ class btnBottomUIButton: UIButton {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
-        self.setTitleColor(bcuxWhite, for: .normal)
-        self.layer.cornerRadius = 0
-        self.layer.backgroundColor = bcuxBlue.cgColor
-        self.contentHorizontalAlignment = UIControlContentHorizontalAlignment.center
-        self.titleLabel!.font =  UIFont(name: "System Bold", size: 17)
-//        self.frame.size.height = 65
-//        self.frame.size.width = 285
+        if self.isEnabled {
+            self.setTitleColor(bcuxWhite, for: .normal)
+            self.layer.cornerRadius = 0
+            self.layer.backgroundColor = bcuxBlue.cgColor
+            self.contentHorizontalAlignment = UIControlContentHorizontalAlignment.center
+            self.titleLabel!.font =  UIFont(name: "System Bold", size: 17)
+        } else {
+            self.setTitleColor(bcuxWhite, for: .normal)
+            self.layer.cornerRadius = 0
+            self.layer.backgroundColor = bcuxBlue.cgColor
+            self.contentHorizontalAlignment = UIControlContentHorizontalAlignment.center
+            self.titleLabel!.font =  UIFont(name: "System Bold", size: 17)
+        }
+        
+        
         
     }
 

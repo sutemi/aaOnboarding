@@ -27,17 +27,18 @@ class repeatPaymentsUIViewController: UIViewController, UITableViewDataSource, U
         
         tableView.tableFooterView = UIView()
         
-        // Set navbar style
-        let navbar = self.navigationController?.navigationBar
-        navbar?.shadowImage = UIImage()
-        navbar?.setBackgroundImage(UIImage(), for: .default)
         
-        navigationController?.setNavigationBarHidden(true, animated: false)
+       
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(true, animated: false)
+    
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+         navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

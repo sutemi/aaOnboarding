@@ -10,14 +10,17 @@ import Foundation
 import UIKit
 
 
-//extension UINavigationController {
-//    
-//}
+extension UINavigationController {
+    
+    public func prepareForDisplay() {
+        
+        self.navigationBar.shadowImage = UIImage()
+        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        
+//        self.navigationItem.backBarButtonItem?.title = ""
+//        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
+    }
+    
+}
 
-
-//extension UIView: UITextFieldDelegate {
-//    
-//    public func textFieldDidEndEditing(_ textField: UITextField) {
-//        self.resignFirstResponder()
-//    }
-//}
