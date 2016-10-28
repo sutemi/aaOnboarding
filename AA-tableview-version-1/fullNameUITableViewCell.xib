@@ -85,7 +85,11 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="firstNameField" destination="LUT-op-EeQ" id="D2f-JI-Mmp"/>
+                <outlet property="lastNameField" destination="YTU-SK-3sT" id="zAg-37-OYl"/>
+                <outlet property="miField" destination="Zmf-IL-3v8" id="2qJ-49-tyj"/>
                 <outlet property="nameLabel" destination="EdQ-5T-hxX" id="beq-Da-NvY"/>
+                <outlet property="suffixField" destination="syg-3L-MBl" id="vjY-fJ-bOW"/>
             </connections>
             <point key="canvasLocation" x="36" y="169"/>
         </tableViewCell>

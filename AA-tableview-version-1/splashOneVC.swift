@@ -10,11 +10,7 @@ import UIKit
 
 class splashOneVC: UIViewController {
 
-    
-    
-    
-    
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,8 +22,14 @@ class splashOneVC: UIViewController {
         
     }
     
+
+    @IBAction func advancePageViewer(_ sender: AnyObject) {
+        
+        
+    }
     
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

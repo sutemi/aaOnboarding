@@ -52,6 +52,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="dobField" destination="x8O-bM-Wbt" id="FaF-sk-FgB"/>
                 <outlet property="dobLabel" destination="Bva-gm-Kkg" id="f3K-PU-TZc"/>
             </connections>
             <point key="canvasLocation" x="92" y="94.5"/>

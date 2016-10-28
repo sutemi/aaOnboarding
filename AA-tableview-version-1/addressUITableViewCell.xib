@@ -113,6 +113,10 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="addressLabel" destination="f81-vy-895" id="g1k-k8-QH8"/>
+                <outlet property="cityField" destination="1iW-2q-tTm" id="kNR-uQ-pz1"/>
+                <outlet property="stateField" destination="62b-rN-7ca" id="VZ8-dB-0cq"/>
+                <outlet property="streetField" destination="3PQ-f4-ML5" id="mYm-Nt-Q20"/>
+                <outlet property="zipField" destination="D1r-kN-Cy0" id="9sd-ib-giB"/>
             </connections>
         </tableViewCell>
     </objects>

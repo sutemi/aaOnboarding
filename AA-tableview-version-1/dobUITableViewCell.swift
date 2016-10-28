@@ -14,10 +14,17 @@ class dobUITableViewCell: UITableViewCell {
     
     @IBOutlet weak var dobLabel: UILabel!
 
+    @IBOutlet weak var dobField: formUITextField!
+    
+    var isComplete:Bool = false
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        dobField.addTarget(self, action: Selector(("textFieldDidChange:")), for: UIControlEvents.editingChanged)
         
         self.clipsToBounds = true
     }
@@ -32,5 +39,13 @@ class dobUITableViewCell: UITableViewCell {
             dobLabel.isHidden = false
         }
     }
+    
+    
+    func textFieldDidChange() {
+        if dobField.text != "" {
+            self.isComplete = true
+        }
+    }
+    
     
 }

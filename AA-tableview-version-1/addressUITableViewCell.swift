@@ -13,9 +13,25 @@ class addressUITableViewCell: UITableViewCell {
     
     @IBOutlet weak var addressLabel: UILabel!
     
+    @IBOutlet weak var streetField: formUITextField!
+    @IBOutlet weak var zipField: formUITextField!
+    @IBOutlet weak var cityField: formUITextField!
+    @IBOutlet weak var stateField: formUITextField!
+   
+    
+    
+    var isComplete:Bool = true
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        
+        streetField.addTarget(self, action: Selector(("textFieldDidChange:")), for: UIControlEvents.editingChanged)
+        zipField.addTarget(self, action: Selector(("textFieldDidChange:")), for: UIControlEvents.editingChanged)
+        cityField.addTarget(self, action: Selector(("textFieldDidChange:")), for: UIControlEvents.editingChanged)
+        stateField.addTarget(self, action: Selector(("textFieldDidChange:")), for: UIControlEvents.editingChanged)
+        
         
         self.clipsToBounds = true
     }
@@ -30,6 +46,13 @@ class addressUITableViewCell: UITableViewCell {
             addressLabel.isHidden = false
         }
         
+    }
+    
+    
+    func textFieldDidChange() {
+        if streetField.text != "" && zipField.text != "" && cityField.text != "" && stateField.text != "" {
+            self.isComplete = true
+        }
     }
     
 }
