@@ -11,13 +11,14 @@ import UIKit
 class splashOneVC: UIViewController {
 
 
+    @IBOutlet weak var caption: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        
+        caption.setLineSpacing(sender: self.caption, amt: 4.0, align: "center")
         
         
     }

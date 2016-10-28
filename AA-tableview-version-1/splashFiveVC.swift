@@ -1,20 +1,18 @@
 //
-//  ficoSettingsVC.swift
+//  splashFiveVC.swift
 //  AA-tableview-version-1
 //
-//  Created by James Wilson on 10/26/16.
+//  Created by James Wilson on 10/28/16.
 //  Copyright © 2016 James Wilson. All rights reserved.
 //
 
 import UIKit
 
-class ficoSettingsVC: UIViewController {
+class splashFiveVC: UIViewController {
 
     
-    @IBOutlet weak var caption1: UILabel!
-    @IBOutlet weak var caption2: UILabel!
-    @IBOutlet weak var caption3: UILabel!
-    @IBOutlet weak var caption4: UILabel!
+    
+    @IBOutlet weak var caption: UILabel!
     
     
     override func viewDidLoad() {
@@ -22,10 +20,7 @@ class ficoSettingsVC: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        caption1.setLineSpacing(sender: self.caption1, amt: 4.0, align: "left")
-        caption2.setLineSpacing(sender: self.caption2, amt: 4.0, align: "left")
-        caption3.setLineSpacing(sender: self.caption3, amt: 4.0, align: "left")
-        caption4.setLineSpacing(sender: self.caption4, amt: 4.0, align: "left")
+        caption.setLineSpacing(sender: self.caption, amt: 4.0, align: "center")
     }
 
     override func didReceiveMemoryWarning() {

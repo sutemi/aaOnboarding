@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		330632AC1DC3932F004ADEB7 /* AmericanSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 330632A11DC3932F004ADEB7 /* AmericanSans-Bold.ttf */; };
+		330632AD1DC3932F004ADEB7 /* AmericanSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 330632A21DC3932F004ADEB7 /* AmericanSans-BoldItalic.ttf */; };
+		330632AE1DC3932F004ADEB7 /* AmericanSans-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 330632A31DC3932F004ADEB7 /* AmericanSans-Book.ttf */; };
+		330632AF1DC3932F004ADEB7 /* AmericanSans-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 330632A41DC3932F004ADEB7 /* AmericanSans-BookItalic.ttf */; };
+		330632B01DC3932F004ADEB7 /* AmericanSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 330632A51DC3932F004ADEB7 /* AmericanSans-Italic.ttf */; };
+		330632B11DC3932F004ADEB7 /* AmericanSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 330632A61DC3932F004ADEB7 /* AmericanSans-Light.ttf */; };
+		330632B21DC3932F004ADEB7 /* AmericanSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 330632A71DC3932F004ADEB7 /* AmericanSans-LightItalic.ttf */; };
+		330632B31DC3932F004ADEB7 /* AmericanSans-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 330632A81DC3932F004ADEB7 /* AmericanSans-Medium.otf */; };
+		330632B41DC3932F004ADEB7 /* AmericanSans-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 330632A91DC3932F004ADEB7 /* AmericanSans-MediumItalic.otf */; };
+		330632B51DC3932F004ADEB7 /* AmericanSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 330632AA1DC3932F004ADEB7 /* AmericanSans-Regular.otf */; };
+		330632B61DC3932F004ADEB7 /* AmericanSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 330632AB1DC3932F004ADEB7 /* AmericanSans-Regular.ttf */; };
+		330632B91DC3978C004ADEB7 /* UILabel+LineSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330632B81DC3978C004ADEB7 /* UILabel+LineSpacing.swift */; };
+		330632BB1DC39FEA004ADEB7 /* splashTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330632BA1DC39FEA004ADEB7 /* splashTwoVC.swift */; };
+		330632BD1DC3A052004ADEB7 /* splashThreeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330632BC1DC3A052004ADEB7 /* splashThreeVC.swift */; };
+		330632BF1DC3A0DA004ADEB7 /* splashFourVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330632BE1DC3A0DA004ADEB7 /* splashFourVC.swift */; };
+		330632C11DC3A15C004ADEB7 /* splashFiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330632C01DC3A15C004ADEB7 /* splashFiveVC.swift */; };
+		330632C31DC3A1B7004ADEB7 /* splashSixVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330632C21DC3A1B7004ADEB7 /* splashSixVC.swift */; };
+		330632C51DC3A216004ADEB7 /* splashSevenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330632C41DC3A216004ADEB7 /* splashSevenVC.swift */; };
+		330632C71DC3A278004ADEB7 /* splashEightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330632C61DC3A278004ADEB7 /* splashEightVC.swift */; };
 		334B6E781DB9B95A002FF8B7 /* paymentDaysTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B6E771DB9B95A002FF8B7 /* paymentDaysTVC.swift */; };
 		335116BA1DB99B68005FD2F4 /* autoFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335116B91DB99B68005FD2F4 /* autoFunctions.swift */; };
 		335116BC1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335116BB1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift */; };
@@ -70,6 +89,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		330632A11DC3932F004ADEB7 /* AmericanSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AmericanSans-Bold.ttf"; path = "../AmericanSans-Bold.ttf"; sourceTree = "<group>"; };
+		330632A21DC3932F004ADEB7 /* AmericanSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AmericanSans-BoldItalic.ttf"; path = "../AmericanSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		330632A31DC3932F004ADEB7 /* AmericanSans-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AmericanSans-Book.ttf"; path = "../AmericanSans-Book.ttf"; sourceTree = "<group>"; };
+		330632A41DC3932F004ADEB7 /* AmericanSans-BookItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AmericanSans-BookItalic.ttf"; path = "../AmericanSans-BookItalic.ttf"; sourceTree = "<group>"; };
+		330632A51DC3932F004ADEB7 /* AmericanSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AmericanSans-Italic.ttf"; path = "../AmericanSans-Italic.ttf"; sourceTree = "<group>"; };
+		330632A61DC3932F004ADEB7 /* AmericanSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AmericanSans-Light.ttf"; path = "../AmericanSans-Light.ttf"; sourceTree = "<group>"; };
+		330632A71DC3932F004ADEB7 /* AmericanSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AmericanSans-LightItalic.ttf"; path = "../AmericanSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		330632A81DC3932F004ADEB7 /* AmericanSans-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AmericanSans-Medium.otf"; path = "../AmericanSans-Medium.otf"; sourceTree = "<group>"; };
+		330632A91DC3932F004ADEB7 /* AmericanSans-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AmericanSans-MediumItalic.otf"; path = "../AmericanSans-MediumItalic.otf"; sourceTree = "<group>"; };
+		330632AA1DC3932F004ADEB7 /* AmericanSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AmericanSans-Regular.otf"; path = "../AmericanSans-Regular.otf"; sourceTree = "<group>"; };
+		330632AB1DC3932F004ADEB7 /* AmericanSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AmericanSans-Regular.ttf"; path = "../AmericanSans-Regular.ttf"; sourceTree = "<group>"; };
+		330632B81DC3978C004ADEB7 /* UILabel+LineSpacing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+LineSpacing.swift"; sourceTree = "<group>"; };
+		330632BA1DC39FEA004ADEB7 /* splashTwoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splashTwoVC.swift; sourceTree = "<group>"; };
+		330632BC1DC3A052004ADEB7 /* splashThreeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splashThreeVC.swift; sourceTree = "<group>"; };
+		330632BE1DC3A0DA004ADEB7 /* splashFourVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splashFourVC.swift; sourceTree = "<group>"; };
+		330632C01DC3A15C004ADEB7 /* splashFiveVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splashFiveVC.swift; sourceTree = "<group>"; };
+		330632C21DC3A1B7004ADEB7 /* splashSixVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splashSixVC.swift; sourceTree = "<group>"; };
+		330632C41DC3A216004ADEB7 /* splashSevenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splashSevenVC.swift; sourceTree = "<group>"; };
+		330632C61DC3A278004ADEB7 /* splashEightVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splashEightVC.swift; sourceTree = "<group>"; };
 		334B6E771DB9B95A002FF8B7 /* paymentDaysTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paymentDaysTVC.swift; sourceTree = "<group>"; };
 		335116B91DB99B68005FD2F4 /* autoFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = autoFunctions.swift; sourceTree = "<group>"; };
 		335116BB1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+TextFieldDelegate.swift"; sourceTree = "<group>"; };
@@ -145,11 +183,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		330632B71DC3933B004ADEB7 /* FONTS */ = {
+			isa = PBXGroup;
+			children = (
+				330632A11DC3932F004ADEB7 /* AmericanSans-Bold.ttf */,
+				330632A21DC3932F004ADEB7 /* AmericanSans-BoldItalic.ttf */,
+				330632A31DC3932F004ADEB7 /* AmericanSans-Book.ttf */,
+				330632A41DC3932F004ADEB7 /* AmericanSans-BookItalic.ttf */,
+				330632A51DC3932F004ADEB7 /* AmericanSans-Italic.ttf */,
+				330632A61DC3932F004ADEB7 /* AmericanSans-Light.ttf */,
+				330632A71DC3932F004ADEB7 /* AmericanSans-LightItalic.ttf */,
+				330632A81DC3932F004ADEB7 /* AmericanSans-Medium.otf */,
+				330632A91DC3932F004ADEB7 /* AmericanSans-MediumItalic.otf */,
+				330632AA1DC3932F004ADEB7 /* AmericanSans-Regular.otf */,
+				330632AB1DC3932F004ADEB7 /* AmericanSans-Regular.ttf */,
+			);
+			name = FONTS;
+			sourceTree = "<group>";
+		};
 		335116B81DB99B4A005FD2F4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				335116B91DB99B68005FD2F4 /* autoFunctions.swift */,
 				335116BB1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift */,
+				330632B81DC3978C004ADEB7 /* UILabel+LineSpacing.swift */,
 				3363F74E1DBE8CE200F375F3 /* customNavigationBar.swift */,
 				3363F7521DBFD62C00F375F3 /* UIView+SuccessScreen.swift */,
 				3363F7541DBFE5B900F375F3 /* UIViewControllerBaseClass.swift */,
@@ -187,6 +244,13 @@
 			isa = PBXGroup;
 			children = (
 				337D04981DBBE338001AAABF /* splashOneVC.swift */,
+				330632BA1DC39FEA004ADEB7 /* splashTwoVC.swift */,
+				330632BC1DC3A052004ADEB7 /* splashThreeVC.swift */,
+				330632BE1DC3A0DA004ADEB7 /* splashFourVC.swift */,
+				330632C01DC3A15C004ADEB7 /* splashFiveVC.swift */,
+				330632C21DC3A1B7004ADEB7 /* splashSixVC.swift */,
+				330632C41DC3A216004ADEB7 /* splashSevenVC.swift */,
+				330632C61DC3A278004ADEB7 /* splashEightVC.swift */,
 			);
 			name = "splash page animation classes";
 			sourceTree = "<group>";
@@ -210,6 +274,7 @@
 		33C9DDC91DB6597700D29065 /* AA-tableview-version-1 */ = {
 			isa = PBXGroup;
 			children = (
+				330632B71DC3933B004ADEB7 /* FONTS */,
 				33C9DDCA1DB6597700D29065 /* AppDelegate.swift */,
 				33C9DDCC1DB6597700D29065 /* MainViewController.swift */,
 				33C9DDCE1DB6597700D29065 /* Main.storyboard */,
@@ -405,17 +470,28 @@
 				33C9DE271DB95D9A00D29065 /* accountTableViewCell.xib in Resources */,
 				33C9DDD51DB6597700D29065 /* LaunchScreen.storyboard in Resources */,
 				33C9DE331DB960F900D29065 /* nicknameTableViewCell.xib in Resources */,
+				330632B41DC3932F004ADEB7 /* AmericanSans-MediumItalic.otf in Resources */,
 				33C9DE2F1DB95F6A00D29065 /* typeTableViewCell.xib in Resources */,
 				33C9DDFE1DB79FB800D29065 /* citizenUITableViewCell.xib in Resources */,
+				330632B61DC3932F004ADEB7 /* AmericanSans-Regular.ttf in Resources */,
 				33C9DE021DB7A58F00D29065 /* addressUITableViewCell.xib in Resources */,
+				330632B31DC3932F004ADEB7 /* AmericanSans-Medium.otf in Resources */,
+				330632B21DC3932F004ADEB7 /* AmericanSans-LightItalic.ttf in Resources */,
+				330632AF1DC3932F004ADEB7 /* AmericanSans-BookItalic.ttf in Resources */,
 				33C9DDE31DB67DDB00D29065 /* fullNameUITableViewCell.xib in Resources */,
 				33C9DDEF1DB6C07C00D29065 /* dobUITableViewCell.xib in Resources */,
 				33C9DDD21DB6597700D29065 /* Assets.xcassets in Resources */,
 				33C9DE1B1DB9352E00D29065 /* paymentDateTableViewCell.xib in Resources */,
 				33C9DE131DB92EFA00D29065 /* whichAccountTableViewCell.xib in Resources */,
 				33C9DE171DB933CB00D29065 /* amountTableViewCell.xib in Resources */,
+				330632B01DC3932F004ADEB7 /* AmericanSans-Italic.ttf in Resources */,
+				330632B11DC3932F004ADEB7 /* AmericanSans-Light.ttf in Resources */,
+				330632B51DC3932F004ADEB7 /* AmericanSans-Regular.otf in Resources */,
+				330632AC1DC3932F004ADEB7 /* AmericanSans-Bold.ttf in Resources */,
+				330632AD1DC3932F004ADEB7 /* AmericanSans-BoldItalic.ttf in Resources */,
 				33C9DDD01DB6597700D29065 /* Main.storyboard in Resources */,
 				33C9DE2B1DB95E8700D29065 /* reaccountTableViewCell.xib in Resources */,
+				330632AE1DC3932F004ADEB7 /* AmericanSans-Book.ttf in Resources */,
 				33C9DDF51DB6EB8200D29065 /* relationshipUITableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +505,8 @@
 			files = (
 				3363F7551DBFE5B900F375F3 /* UIViewControllerBaseClass.swift in Sources */,
 				33F3EFC71DBA538B00DFCFF6 /* servicingAlertsVC.swift in Sources */,
+				330632BF1DC3A0DA004ADEB7 /* splashFourVC.swift in Sources */,
+				330632C31DC3A1B7004ADEB7 /* splashSixVC.swift in Sources */,
 				3363F75D1DC10C3E00F375F3 /* customColors.swift in Sources */,
 				33C9DDEE1DB6C07C00D29065 /* dobUITableViewCell.swift in Sources */,
 				33C9DDEB1DB691C300D29065 /* fullNameUIViewController.swift in Sources */,
@@ -437,13 +515,16 @@
 				337D04991DBBE338001AAABF /* splashOneVC.swift in Sources */,
 				33C9DE1F1DB93DB700D29065 /* newAccountDetailsVC.swift in Sources */,
 				334B6E781DB9B95A002FF8B7 /* paymentDaysTVC.swift in Sources */,
+				330632C11DC3A15C004ADEB7 /* splashFiveVC.swift in Sources */,
 				33C9DE0E1DB92AE200D29065 /* repeatPaymentsUIViewController.swift in Sources */,
 				33C9DE011DB7A58F00D29065 /* addressUITableViewCell.swift in Sources */,
+				330632C51DC3A216004ADEB7 /* splashSevenVC.swift in Sources */,
 				335116BC1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift in Sources */,
 				3363F7581DC0F36800F375F3 /* touchIDSettingsVC.swift in Sources */,
 				33C9DE0B1DB82CE900D29065 /* delayedSuccessScreenViewController.swift in Sources */,
 				33C9DE321DB960F900D29065 /* nicknameTableViewCell.swift in Sources */,
 				33C9DDDD1DB65CF900D29065 /* primaryEnabledUIButton.swift in Sources */,
+				330632C71DC3A278004ADEB7 /* splashEightVC.swift in Sources */,
 				33C9DE2E1DB95F6A00D29065 /* typeTableViewCell.swift in Sources */,
 				33C9DDE21DB67DDB00D29065 /* fullNameUITableViewCell.swift in Sources */,
 				33C9DE071DB7C9F900D29065 /* countriesListUIViewController.swift in Sources */,
@@ -467,9 +548,12 @@
 				3363F74D1DBE7ED600F375F3 /* paperlessStatementsVC.swift in Sources */,
 				33C9DE1D1DB9393F00D29065 /* bankAccountListTVC.swift in Sources */,
 				33C9DE2A1DB95E8700D29065 /* reaccountTableViewCell.swift in Sources */,
+				330632BD1DC3A052004ADEB7 /* splashThreeVC.swift in Sources */,
 				33F3EFCB1DBA568600DFCFF6 /* servicingAlertTableViewCell.swift in Sources */,
+				330632B91DC3978C004ADEB7 /* UILabel+LineSpacing.swift in Sources */,
 				33C9DE351DB9658000D29065 /* newAcctTypeTVC.swift in Sources */,
 				33C9DDF41DB6EB8200D29065 /* relationshipUITableViewCell.swift in Sources */,
+				330632BB1DC39FEA004ADEB7 /* splashTwoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
