@@ -16,6 +16,10 @@ class ficoSettingsVC: UIViewController {
     @IBOutlet weak var caption3: UILabel!
     @IBOutlet weak var caption4: UILabel!
     
+    @IBOutlet weak var p1: UILabel!
+    @IBOutlet weak var p2: UILabel!
+    @IBOutlet weak var p3: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +30,11 @@ class ficoSettingsVC: UIViewController {
         caption2.setLineSpacing(sender: self.caption2, amt: 4.0, align: "left")
         caption3.setLineSpacing(sender: self.caption3, amt: 4.0, align: "left")
         caption4.setLineSpacing(sender: self.caption4, amt: 4.0, align: "left")
+        
+        p1.setLineSpacing(sender: self.p1, amt: 4.0, align: "left")
+        p2.setLineSpacing(sender: self.p2, amt: 4.0, align: "left")
+        
+        p3.setLineSpacing(sender: self.p3, amt: 4.0, align: "center")
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,14 +43,5 @@ class ficoSettingsVC: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
