@@ -23,10 +23,7 @@ class relationshipUITableViewController: UITableViewController {
         
         relationTableView.tableFooterView = UIView()
         
-        // Set navbar style
-        let navbar = self.navigationController?.navigationBar
-        navbar?.shadowImage = UIImage()
-        navbar?.setBackgroundImage(UIImage(), for: .default)
+
         self.navigationController?.setNavigationBarHidden(false, animated: true)
         
         

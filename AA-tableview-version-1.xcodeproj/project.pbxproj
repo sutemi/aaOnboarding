@@ -26,6 +26,7 @@
 		330632C31DC3A1B7004ADEB7 /* splashSixVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330632C21DC3A1B7004ADEB7 /* splashSixVC.swift */; };
 		330632C51DC3A216004ADEB7 /* splashSevenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330632C41DC3A216004ADEB7 /* splashSevenVC.swift */; };
 		330632C71DC3A278004ADEB7 /* splashEightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330632C61DC3A278004ADEB7 /* splashEightVC.swift */; };
+		330632C91DC77F0F004ADEB7 /* countriesListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330632C81DC77F0F004ADEB7 /* countriesListTVC.swift */; };
 		334B6E781DB9B95A002FF8B7 /* paymentDaysTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B6E771DB9B95A002FF8B7 /* paymentDaysTVC.swift */; };
 		335116BA1DB99B68005FD2F4 /* autoFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335116B91DB99B68005FD2F4 /* autoFunctions.swift */; };
 		335116BC1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335116BB1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift */; };
@@ -59,7 +60,6 @@
 		33C9DE011DB7A58F00D29065 /* addressUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDFF1DB7A58F00D29065 /* addressUITableViewCell.swift */; };
 		33C9DE021DB7A58F00D29065 /* addressUITableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DE001DB7A58F00D29065 /* addressUITableViewCell.xib */; };
 		33C9DE041DB7B02300D29065 /* pillLightUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE031DB7B02300D29065 /* pillLightUIButton.swift */; };
-		33C9DE071DB7C9F900D29065 /* countriesListUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE061DB7C9F900D29065 /* countriesListUIViewController.swift */; };
 		33C9DE091DB828B500D29065 /* btnBottomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE081DB828B500D29065 /* btnBottomUIButton.swift */; };
 		33C9DE0B1DB82CE900D29065 /* delayedSuccessScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE0A1DB82CE900D29065 /* delayedSuccessScreenViewController.swift */; };
 		33C9DE0E1DB92AE200D29065 /* repeatPaymentsUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE0D1DB92AE200D29065 /* repeatPaymentsUIViewController.swift */; };
@@ -108,6 +108,7 @@
 		330632C21DC3A1B7004ADEB7 /* splashSixVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splashSixVC.swift; sourceTree = "<group>"; };
 		330632C41DC3A216004ADEB7 /* splashSevenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splashSevenVC.swift; sourceTree = "<group>"; };
 		330632C61DC3A278004ADEB7 /* splashEightVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splashEightVC.swift; sourceTree = "<group>"; };
+		330632C81DC77F0F004ADEB7 /* countriesListTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = countriesListTVC.swift; sourceTree = "<group>"; };
 		334B6E771DB9B95A002FF8B7 /* paymentDaysTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paymentDaysTVC.swift; sourceTree = "<group>"; };
 		335116B91DB99B68005FD2F4 /* autoFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = autoFunctions.swift; sourceTree = "<group>"; };
 		335116BB1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+TextFieldDelegate.swift"; sourceTree = "<group>"; };
@@ -143,7 +144,6 @@
 		33C9DDFF1DB7A58F00D29065 /* addressUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addressUITableViewCell.swift; sourceTree = "<group>"; };
 		33C9DE001DB7A58F00D29065 /* addressUITableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = addressUITableViewCell.xib; sourceTree = "<group>"; };
 		33C9DE031DB7B02300D29065 /* pillLightUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pillLightUIButton.swift; sourceTree = "<group>"; };
-		33C9DE061DB7C9F900D29065 /* countriesListUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = countriesListUIViewController.swift; sourceTree = "<group>"; };
 		33C9DE081DB828B500D29065 /* btnBottomUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = btnBottomUIButton.swift; sourceTree = "<group>"; };
 		33C9DE0A1DB82CE900D29065 /* delayedSuccessScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = delayedSuccessScreenViewController.swift; sourceTree = "<group>"; };
 		33C9DE0D1DB92AE200D29065 /* repeatPaymentsUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = repeatPaymentsUIViewController.swift; sourceTree = "<group>"; };
@@ -340,7 +340,7 @@
 			children = (
 				33C9DDEA1DB691C300D29065 /* fullNameUIViewController.swift */,
 				33C9DDF61DB7120300D29065 /* relationshipUITableViewController.swift */,
-				33C9DE061DB7C9F900D29065 /* countriesListUIViewController.swift */,
+				330632C81DC77F0F004ADEB7 /* countriesListTVC.swift */,
 			);
 			name = "ViewControllers - Add User";
 			sourceTree = "<group>";
@@ -527,7 +527,6 @@
 				330632C71DC3A278004ADEB7 /* splashEightVC.swift in Sources */,
 				33C9DE2E1DB95F6A00D29065 /* typeTableViewCell.swift in Sources */,
 				33C9DDE21DB67DDB00D29065 /* fullNameUITableViewCell.swift in Sources */,
-				33C9DE071DB7C9F900D29065 /* countriesListUIViewController.swift in Sources */,
 				33C9DE1A1DB9352E00D29065 /* paymentDateTableViewCell.swift in Sources */,
 				3363F75B1DC0F5F800F375F3 /* ficoSettingsVC.swift in Sources */,
 				33C9DDF71DB7120300D29065 /* relationshipUITableViewController.swift in Sources */,
@@ -553,6 +552,7 @@
 				330632B91DC3978C004ADEB7 /* UILabel+LineSpacing.swift in Sources */,
 				33C9DE351DB9658000D29065 /* newAcctTypeTVC.swift in Sources */,
 				33C9DDF41DB6EB8200D29065 /* relationshipUITableViewCell.swift in Sources */,
+				330632C91DC77F0F004ADEB7 /* countriesListTVC.swift in Sources */,
 				330632BB1DC39FEA004ADEB7 /* splashTwoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
