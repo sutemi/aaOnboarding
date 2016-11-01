@@ -28,6 +28,9 @@ class countriesListTVC: UITableViewController, UISearchBarDelegate {
         ,"Turkey","Turkmenistan","Turks &amp; Caicos","Uganda","Ukraine","United Arab Emirates","United Kingdom","United States Minor Outlying Islands","Uruguay","Uzbekistan","Venezuela","Vietnam","Virgin Islands (US)"
         ,"Yemen","Zambia","Zimbabwe"]
     
+    var filteredArray = [String]()
+    var shouldShowSearchResults = false
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +46,7 @@ class countriesListTVC: UITableViewController, UISearchBarDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-
+        self.navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -67,7 +70,24 @@ class countriesListTVC: UITableViewController, UISearchBarDelegate {
     }
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        shouldShowSearchResults = true
         searchBar.endEditing(true)
+        self.tableView.reloadData()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        filteredArray = countryList.filter({ (countries:String ) -> Bool in
+            return countries.lowercased().range(of: searchText.lowercased()) != nil
+        })
+        
+        if searchText != ""
+        {
+            shouldShowSearchResults = true
+        } else {
+            shouldShowSearchResults = false
+        }
+        
+        self.tableView.reloadData()
     }
 
     
@@ -85,7 +105,12 @@ class countriesListTVC: UITableViewController, UISearchBarDelegate {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return countryList.count
+        if shouldShowSearchResults {
+            return filteredArray.count
+        } else {
+            return countryList.count
+        }
+        
     }
 
 
@@ -93,7 +118,11 @@ class countriesListTVC: UITableViewController, UISearchBarDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "countryCell", for: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = countryList[indexPath.row]
+        if shouldShowSearchResults {
+            cell.textLabel?.text = filteredArray[indexPath.row]
+        } else {
+            cell.textLabel?.text = countryList[indexPath.row]
+        }
         
         return cell
     }

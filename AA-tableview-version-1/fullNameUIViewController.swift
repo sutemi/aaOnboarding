@@ -63,6 +63,11 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellCitizen") as! citizenUITableViewCell
             
+            cell.tapAction = { (cell) in
+//                self.showAlertForRow(tableView.indexPath(for: cell)!.row)
+                self.selectCountryFromList()
+            }
+            
             return cell
         } else if indexPath.row == 4 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellAddress") as! addressUITableViewCell
@@ -72,6 +77,33 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
             return cell
         }
     }
+    
+    
+    
+    func selectCountryFromList() {
+        performSegue(withIdentifier: "countriesListSegue", sender: self)
+
+    }
+    
+//    func showAlertForRow(_ row: Int) {
+//        let alert = UIAlertController(
+//            title: "BEHOLD",
+//            message: "Cell at row \(row) was tapped!",
+//            preferredStyle: .alert)
+//        alert.addAction(UIAlertAction(title: "Gotcha!", style: UIAlertActionStyle.default, handler: { (test) -> Void in
+//            self.dismiss(animated: true, completion: nil)
+//        }))
+//        
+//        self.present(
+//            alert,
+//            animated: true,
+//            completion: nil)
+//    }
+    
+    
+    
+    
+    
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
@@ -131,7 +163,7 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
             performSegue(withIdentifier: "showRelationshipSegue", sender: self)
         }
         else if selectedIndexPath?.row == 3 {
-            performSegue(withIdentifier: "countriesListSegue", sender: self)
+//            performSegue(withIdentifier: "countriesListSegue", sender: self)
         }
         
         tableView.reloadRows(at: [indexPath], with: .automatic)

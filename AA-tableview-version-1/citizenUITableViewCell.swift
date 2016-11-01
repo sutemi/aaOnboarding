@@ -15,12 +15,15 @@ class citizenUITableViewCell: UITableViewCell {
     
     @IBOutlet weak var citizenLabel: UILabel!
 
+    var tapAction: ((UITableViewCell) -> Void)?
     
-//    var tapped: ((citizenUITableViewCell) -> Void)?
-//    
-//    @IBAction func choseNotCitizen(_ sender: AnyObject) {
-//        tapped?(self)
-//    }
+
+    
+    @IBAction func choseNotCitizen(_ sender: AnyObject) {
+        tapAction!(self)
+    }
+    
+    
     
     
     

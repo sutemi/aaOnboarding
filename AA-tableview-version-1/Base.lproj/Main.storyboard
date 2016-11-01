@@ -343,7 +343,7 @@
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                         <connections>
-                                                            <segue destination="ceS-ky-USE" kind="show" identifier="countriesListSegue" id="Tmh-tS-1lo"/>
+                                                            <segue destination="ceS-ky-USE" kind="show" identifier="countriesListSegue" id="e8e-PG-Ffa"/>
                                                         </connections>
                                                     </tableViewCell>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xp0-CK-Wf3" customClass="addressUITableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
@@ -3199,7 +3199,7 @@ It is important to update your email address when it changes, so we can notify y
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <attributedString key="attributedText">
                                                     <fragment>
-                                                        <mutableString key="content">By accessing your FICO® Score through this program you are subject to the following Terms of Use. The information provided is intended for the primary cardmember only and is offered solely for their own non-commercial, personal review, use and benefit. You (the primary cardmember) understand that if you give anyone else online access to your Barclaycard account(s), they will be able to view your FICO® Score as well as the factors impacting that score. 
+                                                        <string key="content">By accessing your FICO® Score through this program you are subject to the following Terms of Use. The information provided is intended for the primary cardmember only and is offered solely for their own non-commercial, personal review, use and benefit. You (the primary cardmember) understand that if you give anyone else online access to your Barclaycard account(s), they will be able to view your FICO® Score as well as the factors impacting that score. 
 Barclaycard offers FICO® Score access at its own discretion. FICO® Score access is not a permanent feature of your account and may be removed at any time. To view your FICO® Score, your account with us must be open and active (having activity within the past 150 days). Not all accounts will have a FICO® Score to display including but not limited to, accounts without a United States address, accounts with unresolved credit bureau disputes,  accounts without charging privileges, and accounts opened (or transferred from another bank) within the past 40 days. 
 Your FICO® Score is created with the FICO® Score 8 version using your credit information at TransUnion.  It  can range from 300 to 850. Your FICO® Score is not an endorsement or a determination of your qualification for a loan or credit. Credit score models and score ranges may differ by lender.
 FICO and TransUnion are third-party providers and are not affiliated with Barclaycard. Barclaycard does not guarantee the accuracy of any credit information that is provided to you by these third parties. 
@@ -3211,7 +3211,7 @@ Understanding FICO® Scores
 Frequently Asked Questions About FICO® Scores 
 
 FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the United States and other countries. 
-</mutableString>
+</string>
                                                         <attributes>
                                                             <font key="NSFont" size="12" name="AmericanSansBook"/>
                                                         </attributes>

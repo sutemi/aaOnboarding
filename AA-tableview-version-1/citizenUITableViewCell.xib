@@ -36,6 +36,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btnNotCitizen" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KO-pq-wyx" customClass="pillLightUIButton" customModule="AA_tableview_version_1" customModuleProvider="target">
                                 <state key="normal" title="No"/>
+                                <connections>
+                                    <action selector="choseNotCitizen:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sQX-nW-VGO"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.81568627449999997" green="0.85490196080000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
