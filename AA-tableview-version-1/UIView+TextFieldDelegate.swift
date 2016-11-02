@@ -6,23 +6,20 @@
 //  Copyright © 2016 James Wilson. All rights reserved.
 //
 
-import Foundation
-import UIKit
-
-extension UIView: UITextFieldDelegate {
-
-    public func textFieldDidEndEditing(_ textField: UITextField) {
-        self.resignFirstResponder()
-    }
-    
-    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.resignFirstResponder()
-        return true
-    }
-    
-//    override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        self.view.endEditing(true)
+//import Foundation
+//import UIKit
+//
+//extension UIView: UITextFieldDelegate {
+//
+//    public func textFieldDidEndEditing(_ textField: UITextField) {
+//        self.resignFirstResponder()
 //    }
-    
-    
-}
+//    
+//    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+//        self.resignFirstResponder()
+//        return true
+//    }
+//
+//    
+//    
+//}

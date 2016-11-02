@@ -24,7 +24,7 @@ class dobUITableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        dobField.addTarget(self, action: Selector(("textFieldDidChange:")), for: UIControlEvents.editingChanged)
+        dobField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
         
         self.clipsToBounds = true
     }
@@ -41,10 +41,22 @@ class dobUITableViewCell: UITableViewCell {
     }
     
     
-    func textFieldDidChange() {
-        if dobField.text != "" {
-            self.isComplete = true
+    func textFieldDidChange(sender:formUITextField) {
+        
+        switch sender {
+        case dobField:
+            print("editing: firstNameField")
+            break
+        default:
+            break
         }
+        
+        
+        
+        if dobField.text != "" {
+            //            self.isComplete = true
+        }
+        
     }
     
     

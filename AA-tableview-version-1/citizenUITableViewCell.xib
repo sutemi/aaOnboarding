@@ -12,7 +12,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="124"/>
+                <frame key="frameInset" width="320" height="124.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is this person a United States citizen?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZW-Pw-o9C">
@@ -29,17 +29,28 @@
                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oCv-cL-vg6" userLabel="Stack radio buttons">
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oCv-cL-vg6" userLabel="Stack radio buttons">
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92v-xL-haP" customClass="pillLightUIButton" customModule="AA_tableview_version_1" customModuleProvider="target">
-                                <state key="normal" title="Yes"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btnNotCitizen" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KO-pq-wyx" customClass="pillLightUIButton" customModule="AA_tableview_version_1" customModuleProvider="target">
-                                <state key="normal" title="No"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VnE-6F-rI1">
                                 <connections>
-                                    <action selector="choseNotCitizen:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sQX-nW-VGO"/>
+                                    <action selector="switchedYes:" destination="KGk-i7-Jjw" eventType="valueChanged" id="uJq-Yp-abM"/>
                                 </connections>
-                            </button>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="756" verticalHuggingPriority="251" horizontalCompressionResistancePriority="758" text="Yes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lnd-g6-fdx">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xvK-2H-2O9">
+                                <connections>
+                                    <action selector="switchedNo:" destination="KGk-i7-Jjw" eventType="valueChanged" id="74h-mn-aWG"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="756" verticalHuggingPriority="251" horizontalCompressionResistancePriority="758" text="No" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwZ-9e-ebl">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.81568627449999997" green="0.85490196080000003" blue="0.87843137250000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -61,6 +72,8 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="citizenLabel" destination="tXn-Ea-7qI" id="3nI-TL-7YI"/>
+                <outlet property="switchNo" destination="xvK-2H-2O9" id="M2Y-Ct-h7X"/>
+                <outlet property="switchYes" destination="VnE-6F-rI1" id="T9l-LJ-HG8"/>
             </connections>
             <point key="canvasLocation" x="34" y="53.5"/>
         </tableViewCell>

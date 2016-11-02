@@ -27,10 +27,10 @@ class addressUITableViewCell: UITableViewCell {
         // Initialization code
         
         
-        streetField.addTarget(self, action: Selector(("textFieldDidChange:")), for: UIControlEvents.editingChanged)
-        zipField.addTarget(self, action: Selector(("textFieldDidChange:")), for: UIControlEvents.editingChanged)
-        cityField.addTarget(self, action: Selector(("textFieldDidChange:")), for: UIControlEvents.editingChanged)
-        stateField.addTarget(self, action: Selector(("textFieldDidChange:")), for: UIControlEvents.editingChanged)
+        streetField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
+        zipField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
+        cityField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
+        stateField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
         
         
         self.clipsToBounds = true

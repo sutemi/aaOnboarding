@@ -12,15 +12,24 @@ import UIKit
 
 class citizenUITableViewCell: UITableViewCell {
 
+   var tapAction: ((UITableViewCell) -> Void)?
     
     @IBOutlet weak var citizenLabel: UILabel!
+    @IBOutlet weak var switchNo: UISwitch!
+    @IBOutlet weak var switchYes: UISwitch!
 
-    var tapAction: ((UITableViewCell) -> Void)?
     
-
-    
-    @IBAction func choseNotCitizen(_ sender: AnyObject) {
+    @IBAction func switchedNo(_ sender:AnyObject) {
+        if switchYes.isOn {
+            switchYes.isOn = false
+        }
         tapAction!(self)
+    }
+    
+    @IBAction func switchedYes(_ sender: AnyObject) {
+        if switchNo.isOn {
+            switchNo.isOn = false
+        }
     }
     
     

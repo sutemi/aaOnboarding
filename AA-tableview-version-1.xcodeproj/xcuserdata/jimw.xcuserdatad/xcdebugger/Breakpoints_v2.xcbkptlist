@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AA-tableview-version-1/fullNameUITableViewCell.swift"
-            timestampString = "499305985.862526"
+            timestampString = "499793549.886975"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "textFieldDidChange()"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "textFieldDidChange(sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
