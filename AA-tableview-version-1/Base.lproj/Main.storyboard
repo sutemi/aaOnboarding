@@ -425,7 +425,7 @@
         <scene sceneID="UNY-Id-9nh">
             <objects>
                 <tableViewController title="RELATIONSHIP TO CARDMEMBER" id="dBa-DP-MdD" customClass="relationshipUITableViewController" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="3" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="MBh-zo-pcg">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="3" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="MBh-zo-pcg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -433,7 +433,7 @@
                         <sections>
                             <tableViewSection id="IUE-1b-gYu">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationLevel="20" indentationWidth="20" reuseIdentifier="relationship" id="wnF-cA-e3v">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationLevel="20" indentationWidth="20" reuseIdentifier="relationshipCell" id="wnF-cA-e3v">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wnF-cA-e3v" id="kp2-Ba-u2s">
@@ -449,17 +449,18 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationLevel="20" indentationWidth="20" id="tfx-QM-2or">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationLevel="20" indentationWidth="20" reuseIdentifier="relationshipCell" id="YUh-Qp-3nR">
                                         <rect key="frame" x="0.0" y="50" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tfx-QM-2or" id="gOB-Sj-zHk">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YUh-Qp-3nR" id="hAN-JB-dq0">
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Child" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8N-a4-FgL">
-                                                    <frame key="frameInset" minX="40" minY="18.5" width="30" height="14"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Child" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzI-Mo-GXK">
+                                                    <frame key="frameInset" minX="40" minY="18.5" width="44.5" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="AmericanSansBook" family="AmericanSans Book" pointSize="14"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -467,17 +468,18 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationLevel="20" indentationWidth="20" id="VtS-27-awm">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationLevel="20" indentationWidth="20" reuseIdentifier="relationshipCell" id="3OE-kg-dcH">
                                         <rect key="frame" x="0.0" y="100" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VtS-27-awm" id="RMA-xH-tnH">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3OE-kg-dcH" id="a2N-iR-NVy">
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yap-Cr-lH9">
-                                                    <frame key="frameInset" minX="40" minY="18.5" width="36" height="14"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIM-lf-Rmx">
+                                                    <frame key="frameInset" minX="40" minY="18.5" width="44.5" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="AmericanSansBook" family="AmericanSans Book" pointSize="14"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -485,6 +487,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
                                 </cells>
