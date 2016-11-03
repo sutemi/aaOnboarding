@@ -110,6 +110,8 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
         let index = indexPath
         var maxHeight:CGFloat!
         
+        
+        
         switch index.row {
         case 0:
             maxHeight = 273

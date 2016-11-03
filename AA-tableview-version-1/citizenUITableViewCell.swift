@@ -14,7 +14,8 @@ class citizenUITableViewCell: UITableViewCell {
 
    var tapAction: ((UITableViewCell) -> Void)?
     
-    @IBOutlet weak var citizenLabel: UILabel!
+
+    @IBOutlet weak var cellLabel: UILabel!
     @IBOutlet weak var switchNo: UISwitch!
     @IBOutlet weak var switchYes: UISwitch!
 
@@ -48,10 +49,10 @@ class citizenUITableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-        if citizenLabel.text == "" {
-            citizenLabel.isHidden = true
+        if cellLabel.text == "" {
+            cellLabel.isHidden = true
         } else {
-            citizenLabel.isHidden = false
+            cellLabel.isHidden = false
         }
     }
 

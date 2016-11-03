@@ -41,7 +41,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="relationLabel" destination="5Eh-gf-YGY" id="Tjt-0E-X9d"/>
+                <outlet property="cellLabel" destination="5Eh-gf-YGY" id="7A0-CC-BOq"/>
             </connections>
             <point key="canvasLocation" x="34" y="122"/>
         </tableViewCell>

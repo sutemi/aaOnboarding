@@ -11,7 +11,8 @@ import UIKit
 class addressUITableViewCell: UITableViewCell {
 
     
-    @IBOutlet weak var addressLabel: UILabel!
+    
+    @IBOutlet weak var cellLabel: UILabel!
     
     @IBOutlet weak var streetField: formUITextField!
     @IBOutlet weak var zipField: formUITextField!
@@ -40,10 +41,10 @@ class addressUITableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-        if addressLabel.text == "" {
-            addressLabel.isHidden = true
+        if cellLabel.text == "" {
+            cellLabel.isHidden = true
         } else {
-            addressLabel.isHidden = false
+            cellLabel.isHidden = false
         }
         
     }

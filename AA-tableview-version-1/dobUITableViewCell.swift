@@ -11,8 +11,8 @@ import UIKit
 class dobUITableViewCell: UITableViewCell {
 
     
-    
-    @IBOutlet weak var dobLabel: UILabel!
+
+    @IBOutlet weak var cellLabel: UILabel!
 
     @IBOutlet weak var dobField: formUITextField!
     
@@ -33,10 +33,10 @@ class dobUITableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-        if dobLabel.text == "" {
-            dobLabel.isHidden = true
+        if cellLabel.text == "" {
+            cellLabel.isHidden = true
         } else {
-            dobLabel.isHidden = false
+            cellLabel.isHidden = false
         }
     }
     

@@ -71,7 +71,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="citizenLabel" destination="tXn-Ea-7qI" id="3nI-TL-7YI"/>
+                <outlet property="cellLabel" destination="tXn-Ea-7qI" id="Uty-vJ-Vun"/>
                 <outlet property="switchNo" destination="xvK-2H-2O9" id="M2Y-Ct-h7X"/>
                 <outlet property="switchYes" destination="VnE-6F-rI1" id="T9l-LJ-HG8"/>
             </connections>

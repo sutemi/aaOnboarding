@@ -13,7 +13,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="125"/>
+                <frame key="frameInset" width="320" height="124.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="mm/dd/yyyy" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x8O-bM-Wbt" customClass="formUITextField" customModule="AA_tableview_version_1" customModuleProvider="target">
@@ -52,8 +52,8 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="cellLabel" destination="Bva-gm-Kkg" id="8FX-Fq-slP"/>
                 <outlet property="dobField" destination="x8O-bM-Wbt" id="FaF-sk-FgB"/>
-                <outlet property="dobLabel" destination="Bva-gm-Kkg" id="f3K-PU-TZc"/>
             </connections>
             <point key="canvasLocation" x="92" y="94.5"/>
         </tableViewCell>

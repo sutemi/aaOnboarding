@@ -83,6 +83,9 @@
 		33C9DE331DB960F900D29065 /* nicknameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DE311DB960F900D29065 /* nicknameTableViewCell.xib */; };
 		33C9DE351DB9658000D29065 /* newAcctTypeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE341DB9658000D29065 /* newAcctTypeTVC.swift */; };
 		33C9DE371DB96E5700D29065 /* paymentAmountsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE361DB96E5700D29065 /* paymentAmountsTVC.swift */; };
+		33DF97AE1DCA5ED600329650 /* maxLengthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DF97AD1DCA5ED600329650 /* maxLengthTextField.swift */; };
+		33DF97B01DCA5F3100329650 /* allowedCharsTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DF97AF1DCA5F3100329650 /* allowedCharsTextField.swift */; };
+		33DF97B21DCB765400329650 /* TEMPTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DF97B11DCB765400329650 /* TEMPTableViewController.swift */; };
 		33F3EFC71DBA538B00DFCFF6 /* servicingAlertsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F3EFC61DBA538B00DFCFF6 /* servicingAlertsVC.swift */; };
 		33F3EFCB1DBA568600DFCFF6 /* servicingAlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F3EFC91DBA568600DFCFF6 /* servicingAlertTableViewCell.swift */; };
 		33F3EFCC1DBA568600DFCFF6 /* servicingAlertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F3EFCA1DBA568600DFCFF6 /* servicingAlertTableViewCell.xib */; };
@@ -167,6 +170,9 @@
 		33C9DE311DB960F900D29065 /* nicknameTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = nicknameTableViewCell.xib; sourceTree = "<group>"; };
 		33C9DE341DB9658000D29065 /* newAcctTypeTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = newAcctTypeTVC.swift; sourceTree = "<group>"; };
 		33C9DE361DB96E5700D29065 /* paymentAmountsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paymentAmountsTVC.swift; sourceTree = "<group>"; };
+		33DF97AD1DCA5ED600329650 /* maxLengthTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = maxLengthTextField.swift; sourceTree = "<group>"; };
+		33DF97AF1DCA5F3100329650 /* allowedCharsTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allowedCharsTextField.swift; sourceTree = "<group>"; };
+		33DF97B11DCB765400329650 /* TEMPTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEMPTableViewController.swift; sourceTree = "<group>"; };
 		33F3EFC61DBA538B00DFCFF6 /* servicingAlertsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = servicingAlertsVC.swift; sourceTree = "<group>"; };
 		33F3EFC91DBA568600DFCFF6 /* servicingAlertTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = servicingAlertTableViewCell.swift; sourceTree = "<group>"; };
 		33F3EFCA1DBA568600DFCFF6 /* servicingAlertTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = servicingAlertTableViewCell.xib; sourceTree = "<group>"; };
@@ -330,6 +336,8 @@
 		33C9DDE41DB6820B00D29065 /* TextFields */ = {
 			isa = PBXGroup;
 			children = (
+				33DF97AD1DCA5ED600329650 /* maxLengthTextField.swift */,
+				33DF97AF1DCA5F3100329650 /* allowedCharsTextField.swift */,
 				33C9DDE51DB6825B00D29065 /* formUITextField.swift */,
 			);
 			name = TextFields;
@@ -341,6 +349,7 @@
 				33C9DDEA1DB691C300D29065 /* fullNameUIViewController.swift */,
 				33C9DDF61DB7120300D29065 /* relationshipUITableViewController.swift */,
 				330632C81DC77F0F004ADEB7 /* countriesListTVC.swift */,
+				33DF97B11DCB765400329650 /* TEMPTableViewController.swift */,
 			);
 			name = "ViewControllers - Add User";
 			sourceTree = "<group>";
@@ -520,6 +529,7 @@
 				33C9DE011DB7A58F00D29065 /* addressUITableViewCell.swift in Sources */,
 				330632C51DC3A216004ADEB7 /* splashSevenVC.swift in Sources */,
 				335116BC1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift in Sources */,
+				33DF97B21DCB765400329650 /* TEMPTableViewController.swift in Sources */,
 				3363F7581DC0F36800F375F3 /* touchIDSettingsVC.swift in Sources */,
 				33C9DE0B1DB82CE900D29065 /* delayedSuccessScreenViewController.swift in Sources */,
 				33C9DE321DB960F900D29065 /* nicknameTableViewCell.swift in Sources */,
@@ -539,6 +549,7 @@
 				33C9DE091DB828B500D29065 /* btnBottomUIButton.swift in Sources */,
 				335116BA1DB99B68005FD2F4 /* autoFunctions.swift in Sources */,
 				33C9DDCD1DB6597700D29065 /* MainViewController.swift in Sources */,
+				33DF97AE1DCA5ED600329650 /* maxLengthTextField.swift in Sources */,
 				33C9DDFD1DB79FB800D29065 /* citizenUITableViewCell.swift in Sources */,
 				33C9DE041DB7B02300D29065 /* pillLightUIButton.swift in Sources */,
 				3363F74B1DBE5E8400F375F3 /* paperlessDisclosuresVC.swift in Sources */,
@@ -554,6 +565,7 @@
 				33C9DDF41DB6EB8200D29065 /* relationshipUITableViewCell.swift in Sources */,
 				330632C91DC77F0F004ADEB7 /* countriesListTVC.swift in Sources */,
 				330632BB1DC39FEA004ADEB7 /* splashTwoVC.swift in Sources */,
+				33DF97B01DCA5F3100329650 /* allowedCharsTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

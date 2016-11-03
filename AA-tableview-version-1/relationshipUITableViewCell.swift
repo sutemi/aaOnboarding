@@ -10,7 +10,8 @@ import UIKit
 
 class relationshipUITableViewCell: UITableViewCell {
 
-    @IBOutlet weak var relationLabel: UILabel!
+    
+    @IBOutlet weak var cellLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,10 +24,10 @@ class relationshipUITableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-        if relationLabel.text == "" {
-            relationLabel.isHidden = true
+        if cellLabel.text == "" {
+            cellLabel.isHidden = true
         } else {
-            relationLabel.isHidden = false
+            cellLabel.isHidden = false
         }
     }
     
