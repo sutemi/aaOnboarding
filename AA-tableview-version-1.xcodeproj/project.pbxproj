@@ -86,6 +86,7 @@
 		33DF97AE1DCA5ED600329650 /* maxLengthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DF97AD1DCA5ED600329650 /* maxLengthTextField.swift */; };
 		33DF97B01DCA5F3100329650 /* allowedCharsTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DF97AF1DCA5F3100329650 /* allowedCharsTextField.swift */; };
 		33DF97B21DCB765400329650 /* TEMPTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DF97B11DCB765400329650 /* TEMPTableViewController.swift */; };
+		33DF97B41DCB924000329650 /* UITableViewCellSelected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DF97B31DCB924000329650 /* UITableViewCellSelected.swift */; };
 		33F3EFC71DBA538B00DFCFF6 /* servicingAlertsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F3EFC61DBA538B00DFCFF6 /* servicingAlertsVC.swift */; };
 		33F3EFCB1DBA568600DFCFF6 /* servicingAlertTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F3EFC91DBA568600DFCFF6 /* servicingAlertTableViewCell.swift */; };
 		33F3EFCC1DBA568600DFCFF6 /* servicingAlertTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33F3EFCA1DBA568600DFCFF6 /* servicingAlertTableViewCell.xib */; };
@@ -173,6 +174,7 @@
 		33DF97AD1DCA5ED600329650 /* maxLengthTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = maxLengthTextField.swift; sourceTree = "<group>"; };
 		33DF97AF1DCA5F3100329650 /* allowedCharsTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = allowedCharsTextField.swift; sourceTree = "<group>"; };
 		33DF97B11DCB765400329650 /* TEMPTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEMPTableViewController.swift; sourceTree = "<group>"; };
+		33DF97B31DCB924000329650 /* UITableViewCellSelected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellSelected.swift; sourceTree = "<group>"; };
 		33F3EFC61DBA538B00DFCFF6 /* servicingAlertsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = servicingAlertsVC.swift; sourceTree = "<group>"; };
 		33F3EFC91DBA568600DFCFF6 /* servicingAlertTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = servicingAlertTableViewCell.swift; sourceTree = "<group>"; };
 		33F3EFCA1DBA568600DFCFF6 /* servicingAlertTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = servicingAlertTableViewCell.xib; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 				3363F7521DBFD62C00F375F3 /* UIView+SuccessScreen.swift */,
 				3363F7541DBFE5B900F375F3 /* UIViewControllerBaseClass.swift */,
 				3363F75C1DC10C3E00F375F3 /* customColors.swift */,
+				33DF97B31DCB924000329650 /* UITableViewCellSelected.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -538,6 +541,7 @@
 				33C9DE2E1DB95F6A00D29065 /* typeTableViewCell.swift in Sources */,
 				33C9DDE21DB67DDB00D29065 /* fullNameUITableViewCell.swift in Sources */,
 				33C9DE1A1DB9352E00D29065 /* paymentDateTableViewCell.swift in Sources */,
+				33DF97B41DCB924000329650 /* UITableViewCellSelected.swift in Sources */,
 				3363F75B1DC0F5F800F375F3 /* ficoSettingsVC.swift in Sources */,
 				33C9DDF71DB7120300D29065 /* relationshipUITableViewController.swift in Sources */,
 				33C9DE161DB933CA00D29065 /* amountTableViewCell.swift in Sources */,

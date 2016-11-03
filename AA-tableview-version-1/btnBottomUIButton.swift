@@ -10,6 +10,9 @@ import UIKit
 
 class btnBottomUIButton: UIButton {
 
+    @IBInspectable var targetIndex = Int()
+    var advanceAction: ((UIButton) -> Void)?
+    
     // Get the app's main bundle
     let mainBundle = Bundle.main
     
