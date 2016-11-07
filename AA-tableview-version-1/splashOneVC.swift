@@ -8,13 +8,15 @@
 
 import UIKit
 
+
 class splashOneVC: UIViewController {
 
 
     @IBOutlet weak var caption: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
         
@@ -24,10 +26,11 @@ class splashOneVC: UIViewController {
     }
     
 
-    @IBAction func advancePageViewer(_ sender: AnyObject) {
-        
-        
+    @IBAction func nextClicked(sender: AnyObject) {
+        let pageViewController = self.parent?.parent as! MainViewController
+        pageViewController.nextPageWithIndex(index: 1)
     }
+
     
 
     

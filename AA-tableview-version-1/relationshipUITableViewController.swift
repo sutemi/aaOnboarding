@@ -43,14 +43,15 @@ class relationshipUITableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        print("SELECTION MADE...")
-        print("PREVIOUSLY SELECTED: \(selectedIndexPath)")
+//        print("SELECTION MADE...")
+//        print("PREVIOUSLY SELECTED: \(selectedIndexPath)")
         switch selectedIndexPath {
             case nil:
                 selectedIndexPath = indexPath
             
             default:
                 if selectedIndexPath! == indexPath {
+//                    self.relationTableView.deselectRow(at: selectedIndexPath!, animated: true)
                     selectedIndexPath = nil
                     
                 } else {

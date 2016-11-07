@@ -61,7 +61,7 @@
 		33C9DE021DB7A58F00D29065 /* addressUITableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DE001DB7A58F00D29065 /* addressUITableViewCell.xib */; };
 		33C9DE041DB7B02300D29065 /* pillLightUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE031DB7B02300D29065 /* pillLightUIButton.swift */; };
 		33C9DE091DB828B500D29065 /* btnBottomUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE081DB828B500D29065 /* btnBottomUIButton.swift */; };
-		33C9DE0B1DB82CE900D29065 /* delayedSuccessScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE0A1DB82CE900D29065 /* delayedSuccessScreenViewController.swift */; };
+		33C9DE0B1DB82CE900D29065 /* delayedSuccessScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE0A1DB82CE900D29065 /* delayedSuccessScreen.swift */; };
 		33C9DE0E1DB92AE200D29065 /* repeatPaymentsUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE0D1DB92AE200D29065 /* repeatPaymentsUIViewController.swift */; };
 		33C9DE121DB92EFA00D29065 /* whichAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DE101DB92EFA00D29065 /* whichAccountTableViewCell.swift */; };
 		33C9DE131DB92EFA00D29065 /* whichAccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DE111DB92EFA00D29065 /* whichAccountTableViewCell.xib */; };
@@ -149,7 +149,7 @@
 		33C9DE001DB7A58F00D29065 /* addressUITableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = addressUITableViewCell.xib; sourceTree = "<group>"; };
 		33C9DE031DB7B02300D29065 /* pillLightUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pillLightUIButton.swift; sourceTree = "<group>"; };
 		33C9DE081DB828B500D29065 /* btnBottomUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = btnBottomUIButton.swift; sourceTree = "<group>"; };
-		33C9DE0A1DB82CE900D29065 /* delayedSuccessScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = delayedSuccessScreenViewController.swift; sourceTree = "<group>"; };
+		33C9DE0A1DB82CE900D29065 /* delayedSuccessScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = delayedSuccessScreen.swift; sourceTree = "<group>"; };
 		33C9DE0D1DB92AE200D29065 /* repeatPaymentsUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = repeatPaymentsUIViewController.swift; sourceTree = "<group>"; };
 		33C9DE101DB92EFA00D29065 /* whichAccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = whichAccountTableViewCell.swift; sourceTree = "<group>"; };
 		33C9DE111DB92EFA00D29065 /* whichAccountTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = whichAccountTableViewCell.xib; sourceTree = "<group>"; };
@@ -286,9 +286,9 @@
 				330632B71DC3933B004ADEB7 /* FONTS */,
 				33C9DDCA1DB6597700D29065 /* AppDelegate.swift */,
 				33C9DDCC1DB6597700D29065 /* MainViewController.swift */,
+				33C9DE0A1DB82CE900D29065 /* delayedSuccessScreen.swift */,
 				33C9DDCE1DB6597700D29065 /* Main.storyboard */,
 				33C9DDD11DB6597700D29065 /* Assets.xcassets */,
-				33C9DE0A1DB82CE900D29065 /* delayedSuccessScreenViewController.swift */,
 				335116B81DB99B4A005FD2F4 /* Utilities */,
 				337D04971DBBE2F6001AAABF /* splash page animation classes */,
 				33C9DDF81DB7993600D29065 /* NavigationControllers */,
@@ -534,7 +534,7 @@
 				335116BC1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift in Sources */,
 				33DF97B21DCB765400329650 /* TEMPTableViewController.swift in Sources */,
 				3363F7581DC0F36800F375F3 /* touchIDSettingsVC.swift in Sources */,
-				33C9DE0B1DB82CE900D29065 /* delayedSuccessScreenViewController.swift in Sources */,
+				33C9DE0B1DB82CE900D29065 /* delayedSuccessScreen.swift in Sources */,
 				33C9DE321DB960F900D29065 /* nicknameTableViewCell.swift in Sources */,
 				33C9DDDD1DB65CF900D29065 /* primaryEnabledUIButton.swift in Sources */,
 				330632C71DC3A278004ADEB7 /* splashEightVC.swift in Sources */,

@@ -8,9 +8,17 @@
 
 import UIKit
 
-protocol delayedSuccessVCDelegate {
-    func viewControllerAtIndex(index:Int) -> UIViewController?
-}
+
+//extension MainViewController:autoAdvancePageDelegate {
+//    func goToNextPage() {
+//        nextIndex += 1
+//        
+//        pageViewController.setViewControllers([viewControllerAtIndex(index: nextIndex)!], direction: .forward, animated: true, completion: nil)
+//    }
+//}
+
+
+
 
 class MainViewController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
 
@@ -21,10 +29,9 @@ class MainViewController: UIViewController, UIPageViewControllerDataSource, UIPa
     }
     
     
-    
-    
     var nextIndex:Int = 0
     
+
     
     // Page view controller slides
     //
@@ -38,6 +45,7 @@ class MainViewController: UIViewController, UIPageViewControllerDataSource, UIPa
     // REVERSE
     func pageViewController(_ pageViewController: UIPageViewController,
                             viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        
         
         if let index = pages.index(of: viewController.restorationIdentifier!) {
             if index > 0 {
@@ -53,6 +61,7 @@ class MainViewController: UIViewController, UIPageViewControllerDataSource, UIPa
     // FORWARD
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
+        
         if let index = pages.index(of: viewController.restorationIdentifier!) {
             if index < pages.count - 1 {
                 nextIndex = index + 1
@@ -64,14 +73,14 @@ class MainViewController: UIViewController, UIPageViewControllerDataSource, UIPa
     }
     
     
+    
+    
     // GET PAGE FROM ARRAY
     func viewControllerAtIndex(index:Int) -> UIViewController? {
         let vc = storyboard?.instantiateViewController(withIdentifier: pages[index])
+        nextIndex = index
         return vc
     }
-    
-    
-
     
     
     
@@ -80,6 +89,7 @@ class MainViewController: UIViewController, UIPageViewControllerDataSource, UIPa
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        print("RECEIVED: \(nextIndex)")
         
         if let vc = storyboard?.instantiateViewController(withIdentifier: "onboardingPageViewController") {
             
@@ -91,20 +101,29 @@ class MainViewController: UIViewController, UIPageViewControllerDataSource, UIPa
             pageViewController.dataSource = self
             pageViewController.delegate = self
             
-            pageViewController.setViewControllers([viewControllerAtIndex(index: 0)!], direction: .forward, animated: true, completion: nil)
+            pageViewController.setViewControllers([viewControllerAtIndex(index: self.nextIndex)!], direction: .forward, animated: true, completion: nil)
             
             pageViewController.didMove(toParentViewController: self)
             
         }
         
     }
+    
+    
+    
+    func nextPageWithIndex(index:Int) {
+        nextIndex = index
+        pageViewController.setViewControllers([viewControllerAtIndex(index: self.nextIndex)!], direction: .forward, animated: true, completion: nil)
+        
+        pageViewController.didMove(toParentViewController: self)
+    }
+    
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+    }
 
-    
-    
-
-
-    
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

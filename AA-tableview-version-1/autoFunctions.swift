@@ -9,9 +9,4 @@
 import Foundation
 import UIKit
 
-protocol AutoFunctions {
-    
-    
-}
-
 

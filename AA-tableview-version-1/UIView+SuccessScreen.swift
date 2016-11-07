@@ -9,15 +9,17 @@
 import Foundation
 import UIKit
 
-extension UIView {
-    
-    public func displaySuccessScreen (_ caption: String, destinationIdentifier: String) {
-        
+
+
+//extension UIView {
+//    
+//    public func displaySuccessScreen (_ caption: String, destinationIdentifier: String) {
+
 //        if let vc3 = self.storyboard?.instantiateViewControllerWithIdentifier("vc3") as? ViewController3 {
 //            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
 //            appDelegate.window?.rootViewController!.presentViewController(vc3, animated: true, completion: nil)
 //        }
-        
-    }
-    
-}
+//        
+//    }
+//    
+//}
