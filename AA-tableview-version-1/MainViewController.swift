@@ -110,6 +110,11 @@ class MainViewController: UIViewController, UIPageViewControllerDataSource, UIPa
     }
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
+    
     
     func nextPageWithIndex(index:Int) {
         nextIndex = index

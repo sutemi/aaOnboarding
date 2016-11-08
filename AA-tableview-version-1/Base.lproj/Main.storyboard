@@ -308,49 +308,49 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <inset key="separatorInset" minX="8" minY="0.0" maxX="15" maxY="0.0"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="gti-Yj-P1Q" customClass="fullNameUITableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="gti-Yj-P1Q" customClass="fullNameUITableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gti-Yj-P1Q" id="aPQ-Uk-R0l">
-                                                            <frame key="frameInset" width="335" height="50"/>
+                                                            <frame key="frameInset" width="335" height="49"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="ztx-82-5mW" customClass="dobUITableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ztx-82-5mW" customClass="dobUITableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="78" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ztx-82-5mW" id="sDG-vD-zft">
-                                                            <frame key="frameInset" width="335" height="50"/>
+                                                            <frame key="frameInset" width="335" height="49"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="Aab-Gu-x2q" customClass="relationshipUITableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Aab-Gu-x2q" customClass="relationshipUITableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="128" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Aab-Gu-x2q" id="aIU-Sn-oih">
-                                                            <frame key="frameInset" width="335" height="50"/>
+                                                            <frame key="frameInset" width="335" height="49"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                         <connections>
                                                             <segue destination="dBa-DP-MdD" kind="show" identifier="showRelationshipSegue" id="MdH-At-ON2"/>
                                                         </connections>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="hi5-Id-Ofm" customClass="citizenUITableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hi5-Id-Ofm" customClass="citizenUITableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="178" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hi5-Id-Ofm" id="Zvu-iM-VOf">
-                                                            <frame key="frameInset" width="335" height="50"/>
+                                                            <frame key="frameInset" width="335" height="49"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                         <connections>
                                                             <segue destination="ceS-ky-USE" kind="show" identifier="countriesListSegue" id="e8e-PG-Ffa"/>
                                                         </connections>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="xp0-CK-Wf3" customClass="addressUITableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="xp0-CK-Wf3" customClass="addressUITableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="228" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xp0-CK-Wf3" id="b0T-f7-Rj9">
-                                                            <frame key="frameInset" width="335" height="50"/>
+                                                            <frame key="frameInset" width="335" height="49"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
@@ -440,7 +440,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wnF-cA-e3v" id="kp2-Ba-u2s">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spouse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkY-wM-6Cn">
@@ -459,7 +459,7 @@
                                         <rect key="frame" x="0.0" y="50" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YUh-Qp-3nR" id="hAN-JB-dq0">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Child" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzI-Mo-GXK">
@@ -478,7 +478,7 @@
                                         <rect key="frame" x="0.0" y="100" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3OE-kg-dcH" id="a2N-iR-NVy">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIM-lf-Rmx">
@@ -524,11 +524,11 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="srd-Fc-LAv" id="ShM-E5-p18">
-                                    <frame key="frameInset" width="375" height="43.5"/>
+                                    <frame key="frameInset" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ETx-1s-qeU">
-                                            <frame key="frameInset" minX="15" width="345" height="43.5"/>
+                                            <frame key="frameInset" minX="15" width="345" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -704,7 +704,7 @@
                                         <fontDescription key="fontDescription" name="AmericanSans-Bold" family="AmericanSans" pointSize="15"/>
                                         <state key="normal" title="Set up my fraud alerts"/>
                                         <connections>
-                                            <segue destination="XBA-8E-0ex" kind="show" identifier="mobileTextSegue" id="jn8-9f-oPI"/>
+                                            <segue destination="QCx-pp-7Li" kind="show" identifier="mobileTextSegue" id="jn8-9f-oPI"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1296,7 +1296,7 @@
                                                         <rect key="frame" x="0.0" y="28" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U3L-Gn-NDf" id="OC8-RM-9Vg">
-                                                            <frame key="frameInset" width="335" height="49.5"/>
+                                                            <frame key="frameInset" width="335" height="49"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                         <connections>
@@ -1307,7 +1307,7 @@
                                                         <rect key="frame" x="0.0" y="78" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yrf-4n-4A4" id="1BD-bJ-Pnm">
-                                                            <frame key="frameInset" width="335" height="49.5"/>
+                                                            <frame key="frameInset" width="335" height="49"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                         <connections>
@@ -1318,7 +1318,7 @@
                                                         <rect key="frame" x="0.0" y="128" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TrF-Ya-GPu" id="S7n-wz-3pY">
-                                                            <frame key="frameInset" width="335" height="49.5"/>
+                                                            <frame key="frameInset" width="335" height="49"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                         <connections>
@@ -1432,7 +1432,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0bT-Hh-m3t" id="RdJ-jk-uxr">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="MWc-ZK-HhZ">
@@ -1460,7 +1460,7 @@
                                         <rect key="frame" x="0.0" y="50" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bVN-hC-LoK" id="Jcy-XZ-5AL">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="Eox-ay-WYb">
@@ -1488,7 +1488,7 @@
                                         <rect key="frame" x="0.0" y="100" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dx2-Og-k90" id="Jxs-vd-81Y">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="CsV-en-IK9">
@@ -1560,46 +1560,46 @@
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <inset key="separatorInset" minX="8" minY="0.0" maxX="15" maxY="0.0"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="NaM-9G-Dkw" customClass="routingTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="NaM-9G-Dkw" customClass="routingTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NaM-9G-Dkw" id="e5O-eK-TXG">
-                                                            <frame key="frameInset" width="335" height="50"/>
+                                                            <frame key="frameInset" width="335" height="49"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="fyB-YD-IhX" customClass="accountTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fyB-YD-IhX" customClass="accountTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="78" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fyB-YD-IhX" id="VfA-bY-z3X">
-                                                            <frame key="frameInset" width="335" height="50"/>
+                                                            <frame key="frameInset" width="335" height="49"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="LCM-sa-Dil" customClass="reaccountTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="LCM-sa-Dil" customClass="reaccountTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="128" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LCM-sa-Dil" id="MB3-jI-m2C">
-                                                            <frame key="frameInset" width="335" height="50"/>
+                                                            <frame key="frameInset" width="335" height="49"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="yfk-ZI-obQ" customClass="typeTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="yfk-ZI-obQ" customClass="typeTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="178" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yfk-ZI-obQ" id="etv-x3-bfL">
-                                                            <frame key="frameInset" width="335" height="50"/>
+                                                            <frame key="frameInset" width="335" height="49"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                         <connections>
                                                             <segue destination="X5R-Ty-j11" kind="show" identifier="selectTypeSegue" id="VUv-QJ-6cG"/>
                                                         </connections>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" id="Qbj-cp-jvm" customClass="nicknameTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Qbj-cp-jvm" customClass="nicknameTableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="228" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qbj-cp-jvm" id="zF3-Qu-pSm">
-                                                            <frame key="frameInset" width="335" height="50"/>
+                                                            <frame key="frameInset" width="335" height="49"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
@@ -1664,7 +1664,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q2x-AA-Mz4" id="u6T-bc-gtI">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="1wH-at-CzJ">
@@ -1692,7 +1692,7 @@
                                         <rect key="frame" x="0.0" y="50" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K7c-3H-T9Y" id="U0m-bj-ZJH">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="xXq-zm-cke">
@@ -1720,7 +1720,7 @@
                                         <rect key="frame" x="0.0" y="100" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cHG-ms-EUJ" id="NgV-XC-qLG">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="pY1-4N-HUX">
@@ -1748,7 +1748,7 @@
                                         <rect key="frame" x="0.0" y="150" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Y4-k8-4fe" id="ZDP-SR-A3I">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="kJQ-9W-3DR">
@@ -1776,7 +1776,7 @@
                                         <rect key="frame" x="0.0" y="200" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zxj-C9-erV" id="rgz-zd-bdT">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="ZZu-MW-DmG">
@@ -1832,7 +1832,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UQi-Qq-uPe" id="ery-5F-fWQ">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="XxC-p4-y3K">
@@ -1860,7 +1860,7 @@
                                         <rect key="frame" x="0.0" y="50" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MfO-k2-E6N" id="pZt-jG-nzg">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="xDP-kf-Hq3">
@@ -1888,7 +1888,7 @@
                                         <rect key="frame" x="0.0" y="100" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cw3-Vh-Pdh" id="Xiu-zu-FSZ">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Other amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cPW-Gi-YGU" customClass="formUITextField" customModule="AA_tableview_version_1" customModuleProvider="target">
@@ -1941,7 +1941,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JGg-wj-Wsi" id="03L-IX-4X5">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="0bJ-f5-xPU">
@@ -1969,7 +1969,7 @@
                                         <rect key="frame" x="0.0" y="50" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Aeg-Cj-fWs" id="WzA-Gm-3oY">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="WSh-ah-VrU">
@@ -1997,7 +1997,7 @@
                                         <rect key="frame" x="0.0" y="100" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="88j-RZ-qgy" id="u8m-hu-WAd">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="EnT-vb-msQ">
@@ -2025,7 +2025,7 @@
                                         <rect key="frame" x="0.0" y="150" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oVL-aS-WMK" id="8yy-k7-HnH">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="xxE-oE-Jmc">
@@ -2053,7 +2053,7 @@
                                         <rect key="frame" x="0.0" y="200" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pvo-wq-G83" id="1OH-BB-Oon">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="g6Y-CO-2YI">
@@ -2081,7 +2081,7 @@
                                         <rect key="frame" x="0.0" y="250" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UcV-TT-gyL" id="T9g-Rk-1vw">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="XtT-dv-fzb">
@@ -2109,7 +2109,7 @@
                                         <rect key="frame" x="0.0" y="300" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BK7-s7-UR6" id="If4-Zr-XwM">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="wR3-qw-kYm">
@@ -2137,7 +2137,7 @@
                                         <rect key="frame" x="0.0" y="350" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sva-eg-utc" id="1tQ-8N-lDJ">
-                                            <frame key="frameInset" width="375" height="49.5"/>
+                                            <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="Tqr-Mz-Cjg">
@@ -2330,10 +2330,11 @@
                             <constraint firstItem="0oN-2j-OCV" firstAttribute="top" secondItem="UeI-Ls-M3g" secondAttribute="bottom" id="nRV-gW-9SF"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Dtq-BP-rwa"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rWE-8E-EnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2200.8000000000002" y="2811.5442278860573"/>
+            <point key="canvasLocation" x="3140" y="2811.5442278860573"/>
         </scene>
         <!--Servicing AlertsVC-->
         <scene sceneID="ioi-LA-zg9">
@@ -2391,7 +2392,7 @@
                                                         <rect key="frame" x="0.0" y="28" width="335" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I3T-BD-yU4" id="F8I-Ka-Ida">
-                                                            <frame key="frameInset" width="335" height="49.5"/>
+                                                            <frame key="frameInset" width="335" height="49"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                         <connections>
@@ -2577,7 +2578,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="XND-lv-uC3" customClass="customNavigationController" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UHB-gg-xlz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="UHB-gg-xlz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2792,7 +2793,7 @@ It is important to update your email address when it changes, so we can notify y
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="lW1-WN-hDG" customClass="customNavigationController" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="W6X-C0-Anu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="W6X-C0-Anu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2966,7 +2967,7 @@ It is important to update your email address when it changes, so we can notify y
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="zr2-Ma-Gnu" customClass="customNavigationController" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WPZ-wH-vHl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="WPZ-wH-vHl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -3255,7 +3256,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                                             <constraint firstAttribute="width" constant="130" id="V5f-Wq-TEX"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've successfully added an authorized user. To add additional authroized users, visit BarclaycardUS.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDV-uU-7wy">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've successfully scheduled repeat payments. Your repeat payment will start next billing cycle." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDV-uU-7wy">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="nQK-rg-uxq"/>
                                             <constraint firstAttribute="height" constant="43" id="tjd-x5-Wsu"/>
@@ -3295,7 +3296,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueToFraudAlerts" id="7YZ-d8-N4c"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="segueToFraudAlerts" modalTransitionStyle="crossDissolve" id="7YZ-d8-N4c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3eV-an-02v" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3339,7 +3340,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                                             <constraint firstAttribute="width" constant="130" id="j6t-sm-DMs"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've successfully added an authorized user. To add additional authroized users, visit BarclaycardUS.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rg-jT-mQy">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've successfully activated fraud alerts." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rg-jT-mQy">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43" id="CSy-Qn-Caj"/>
                                             <constraint firstAttribute="width" constant="250" id="Fhh-JE-pVZ"/>
@@ -3379,12 +3380,12 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueToServiceAlerts" id="HKQ-um-Qdy"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="segueToServiceAlerts" modalTransitionStyle="crossDissolve" id="HKQ-um-Qdy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfP-SQ-IaT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3225" y="2812"/>
+            <point key="canvasLocation" x="4164" y="2811.5442278860573"/>
         </scene>
         <!--Delayed Success Screen-->
         <scene sceneID="Lik-vt-vkR">
@@ -3423,7 +3424,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                                             <constraint firstAttribute="width" constant="130" id="UtA-je-kQ3"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've successfully added an authorized user. To add additional authroized users, visit BarclaycardUS.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAT-eI-xBY">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've successfully activated account servicing alerts." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAT-eI-xBY">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="mOw-Es-8k7"/>
                                             <constraint firstAttribute="height" constant="43" id="pLD-xR-YGX"/>
@@ -3463,7 +3464,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueToPaperless" id="swE-8W-OPh"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="segueToPaperless" modalTransitionStyle="crossDissolve" id="swE-8W-OPh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z9a-1r-Pm0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3507,7 +3508,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                                             <constraint firstAttribute="height" constant="130" id="arx-Hn-iLO"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've successfully added an authorized user. To add additional authroized users, visit BarclaycardUS.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3A-Hz-V3Y">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've successfully enrolled to receive paperless statements." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3A-Hz-V3Y">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43" id="7io-ue-CgQ"/>
                                             <constraint firstAttribute="width" constant="250" id="m0c-oG-GH0"/>
@@ -3547,7 +3548,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueToTouchID" id="9w5-vY-AD4"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="segueToTouchID" modalTransitionStyle="crossDissolve" id="9w5-vY-AD4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WYu-l7-bMN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3591,7 +3592,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                                             <constraint firstAttribute="width" constant="130" id="CLa-Ls-lBb"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've successfully added an authorized user. To add additional authroized users, visit BarclaycardUS.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBk-YS-TpX">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've successfully enabled TouchID." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBk-YS-TpX">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="OsM-bf-qRX"/>
                                             <constraint firstAttribute="height" constant="43" id="nJV-cO-cNv"/>
@@ -3631,7 +3632,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueToFICO" id="zhG-3T-8O8"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="segueToFICO" modalTransitionStyle="crossDissolve" id="zhG-3T-8O8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ep6-we-OZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -3675,7 +3676,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                                             <constraint firstAttribute="width" constant="130" id="skt-Go-SxZ"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've successfully added an authorized user. To add additional authroized users, visit BarclaycardUS.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAX-55-sWZ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can now view your FICO Score - online or through the Barclaycard Mobile App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAX-55-sWZ">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="DdT-Oz-lUB"/>
                                             <constraint firstAttribute="height" constant="43" id="wk0-OZ-bIY"/>
@@ -3740,6 +3741,24 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
             </objects>
             <point key="canvasLocation" x="4079" y="5885"/>
         </scene>
+        <!--Custom Navigation Controller-->
+        <scene sceneID="w0i-Js-PJg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="QCx-pp-7Li" customClass="customNavigationController" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="9lW-ql-diy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XBA-8E-0ex" kind="relationship" relationship="rootViewController" id="ZyN-8U-Eds"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lJT-fh-mPf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2200.8000000000002" y="2811.5442278860573"/>
+        </scene>
     </scenes>
     <resources>
         <image name="aa_aadv_logo" width="315" height="64"/>
@@ -3758,6 +3777,6 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
         <image name="icon-touch-id@1x" width="251" height="252"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HKQ-um-Qdy"/>
+        <segue reference="zhG-3T-8O8"/>
     </inferredMetricsTieBreakers>
 </document>
