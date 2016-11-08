@@ -30,8 +30,10 @@ class delayedSuccessScreen: UIViewController, UIPageViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        
         // Do any additional setup after loading the view.
-        print("MY RESTORATION ID: \(self.restorationIdentifier)")
+//        print("MY RESTORATION ID: \(self.restorationIdentifier)")
         let rID:String = self.restorationIdentifier!
         
         switch rID {

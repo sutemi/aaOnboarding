@@ -1096,7 +1096,7 @@
                                         <fontDescription key="fontDescription" name="AmericanSans-Bold" family="AmericanSans" pointSize="15"/>
                                         <state key="normal" title="View your FICO score"/>
                                         <connections>
-                                            <segue destination="Aa8-Qp-9ye" kind="show" id="mHn-f0-nHE"/>
+                                            <segue destination="Dl0-HR-A09" kind="show" id="mHn-f0-nHE"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1161,7 +1161,7 @@
         <!--Delayed Success Screen-->
         <scene sceneID="3ss-1J-2Z2">
             <objects>
-                <viewController storyboardIdentifier="successAddUser" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7Q0-zo-ydK" customClass="delayedSuccessScreen" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="successAddUser" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7Q0-zo-ydK" customClass="delayedSuccessScreen" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JQ3-J2-Dys"/>
                         <viewControllerLayoutGuide type="bottom" id="r2T-XW-GJU"/>
@@ -3217,7 +3217,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4KI-DP-dWs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2200.8000000000002" y="5884.8575712143929"/>
+            <point key="canvasLocation" x="3140" y="5884.8575712143929"/>
         </scene>
         <!--Delayed Success Screen-->
         <scene sceneID="1HD-TS-KxB">
@@ -3712,34 +3712,16 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="nextPageIndex">
-                            <integer key="value" value="8"/>
+                            <integer key="value" value="0"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
-                        <segue destination="JHr-IQ-4U7" kind="show" identifier="segueToCOMPLETE" id="hOo-q0-pZg"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="segueToCOMPLETE" modalTransitionStyle="crossDissolve" id="s6m-7o-Dfg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JKV-Jg-Bnc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3140" y="5885"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="h0V-vX-CiY">
-            <objects>
-                <viewController id="JHr-IQ-4U7" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="1fQ-e1-GUx"/>
-                        <viewControllerLayoutGuide type="bottom" id="fWS-qK-16W"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ipD-Bp-Vgm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QmK-SO-vAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4079" y="5885"/>
+            <point key="canvasLocation" x="4079.1999999999998" y="5884.8575712143929"/>
         </scene>
         <!--Custom Navigation Controller-->
         <scene sceneID="w0i-Js-PJg">
@@ -3759,6 +3741,24 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
             </objects>
             <point key="canvasLocation" x="2200.8000000000002" y="2811.5442278860573"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZSE-Dm-tv3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Dl0-HR-A09" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="MpF-qU-SIK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Aa8-Qp-9ye" kind="relationship" relationship="rootViewController" id="FfE-PE-ZsL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0f-4O-3bt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2201" y="5600"/>
+        </scene>
     </scenes>
     <resources>
         <image name="aa_aadv_logo" width="315" height="64"/>
@@ -3777,6 +3777,6 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
         <image name="icon-touch-id@1x" width="251" height="252"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zhG-3T-8O8"/>
+        <segue reference="HKQ-um-Qdy"/>
     </inferredMetricsTieBreakers>
 </document>

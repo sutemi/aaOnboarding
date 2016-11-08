@@ -124,15 +124,7 @@ class repeatPaymentsUIViewController: UIViewController, UITableViewDataSource, U
     }
     
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: true)
-        
-        let backItem = UIBarButtonItem()
-        backItem.title = ""
-        navigationItem.backBarButtonItem = backItem
-        
-    }
+
     
     
     

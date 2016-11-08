@@ -74,15 +74,15 @@ class servicingAlertsVC: UIViewController, UITableViewDataSource, UITableViewDel
 
     
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: true)
-        
-        let backItem = UIBarButtonItem()
-        backItem.title = ""
-        navigationItem.backBarButtonItem = backItem
-        
-    }
+//    override func viewDidDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        navigationController?.setNavigationBarHidden(false, animated: true)
+//        
+//        let backItem = UIBarButtonItem()
+//        backItem.title = ""
+//        navigationItem.backBarButtonItem = backItem
+//        
+//    }
     
 
     

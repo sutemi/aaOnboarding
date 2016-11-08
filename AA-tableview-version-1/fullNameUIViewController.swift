@@ -174,15 +174,15 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: true)
-        
-        let backItem = UIBarButtonItem()
-        backItem.title = ""
-        navigationItem.backBarButtonItem = backItem
-        
-    }
+//    override func viewDidDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        navigationController?.setNavigationBarHidden(false, animated: true)
+//        
+//        let backItem = UIBarButtonItem()
+//        backItem.title = ""
+//        navigationItem.backBarButtonItem = backItem
+//        
+//    }
     
     
     override func didChange(_ changeKind: NSKeyValueChange, valuesAt indexes: IndexSet, forKey key: String) {
