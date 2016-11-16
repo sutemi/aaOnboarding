@@ -422,12 +422,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zGg-In-NXE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3512.8000000000002" y="-751.57421289355329"/>
+            <point key="canvasLocation" x="3663" y="-740"/>
         </scene>
         <!--RELATIONSHIP TO CARDMEMBER-->
         <scene sceneID="UNY-Id-9nh">
             <objects>
-                <tableViewController title="RELATIONSHIP TO CARDMEMBER" id="dBa-DP-MdD" customClass="relationshipUITableViewController" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="RELATIONSHIP TO CARDMEMBER" clearsSelectionOnViewWillAppear="NO" id="dBa-DP-MdD" customClass="relationshipUITableViewController" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="3" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="MBh-zo-pcg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -543,6 +543,9 @@
                             <outlet property="delegate" destination="ceS-ky-USE" id="szf-h4-3KU"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="countriesTableView" destination="cN8-fk-7rX" id="Fuh-vA-Tee"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ce6-ht-qSz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1435,24 +1438,14 @@
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="MWc-ZK-HhZ">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="24" id="QPL-xK-OaP"/>
-                                                        <constraint firstAttribute="height" constant="24" id="mMp-4t-qhs"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank 1 on file" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74s-Pb-GNS">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bank 1 on file" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74s-Pb-GNS">
+                                                    <frame key="frameInset" minX="60" minY="17" width="86" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="MWc-ZK-HhZ" firstAttribute="leading" secondItem="RdJ-jk-uxr" secondAttribute="leadingMargin" constant="20" id="0jM-LS-xlw"/>
-                                                <constraint firstItem="74s-Pb-GNS" firstAttribute="centerY" secondItem="MWc-ZK-HhZ" secondAttribute="centerY" id="OKr-Ep-iou"/>
-                                                <constraint firstItem="MWc-ZK-HhZ" firstAttribute="centerY" secondItem="RdJ-jk-uxr" secondAttribute="centerY" id="PHI-QC-NWi"/>
-                                                <constraint firstItem="74s-Pb-GNS" firstAttribute="leading" secondItem="MWc-ZK-HhZ" secondAttribute="trailing" constant="19" id="uxA-YL-vZ7"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
@@ -1463,24 +1456,14 @@
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="Eox-ay-WYb">
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="24" id="Ybj-mb-wRd"/>
-                                                        <constraint firstAttribute="width" constant="24" id="wFY-VK-xBx"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank 2 on file" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVl-Mx-w4C">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bank 2 on file" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVl-Mx-w4C">
+                                                    <frame key="frameInset" minX="60" minY="17" width="88" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="TVl-Mx-w4C" firstAttribute="leading" secondItem="Eox-ay-WYb" secondAttribute="trailing" constant="19" id="1ku-r6-ykC"/>
-                                                <constraint firstItem="TVl-Mx-w4C" firstAttribute="centerY" secondItem="Eox-ay-WYb" secondAttribute="centerY" id="FBy-Ey-f28"/>
-                                                <constraint firstItem="Eox-ay-WYb" firstAttribute="leading" secondItem="Jcy-XZ-5AL" secondAttribute="leadingMargin" constant="20" id="QaF-3n-L8p"/>
-                                                <constraint firstItem="Eox-ay-WYb" firstAttribute="centerY" secondItem="Jcy-XZ-5AL" secondAttribute="centerY" id="bxL-Av-MhN"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
@@ -1491,24 +1474,14 @@
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="CsV-en-IK9">
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="24" id="2FO-xC-THe"/>
-                                                        <constraint firstAttribute="width" constant="24" id="8q8-iM-ZZe"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a new bank account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93a-R9-ubW">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add a new bank account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93a-R9-ubW">
+                                                    <frame key="frameInset" minX="60" minY="17" width="159" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="CsV-en-IK9" firstAttribute="leading" secondItem="Jxs-vd-81Y" secondAttribute="leadingMargin" constant="20" id="5tG-xY-zBg"/>
-                                                <constraint firstItem="93a-R9-ubW" firstAttribute="leading" secondItem="CsV-en-IK9" secondAttribute="trailing" constant="19" id="FaZ-Fe-382"/>
-                                                <constraint firstItem="93a-R9-ubW" firstAttribute="centerY" secondItem="CsV-en-IK9" secondAttribute="centerY" id="OeH-s3-3r4"/>
-                                                <constraint firstItem="CsV-en-IK9" firstAttribute="centerY" secondItem="Jxs-vd-81Y" secondAttribute="centerY" id="ydq-wd-0oD"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                         <connections>
@@ -1667,24 +1640,14 @@
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="1wH-at-CzJ">
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="24" id="SuL-3r-Yxn"/>
-                                                        <constraint firstAttribute="width" constant="24" id="xlz-dG-pFQ"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal checking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY9-dB-aZI">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Personal checking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY9-dB-aZI">
+                                                    <frame key="frameInset" minX="60" minY="17" width="119" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="1wH-at-CzJ" firstAttribute="leading" secondItem="u6T-bc-gtI" secondAttribute="leadingMargin" constant="20" id="5fS-OB-3Fb"/>
-                                                <constraint firstItem="1wH-at-CzJ" firstAttribute="centerY" secondItem="u6T-bc-gtI" secondAttribute="centerY" id="EhX-JZ-48v"/>
-                                                <constraint firstItem="mY9-dB-aZI" firstAttribute="centerY" secondItem="1wH-at-CzJ" secondAttribute="centerY" id="OZs-Xu-bpL"/>
-                                                <constraint firstItem="mY9-dB-aZI" firstAttribute="leading" secondItem="1wH-at-CzJ" secondAttribute="trailing" constant="19" id="bAM-J2-SLW"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
@@ -1695,24 +1658,14 @@
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="xXq-zm-cke">
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="24" id="dga-DQ-qTN"/>
-                                                        <constraint firstAttribute="width" constant="24" id="z5u-C7-SgL"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personal savings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txn-yF-XIT">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Personal savings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txn-yF-XIT">
+                                                    <frame key="frameInset" minX="60" minY="17" width="109" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Txn-yF-XIT" firstAttribute="leading" secondItem="xXq-zm-cke" secondAttribute="trailing" constant="19" id="0JC-sR-0e1"/>
-                                                <constraint firstItem="Txn-yF-XIT" firstAttribute="centerY" secondItem="xXq-zm-cke" secondAttribute="centerY" id="PSJ-6L-bc8"/>
-                                                <constraint firstItem="xXq-zm-cke" firstAttribute="centerY" secondItem="U0m-bj-ZJH" secondAttribute="centerY" id="iMK-ES-DNU"/>
-                                                <constraint firstItem="xXq-zm-cke" firstAttribute="leading" secondItem="U0m-bj-ZJH" secondAttribute="leadingMargin" constant="20" id="vMK-aD-88n"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
@@ -1723,24 +1676,14 @@
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="pY1-4N-HUX">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="24" id="61R-Ya-Nyl"/>
-                                                        <constraint firstAttribute="height" constant="24" id="R53-XJ-1XX"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business checking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1u-1x-9zQ">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Business checking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1u-1x-9zQ">
+                                                    <frame key="frameInset" minX="60" minY="17" width="120" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="u1u-1x-9zQ" firstAttribute="centerY" secondItem="pY1-4N-HUX" secondAttribute="centerY" id="1bN-bh-sbT"/>
-                                                <constraint firstItem="pY1-4N-HUX" firstAttribute="centerY" secondItem="NgV-XC-qLG" secondAttribute="centerY" id="DP7-4X-bl5"/>
-                                                <constraint firstItem="u1u-1x-9zQ" firstAttribute="leading" secondItem="pY1-4N-HUX" secondAttribute="trailing" constant="19" id="Jkk-rZ-2So"/>
-                                                <constraint firstItem="pY1-4N-HUX" firstAttribute="leading" secondItem="NgV-XC-qLG" secondAttribute="leadingMargin" constant="20" id="Nwh-kh-0Lp"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
@@ -1751,24 +1694,14 @@
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="kJQ-9W-3DR">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="24" id="oIJ-Yq-QCJ"/>
-                                                        <constraint firstAttribute="height" constant="24" id="y32-GP-iE0"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business savings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2a-If-RQb">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Business savings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2a-If-RQb">
+                                                    <frame key="frameInset" minX="60" minY="17" width="111" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="P2a-If-RQb" firstAttribute="centerY" secondItem="kJQ-9W-3DR" secondAttribute="centerY" id="D8h-wY-u0W"/>
-                                                <constraint firstItem="P2a-If-RQb" firstAttribute="leading" secondItem="kJQ-9W-3DR" secondAttribute="trailing" constant="19" id="VdU-Dg-iHM"/>
-                                                <constraint firstItem="kJQ-9W-3DR" firstAttribute="centerY" secondItem="ZDP-SR-A3I" secondAttribute="centerY" id="xph-qy-DP3"/>
-                                                <constraint firstItem="kJQ-9W-3DR" firstAttribute="leading" secondItem="ZDP-SR-A3I" secondAttribute="leadingMargin" constant="20" id="y0W-Zs-OqO"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
@@ -1779,24 +1712,14 @@
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="ZZu-MW-DmG">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="24" id="I5V-Mf-Ux5"/>
-                                                        <constraint firstAttribute="height" constant="24" id="pNw-2l-D3g"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Money market" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfL-rO-y2e">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Money market" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfL-rO-y2e">
+                                                    <frame key="frameInset" minX="60" minY="17" width="92" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="ZZu-MW-DmG" firstAttribute="centerY" secondItem="rgz-zd-bdT" secondAttribute="centerY" id="AUd-iT-nhH"/>
-                                                <constraint firstItem="MfL-rO-y2e" firstAttribute="centerY" secondItem="ZZu-MW-DmG" secondAttribute="centerY" id="JLE-YV-8PG"/>
-                                                <constraint firstItem="MfL-rO-y2e" firstAttribute="leading" secondItem="ZZu-MW-DmG" secondAttribute="trailing" constant="19" id="Jr6-nd-bgg"/>
-                                                <constraint firstItem="ZZu-MW-DmG" firstAttribute="leading" secondItem="rgz-zd-bdT" secondAttribute="leadingMargin" constant="20" id="w4H-6b-F9j"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
@@ -1835,24 +1758,14 @@
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="XxC-p4-y3K">
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="24" id="ZIx-Yh-1HI"/>
-                                                        <constraint firstAttribute="width" constant="24" id="kM0-jD-yko"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum payment due" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bur-Tt-buY">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minimum payment due" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bur-Tt-buY">
+                                                    <frame key="frameInset" minX="60" minY="17" width="147" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Bur-Tt-buY" firstAttribute="centerY" secondItem="XxC-p4-y3K" secondAttribute="centerY" id="4XG-1r-Dk4"/>
-                                                <constraint firstItem="XxC-p4-y3K" firstAttribute="centerY" secondItem="ery-5F-fWQ" secondAttribute="centerY" id="VxA-5i-kme"/>
-                                                <constraint firstItem="Bur-Tt-buY" firstAttribute="leading" secondItem="XxC-p4-y3K" secondAttribute="trailing" constant="19" id="cMq-fi-zzT"/>
-                                                <constraint firstItem="XxC-p4-y3K" firstAttribute="leading" secondItem="ery-5F-fWQ" secondAttribute="leadingMargin" constant="20" id="rnj-P4-n1F"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
@@ -1863,24 +1776,14 @@
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="xDP-kf-Hq3">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="24" id="9OV-L0-fX7"/>
-                                                        <constraint firstAttribute="height" constant="24" id="FRT-lB-dyN"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Statement balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2I-3S-Bli">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Statement balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2I-3S-Bli">
+                                                    <frame key="frameInset" minX="60" minY="17" width="122" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="t2I-3S-Bli" firstAttribute="centerY" secondItem="xDP-kf-Hq3" secondAttribute="centerY" id="7Ws-Gj-TE0"/>
-                                                <constraint firstItem="xDP-kf-Hq3" firstAttribute="centerY" secondItem="pZt-jG-nzg" secondAttribute="centerY" id="Io6-DH-e2P"/>
-                                                <constraint firstItem="t2I-3S-Bli" firstAttribute="leading" secondItem="xDP-kf-Hq3" secondAttribute="trailing" constant="19" id="Tg1-XD-a4y"/>
-                                                <constraint firstItem="xDP-kf-Hq3" firstAttribute="leading" secondItem="pZt-jG-nzg" secondAttribute="leadingMargin" constant="20" id="WyD-BN-SdE"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
@@ -1944,24 +1847,14 @@
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="0bJ-f5-xPU">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="24" id="HWn-WL-hl3"/>
-                                                        <constraint firstAttribute="height" constant="24" id="Xoo-0r-Bte"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The day of your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkV-O2-Hsj">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The day of your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkV-O2-Hsj">
+                                                    <frame key="frameInset" minX="60" minY="17" width="222" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="0bJ-f5-xPU" firstAttribute="leading" secondItem="03L-IX-4X5" secondAttribute="leadingMargin" constant="20" id="OUl-dY-WLk"/>
-                                                <constraint firstItem="0bJ-f5-xPU" firstAttribute="centerY" secondItem="03L-IX-4X5" secondAttribute="centerY" id="TeN-aT-BoU"/>
-                                                <constraint firstItem="IkV-O2-Hsj" firstAttribute="centerY" secondItem="0bJ-f5-xPU" secondAttribute="centerY" id="YpV-ow-WBm"/>
-                                                <constraint firstItem="IkV-O2-Hsj" firstAttribute="leading" secondItem="0bJ-f5-xPU" secondAttribute="trailing" constant="19" id="klj-Cc-PF3"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
@@ -1972,24 +1865,14 @@
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="WSh-ah-VrU">
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="24" id="SfK-Oz-bnN"/>
-                                                        <constraint firstAttribute="width" constant="24" id="bxt-IL-Y1s"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 day before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8W-ai-1Mk">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 day before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8W-ai-1Mk">
+                                                    <frame key="frameInset" minX="60" minY="17" width="232" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="T8W-ai-1Mk" firstAttribute="centerY" secondItem="WSh-ah-VrU" secondAttribute="centerY" id="E0Q-qm-baS"/>
-                                                <constraint firstItem="WSh-ah-VrU" firstAttribute="centerY" secondItem="WzA-Gm-3oY" secondAttribute="centerY" id="lv1-1f-BO2"/>
-                                                <constraint firstItem="T8W-ai-1Mk" firstAttribute="leading" secondItem="WSh-ah-VrU" secondAttribute="trailing" constant="19" id="mMz-aa-21r"/>
-                                                <constraint firstItem="WSh-ah-VrU" firstAttribute="leading" secondItem="WzA-Gm-3oY" secondAttribute="leadingMargin" constant="20" id="pFs-Re-h4q"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
@@ -2000,24 +1883,14 @@
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="EnT-vb-msQ">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="24" id="MEI-lT-kkb"/>
-                                                        <constraint firstAttribute="height" constant="24" id="ip6-Ur-3Fp"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 days before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiU-UG-R6L">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 days before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiU-UG-R6L">
+                                                    <frame key="frameInset" minX="60" minY="17" width="241" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="PiU-UG-R6L" firstAttribute="leading" secondItem="EnT-vb-msQ" secondAttribute="trailing" constant="19" id="16L-Nf-EQB"/>
-                                                <constraint firstItem="EnT-vb-msQ" firstAttribute="leading" secondItem="u8m-hu-WAd" secondAttribute="leadingMargin" constant="20" id="768-YX-Qb5"/>
-                                                <constraint firstItem="EnT-vb-msQ" firstAttribute="centerY" secondItem="u8m-hu-WAd" secondAttribute="centerY" id="Cci-Cd-Iyh"/>
-                                                <constraint firstItem="PiU-UG-R6L" firstAttribute="centerY" secondItem="EnT-vb-msQ" secondAttribute="centerY" id="lKk-hj-TbH"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
@@ -2028,24 +1901,14 @@
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="xxE-oE-Jmc">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="24" id="Gr8-kq-fo2"/>
-                                                        <constraint firstAttribute="height" constant="24" id="u4V-US-DNt"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 days before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D29-8S-Z3h">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 days before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D29-8S-Z3h">
+                                                    <frame key="frameInset" minX="60" minY="17" width="241" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="D29-8S-Z3h" firstAttribute="centerY" secondItem="xxE-oE-Jmc" secondAttribute="centerY" id="J4g-kd-3zw"/>
-                                                <constraint firstItem="D29-8S-Z3h" firstAttribute="leading" secondItem="xxE-oE-Jmc" secondAttribute="trailing" constant="19" id="Kb7-nB-oSE"/>
-                                                <constraint firstItem="xxE-oE-Jmc" firstAttribute="centerY" secondItem="8yy-k7-HnH" secondAttribute="centerY" id="YHf-i2-sjJ"/>
-                                                <constraint firstItem="xxE-oE-Jmc" firstAttribute="leading" secondItem="8yy-k7-HnH" secondAttribute="leadingMargin" constant="20" id="lct-Hr-qtg"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
@@ -2056,24 +1919,14 @@
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="g6Y-CO-2YI">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="24" id="1UO-FE-2H8"/>
-                                                        <constraint firstAttribute="height" constant="24" id="AOu-Zs-hQf"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 days before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKL-PZ-hMe">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4 days before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKL-PZ-hMe">
+                                                    <frame key="frameInset" minX="60" minY="17" width="242" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="g6Y-CO-2YI" firstAttribute="leading" secondItem="1OH-BB-Oon" secondAttribute="leadingMargin" constant="20" id="6dm-Xp-P1y"/>
-                                                <constraint firstItem="NKL-PZ-hMe" firstAttribute="centerY" secondItem="g6Y-CO-2YI" secondAttribute="centerY" id="Kew-Rj-AFE"/>
-                                                <constraint firstItem="g6Y-CO-2YI" firstAttribute="centerY" secondItem="1OH-BB-Oon" secondAttribute="centerY" id="YPe-aJ-kbi"/>
-                                                <constraint firstItem="NKL-PZ-hMe" firstAttribute="leading" secondItem="g6Y-CO-2YI" secondAttribute="trailing" constant="19" id="xUI-wg-8Lk"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
@@ -2084,24 +1937,14 @@
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="XtT-dv-fzb">
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="24" id="LtK-st-F0g"/>
-                                                        <constraint firstAttribute="width" constant="24" id="jSp-4k-0BT"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 days before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3M-VW-poA">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 days before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3M-VW-poA">
+                                                    <frame key="frameInset" minX="60" minY="17" width="241" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="XtT-dv-fzb" firstAttribute="centerY" secondItem="T9g-Rk-1vw" secondAttribute="centerY" id="FF9-zD-QBc"/>
-                                                <constraint firstItem="XtT-dv-fzb" firstAttribute="leading" secondItem="T9g-Rk-1vw" secondAttribute="leadingMargin" constant="20" id="V9b-RZ-jsF"/>
-                                                <constraint firstItem="f3M-VW-poA" firstAttribute="centerY" secondItem="XtT-dv-fzb" secondAttribute="centerY" id="i01-dU-X9j"/>
-                                                <constraint firstItem="f3M-VW-poA" firstAttribute="leading" secondItem="XtT-dv-fzb" secondAttribute="trailing" constant="19" id="zGr-1K-QiO"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
@@ -2112,24 +1955,14 @@
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="wR3-qw-kYm">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="24" id="9cL-b6-fef"/>
-                                                        <constraint firstAttribute="height" constant="24" id="McB-1q-mJa"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 days before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofj-JR-eLt">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6 days before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofj-JR-eLt">
+                                                    <frame key="frameInset" minX="60" minY="17" width="242" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="wR3-qw-kYm" firstAttribute="centerY" secondItem="If4-Zr-XwM" secondAttribute="centerY" id="Jq1-8h-alV"/>
-                                                <constraint firstItem="ofj-JR-eLt" firstAttribute="centerY" secondItem="wR3-qw-kYm" secondAttribute="centerY" id="Uao-rf-f7Y"/>
-                                                <constraint firstItem="wR3-qw-kYm" firstAttribute="leading" secondItem="If4-Zr-XwM" secondAttribute="leadingMargin" constant="20" id="WaC-9q-fig"/>
-                                                <constraint firstItem="ofj-JR-eLt" firstAttribute="leading" secondItem="wR3-qw-kYm" secondAttribute="trailing" constant="19" id="wPI-nf-sXL"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
@@ -2140,24 +1973,14 @@
                                             <frame key="frameInset" width="375" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullet-open" translatesAutoresizingMaskIntoConstraints="NO" id="Tqr-Mz-Cjg">
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="24" id="E6e-HH-Mip"/>
-                                                        <constraint firstAttribute="height" constant="24" id="fGC-cn-cCV"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 days before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FP6-AS-CGk">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7 days before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FP6-AS-CGk">
+                                                    <frame key="frameInset" minX="60" minY="17" width="241" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="Tqr-Mz-Cjg" firstAttribute="leading" secondItem="1tQ-8N-lDJ" secondAttribute="leadingMargin" constant="20" id="1a4-FI-7Gt"/>
-                                                <constraint firstItem="FP6-AS-CGk" firstAttribute="leading" secondItem="Tqr-Mz-Cjg" secondAttribute="trailing" constant="19" id="bQs-90-fDp"/>
-                                                <constraint firstItem="FP6-AS-CGk" firstAttribute="centerY" secondItem="Tqr-Mz-Cjg" secondAttribute="centerY" id="uzS-Yb-RMQ"/>
-                                                <constraint firstItem="Tqr-Mz-Cjg" firstAttribute="centerY" secondItem="1tQ-8N-lDJ" secondAttribute="centerY" id="wex-Tr-9ap"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
@@ -2475,7 +2298,7 @@
         <!--PAYMENT DUE REMINDER-->
         <scene sceneID="uMF-Le-elo">
             <objects>
-                <viewController title="PAYMENT DUE REMINDER" id="TGc-LQ-uRN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="serviceSettings" title="PAYMENT DUE REMINDER" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TGc-LQ-uRN" customClass="servicingSettingsVC" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zhc-tT-spT"/>
                         <viewControllerLayoutGuide type="bottom" id="hm4-de-XbI"/>
@@ -2761,7 +2584,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPs-aX-FAG">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPs-aX-FAG">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">By enrolling in paperless statements you agree to receive your monthly statement electronically. You will be notified via email when your statement is available to view on the website. Electronic statements are available in HTML and/or Portable Document Format (PDF). By accessing our website we have confirmed that your computer is capable of viewing statements in an HTML format. You also confirm your computer is equipped with software that enables you to view and retain files in the Portable Document Format (PDF), if you plan to access statements in that format. Please note that any changes to the hardware or software on your computer may result in you not being able to view and retain your statements electronically.
 
@@ -2771,6 +2594,7 @@ It is important to update your email address when it changes, so we can notify y
                                 <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2783,6 +2607,9 @@ It is important to update your email address when it changes, so we can notify y
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PAPERLESS STATEMENT DISCLOSURE" id="TXg-Q9-1dl"/>
+                    <connections>
+                        <outlet property="textView" destination="fPs-aX-FAG" id="QVm-fI-4n0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zfd-4X-ZGq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -3762,7 +3589,6 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
     </scenes>
     <resources>
         <image name="aa_aadv_logo" width="315" height="64"/>
-        <image name="bullet-open" width="55" height="56"/>
         <image name="icon-auth-user@1x-1" width="251" height="251"/>
         <image name="icon-chart" width="88" height="88"/>
         <image name="icon-complete@1x" width="245" height="246"/>
@@ -3779,4 +3605,5 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
     <inferredMetricsTieBreakers>
         <segue reference="HKQ-um-Qdy"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
 </document>

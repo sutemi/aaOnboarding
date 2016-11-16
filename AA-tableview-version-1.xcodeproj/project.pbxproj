@@ -40,6 +40,7 @@
 		3363F75B1DC0F5F800F375F3 /* ficoSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F75A1DC0F5F800F375F3 /* ficoSettingsVC.swift */; };
 		3363F75D1DC10C3E00F375F3 /* customColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F75C1DC10C3E00F375F3 /* customColors.swift */; };
 		337D04991DBBE338001AAABF /* splashOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337D04981DBBE338001AAABF /* splashOneVC.swift */; };
+		3382AFD71DD4C6110078E8C8 /* servicingSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3382AFD61DD4C6110078E8C8 /* servicingSettingsVC.swift */; };
 		33C9DDCB1DB6597700D29065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDCA1DB6597700D29065 /* AppDelegate.swift */; };
 		33C9DDCD1DB6597700D29065 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDCC1DB6597700D29065 /* MainViewController.swift */; };
 		33C9DDD01DB6597700D29065 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DDCE1DB6597700D29065 /* Main.storyboard */; };
@@ -126,6 +127,7 @@
 		3363F75A1DC0F5F800F375F3 /* ficoSettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ficoSettingsVC.swift; sourceTree = "<group>"; };
 		3363F75C1DC10C3E00F375F3 /* customColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customColors.swift; sourceTree = "<group>"; };
 		337D04981DBBE338001AAABF /* splashOneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splashOneVC.swift; sourceTree = "<group>"; };
+		3382AFD61DD4C6110078E8C8 /* servicingSettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = servicingSettingsVC.swift; sourceTree = "<group>"; };
 		33C9DDC71DB6597700D29065 /* AA-tableview-version-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AA-tableview-version-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C9DDCA1DB6597700D29065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33C9DDCC1DB6597700D29065 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -405,6 +407,7 @@
 			isa = PBXGroup;
 			children = (
 				33F3EFC61DBA538B00DFCFF6 /* servicingAlertsVC.swift */,
+				3382AFD61DD4C6110078E8C8 /* servicingSettingsVC.swift */,
 			);
 			name = "ViewControllers - Servicing Alerts";
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3382AFD71DD4C6110078E8C8 /* servicingSettingsVC.swift in Sources */,
 				3363F7551DBFE5B900F375F3 /* UIViewControllerBaseClass.swift in Sources */,
 				33F3EFC71DBA538B00DFCFF6 /* servicingAlertsVC.swift in Sources */,
 				330632BF1DC3A0DA004ADEB7 /* splashFourVC.swift in Sources */,

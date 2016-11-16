@@ -17,7 +17,26 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
     @IBOutlet weak var tableView: UITableView!
 
     var selectedIndexPath:IndexPath? = nil
+    
+    var isFirstTimeLoading: Bool = true
+    var maxHeight:CGFloat!
+    var minHeight:CGFloat!
+    
+    var row0Min:CGFloat = 50
+    var row0Max:CGFloat = 273
+    var row1Min:CGFloat = 50
+    var row1Max:CGFloat = 120
+    var row2Min:CGFloat = 50
+    var row2Max:CGFloat = 50
+    var row3Min:CGFloat = 50
+    var row3Max:CGFloat = 140
+    var row4Min:CGFloat = 50
+    var row4Max:CGFloat = 384
 
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,6 +63,10 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
         return 5
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == 0 {
@@ -56,9 +79,6 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellRelationship") as! relationshipUITableViewCell
             return cell
         } else if indexPath.row == 3 {
-//            
-//            let myButton = pillLightUIButton(coder: classForCoder)
-//            myButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
             
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellCitizen") as! citizenUITableViewCell
@@ -84,68 +104,64 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
         performSegue(withIdentifier: "countriesListSegue", sender: self)
 
     }
-    
-//    func showAlertForRow(_ row: Int) {
-//        let alert = UIAlertController(
-//            title: "BEHOLD",
-//            message: "Cell at row \(row) was tapped!",
-//            preferredStyle: .alert)
-//        alert.addAction(UIAlertAction(title: "Gotcha!", style: UIAlertActionStyle.default, handler: { (test) -> Void in
-//            self.dismiss(animated: true, completion: nil)
-//        }))
-//        
-//        self.present(
-//            alert,
-//            animated: true,
-//            completion: nil)
-//    }
+
     
     
     
     
-    
+    // HEIGHT
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+
+      
+        let indexVal:Int = indexPath.row
+
         
-        let index = indexPath
-        var maxHeight:CGFloat!
-        
-        
-        
-        switch index.row {
-        case 0:
-            maxHeight = 273
-            break
-        case 1:
-            maxHeight = 120
-            break
-        case 2:
-            maxHeight = 50
-            break
-        case 3:
-            maxHeight = 140
-            break
-        case 4:
-            maxHeight = 384
-            break
-        default:
-            maxHeight = 50
-            break
+        switch indexVal {
+            case 0:
+                    minHeight = row0Min
+                    maxHeight = row0Max
+                
+            case 1:
+                    minHeight = row1Min
+                    maxHeight = row1Max
+                
+            case 2:
+                    minHeight = row2Min
+                    maxHeight = row2Max
+                
+            case 3:
+                    minHeight = row3Min
+                    maxHeight = row3Max
+                
+            case 4:
+                    minHeight = row4Min
+                    maxHeight = row4Max
+                
+            default: break
         }
         
+
+        
         if selectedIndexPath != nil {
-            if index == selectedIndexPath {
+            if indexPath == selectedIndexPath {
                 return maxHeight
             } else {
-                return 50
+                
+                return minHeight
             }
             
         } else {
-            return 50
+            return minHeight
         }
         
         
     }
+    
+    
+    
+    
+    // SELECTED ROW
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
@@ -168,7 +184,77 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
 //            performSegue(withIdentifier: "countriesListSegue", sender: self)
         }
         
+        
+        
+
+            
+        switch indexPath.row {
+            case 0:
+                let cell = tableView.cellForRow(at: indexPath) as! fullNameUITableViewCell
+                if cell.cellLabel.text == "" {
+                    row0Min = 50
+                    row0Max = 273
+                } else {
+                    cell.cellLabel.isHidden = false
+                    row0Min = 100
+                    row0Max = 343
+                }
+                
+            case 1:
+                let cell = tableView.cellForRow(at: indexPath) as! dobUITableViewCell
+                if cell.cellLabel.text == "" {
+                    row1Min = 50
+                    row1Max = 120
+                } else {
+                    cell.cellLabel.isHidden = false
+                    row1Min = 100
+                    row1Max = 170
+                }
+                
+            case 2:
+                let cell = tableView.cellForRow(at: indexPath) as! relationshipUITableViewCell
+                if cell.cellLabel.text == "" {
+                    row2Min = 50
+                    row2Max = 50
+                } else {
+                    cell.cellLabel.isHidden = false
+                    row2Min = 100
+                    row2Max = 100
+                }
+                
+            case 3:
+                let cell = tableView.cellForRow(at: indexPath) as! citizenUITableViewCell
+                if cell.cellLabel.text == "" {
+                    row3Min = 50
+                    row3Max = 140
+                } else {
+                    cell.cellLabel.isHidden = false
+                    row3Min = 100
+                    row3Max = 240
+                }
+                
+            case 4:
+                let cell = tableView.cellForRow(at: indexPath) as! addressUITableViewCell
+                if cell.cellLabel.text == "" {
+                    row4Min = 50
+                    row4Max = 384
+                } else {
+                    cell.cellLabel.isHidden = false
+                    row4Min = 100
+                    row4Max = 434
+                }
+                
+            default: break
+        }
+        
+        
+        
+        
+        
+        self.isFirstTimeLoading = false
+    
         tableView.reloadRows(at: [indexPath], with: .automatic)
+       
         
 
     }
@@ -183,6 +269,7 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
 //        navigationItem.backBarButtonItem = backItem
 //        
 //    }
+    
     
     
     override func didChange(_ changeKind: NSKeyValueChange, valuesAt indexes: IndexSet, forKey key: String) {

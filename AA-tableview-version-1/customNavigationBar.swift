@@ -10,18 +10,31 @@ import Foundation
 import UIKit
 
 
-extension UINavigationController {
+//extension UINavigationController {
+//
+//    
+//    public func prepareForDisplay() {
+//        print("CUSTOM NAVIGATION LOADED")
+//        
+//        self.navigationBar.shadowImage = UIImage()
+//        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        self.navigationController?.navigationBar.tintColor = UIColor.aaPrimaryBlue()
+//        
+//        
+//        
+//    }
+//    
+//}
 
-    
-    public func prepareForDisplay() {
-        
-        self.navigationBar.shadowImage = UIImage()
-        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        
-//        self.navigationItem.backBarButtonItem?.title = ""
-//        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
-        
-    }
-    
-}
+
+
+//class customNavigationBar: UINavigationController {
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        
+//        self.navigationBar.shadowImage = UIImage()
+//        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
+//        self.navigationController?.navigationBar.tintColor = UIColor.aaPrimaryBlue()
+//    }
+//}
 

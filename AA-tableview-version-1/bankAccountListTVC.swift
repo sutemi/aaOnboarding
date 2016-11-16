@@ -24,18 +24,27 @@ class bankAccountListTVC: UITableViewController {
         
         whichAccountTableView.tableFooterView = UIView()
         
-        // Set navbar style
-        let navbar = self.navigationController?.navigationBar
-        navbar?.shadowImage = UIImage()
-        navbar?.setBackgroundImage(UIImage(), for: .default)
-//        self.navigationController?.setNavigationBarHidden(false, animated: true)
-        
-        
-    }
+        //--------------------------------------
     
-    override func viewDidAppear(_ animated: Bool) {
-                navigationController?.setNavigationBarHidden(false, animated: false)
+        tableView.setEditing(true, animated: true)
+    
+        //--------------------------------------
+        
+        
+        // Navbar
+        
+        let navitem = self.navigationItem
+        let backItem = navitem.backBarButtonItem
+        backItem?.title = ""
+        backItem?.tintColor = UIColor.aaPrimaryBlue()
+        
+        //-----------
+
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        
+        
     }
+
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -50,21 +59,17 @@ class bankAccountListTVC: UITableViewController {
         switch selectedIndexPath {
         case nil:
             selectedIndexPath = indexPath
+            
         default:
             if selectedIndexPath! == indexPath {
                 selectedIndexPath = nil
+                
             } else {
+                self.whichAccountTableView.deselectRow(at: selectedIndexPath!, animated: true)
                 selectedIndexPath = indexPath
             }
         }
-        
-        //        if let cell = tableView.cellForRow(at: indexPath) {
-        //            cell.accessoryType = .checkmark
-        //        }
-        
-//        if selectedIndexPath?.row == 2 {
-//            performSegue(withIdentifier: "makeNewAccountSegue", sender: self)
-//        }
+
         
     }
     
@@ -79,6 +84,11 @@ class bankAccountListTVC: UITableViewController {
         
     }
     
+
+    
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return UITableViewCellEditingStyle(rawValue: 3)!
+    }
     
     
     

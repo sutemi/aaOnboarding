@@ -32,11 +32,34 @@ class countriesListTVC: UITableViewController, UISearchBarDelegate {
     var shouldShowSearchResults = false
     
     
+    @IBOutlet var countriesTableView: UITableView!
+    var selectedIndexPath:IndexPath? = nil
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        // Navbar
+        
+        let navitem = self.navigationItem
+        let backItem = navitem.backBarButtonItem
+        backItem?.title = ""
+        backItem?.tintColor = UIColor.aaPrimaryBlue()
+        
+        //-----------
+        
+        
         createSearchBar()
         
+        
+        //--------------------------------------
+        
+        tableView.setEditing(true, animated: true)
+        
+        //--------------------------------------
+        
+        navigationController?.setNavigationBarHidden(false, animated: true)
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -46,11 +69,11 @@ class countriesListTVC: UITableViewController, UISearchBarDelegate {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
+//        self.navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
+
     }
     
     
@@ -126,8 +149,30 @@ class countriesListTVC: UITableViewController, UISearchBarDelegate {
         
         return cell
     }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        switch selectedIndexPath {
+        case nil:
+            selectedIndexPath = indexPath
+            
+        default:
+            if selectedIndexPath! == indexPath {
+                selectedIndexPath = nil
+                
+            } else {
+                self.countriesTableView.deselectRow(at: selectedIndexPath!, animated: true)
+                selectedIndexPath = indexPath
+            }
+        }
+    }
 
 
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return UITableViewCellEditingStyle(rawValue: 3)!
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

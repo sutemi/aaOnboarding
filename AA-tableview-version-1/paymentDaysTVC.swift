@@ -23,17 +23,33 @@ class paymentDaysTVC: UITableViewController {
         
         daysTableView.tableFooterView = UIView()
         
-        // Set navbar style
-        let navbar = self.navigationController?.navigationBar
-        navbar?.shadowImage = UIImage()
-        navbar?.setBackgroundImage(UIImage(), for: .default)
-        //        self.navigationController?.setNavigationBarHidden(false, animated: true)
-
         
+        //--------------------------------------
+    
+        tableView.setEditing(true, animated: true)
+    
+        //--------------------------------------
+        
+        
+        
+        // Navbar
+        
+        let navitem = self.navigationItem
+        let backItem = navitem.backBarButtonItem
+        backItem?.title = ""
+        backItem?.tintColor = UIColor.aaPrimaryBlue()
+        
+        //-----------
+        
+        
+        
+        
+        navigationController?.setNavigationBarHidden(false, animated: true)
+
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(false, animated: false)
+       
     }
     
     
@@ -41,10 +57,7 @@ class paymentDaysTVC: UITableViewController {
         return 8
     }
     
-    
-    
 
-    
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -55,6 +68,33 @@ class paymentDaysTVC: UITableViewController {
         navigationItem.backBarButtonItem = backItem
         
     }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        switch selectedIndexPath {
+        case nil:
+            selectedIndexPath = indexPath
+            
+        default:
+            if selectedIndexPath! == indexPath {
+                selectedIndexPath = nil
+                
+            } else {
+                self.daysTableView.deselectRow(at: selectedIndexPath!, animated: true)
+                selectedIndexPath = indexPath
+            }
+        }
+        
+    }
+    
+
+    
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return UITableViewCellEditingStyle(rawValue: 3)!
+    }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

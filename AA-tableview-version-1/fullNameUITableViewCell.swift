@@ -12,6 +12,7 @@ class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
 
     
     @IBOutlet weak var cellLabel: UILabel!
+    
     @IBOutlet weak var firstNameField: formUITextField!
     @IBOutlet weak var miField: formUITextField!
     @IBOutlet weak var lastNameField: formUITextField!
@@ -89,7 +90,7 @@ class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
 //        var fullNameArray = [String]()
 //        fullNameArray.
         
-        if firstNameField.text != "" && lastNameField.text != "" {
+        if firstNameField.text != "" || lastNameField.text != "" {
 //            self.isComplete = true
             
             

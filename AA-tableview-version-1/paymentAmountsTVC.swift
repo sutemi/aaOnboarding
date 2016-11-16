@@ -25,19 +25,33 @@ class paymentAmountsTVC: UITableViewController {
         
         pmtChoicesTableView.tableFooterView = UIView()
         
-        // Set navbar style
-        let navbar = self.navigationController?.navigationBar
-        navbar?.shadowImage = UIImage()
-        navbar?.setBackgroundImage(UIImage(), for: .default)
-        //        self.navigationController?.setNavigationBarHidden(false, animated: true)
         
+        //--------------------------------------
+    
+        tableView.setEditing(true, animated: true)
+    
+        //--------------------------------------
+        
+        
+
+        // Navbar
+        
+        let navitem = self.navigationItem
+        let backItem = navitem.backBarButtonItem
+        backItem?.title = ""
+        backItem?.tintColor = UIColor.aaPrimaryBlue()
+        
+        //-----------
+        
+        
+
+        navigationController?.setNavigationBarHidden(false, animated: true)
         
         otherAmountField.keyboardType = UIKeyboardType.numberPad
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
     
@@ -53,10 +67,13 @@ class paymentAmountsTVC: UITableViewController {
         switch selectedIndexPath {
         case nil:
             selectedIndexPath = indexPath
+            
         default:
             if selectedIndexPath! == indexPath {
                 selectedIndexPath = nil
+                
             } else {
+                self.pmtChoicesTableView.deselectRow(at: selectedIndexPath!, animated: true)
                 selectedIndexPath = indexPath
             }
         }
@@ -78,7 +95,22 @@ class paymentAmountsTVC: UITableViewController {
         navigationItem.backBarButtonItem = backItem
         
     }
+    
+    
 
+
+    
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        if indexPath.row == 0 || indexPath.row == 1 {
+            return UITableViewCellEditingStyle(rawValue: 3)!
+        }
+        
+        return .none
+        
+        
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

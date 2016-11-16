@@ -16,14 +16,24 @@ class relationshipUITableViewController: UITableViewController {
     
     var selectedIndexPath:IndexPath? = nil
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         
         relationTableView.tableFooterView = UIView()
         
         
+        // Navbar
+        
+        let navitem = self.navigationItem
+        let backItem = navitem.backBarButtonItem
+        backItem?.title = ""
+        backItem?.tintColor = UIColor.aaPrimaryBlue()
+        
+        //-----------
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
         
         
         //--------------------------------------
@@ -35,32 +45,31 @@ class relationshipUITableViewController: UITableViewController {
         
     }
     
+    
+    override func viewWillAppear(_ animated: Bool) {
+    }
+    
+    
     override func viewDidAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-//        print("SELECTION MADE...")
-//        print("PREVIOUSLY SELECTED: \(selectedIndexPath)")
+
         switch selectedIndexPath {
             case nil:
                 selectedIndexPath = indexPath
             
             default:
                 if selectedIndexPath! == indexPath {
-//                    self.relationTableView.deselectRow(at: selectedIndexPath!, animated: true)
                     selectedIndexPath = nil
                     
                 } else {
                     self.relationTableView.deselectRow(at: selectedIndexPath!, animated: true)
                     selectedIndexPath = indexPath
                 }
-            }
-        
-        
+        }
  
     }
         

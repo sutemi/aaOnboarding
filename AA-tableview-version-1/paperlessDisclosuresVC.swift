@@ -9,14 +9,27 @@
 import UIKit
 
 class paperlessDisclosuresVC: UIViewController {
+    
+
+    @IBOutlet weak var textView: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         
         
+        // Navbar
         
+        let navitem = self.navigationItem
+        let backItem = navitem.backBarButtonItem
+        backItem?.title = ""
+        backItem?.tintColor = UIColor.aaPrimaryBlue()
+        
+        //-----------
+        
+        
+        navigationController?.setNavigationBarHidden(false, animated: true)
+
         
     }
 
@@ -26,10 +39,15 @@ class paperlessDisclosuresVC: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        textView.setContentOffset(CGPoint.zero, animated: false)
+    }
+    
+    
     /*
     // MARK: - Navigation
 

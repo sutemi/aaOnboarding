@@ -29,12 +29,21 @@ class newAccountDetailsVC: UIViewController, UITableViewDataSource, UITableViewD
         
         tableView.tableFooterView = UIView()
         
-        // Set navbar style
-        let navbar = self.navigationController?.navigationBar
-        navbar?.shadowImage = UIImage()
-        navbar?.setBackgroundImage(UIImage(), for: .default)
+
         
-        navigationController?.setNavigationBarHidden(false, animated: false)
+        // Navbar
+        
+        let navitem = self.navigationItem
+        let backItem = navitem.backBarButtonItem
+        backItem?.title = ""
+        backItem?.tintColor = UIColor.aaPrimaryBlue()
+        
+        //-----------
+        
+        
+        
+        
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
     
@@ -142,12 +151,12 @@ class newAccountDetailsVC: UIViewController, UITableViewDataSource, UITableViewD
     
     
     override func viewDidDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.setNavigationBarHidden(false, animated: true)
-        
-        let backItem = UIBarButtonItem()
-        backItem.title = ""
-        navigationItem.backBarButtonItem = backItem
+//        super.viewWillDisappear(animated)
+//        navigationController?.setNavigationBarHidden(false, animated: true)
+//        
+//        let backItem = UIBarButtonItem()
+//        backItem.title = ""
+//        navigationItem.backBarButtonItem = backItem
         
     }
 
