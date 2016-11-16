@@ -13,6 +13,7 @@ import UIKit
 class citizenUITableViewCell: UITableViewCell {
 
    var tapAction: ((UITableViewCell) -> Void)?
+    @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
     
 
     @IBOutlet weak var cellLabel: UILabel!
@@ -49,11 +50,11 @@ class citizenUITableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-        if cellLabel.text == "" {
-            cellLabel.isHidden = true
-        } else {
-            cellLabel.isHidden = false
-        }
+//        if cellLabel.text == "" {
+//            cellLabel.isHidden = true
+//        } else {
+//            cellLabel.isHidden = false
+//        }
     }
 
 

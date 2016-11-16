@@ -9,11 +9,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellRelationship" rowHeight="50" id="KGk-i7-Jjw" customClass="relationshipUITableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="cellRelationship" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellRelationship" rowHeight="50" id="KGk-i7-Jjw" customClass="relationshipUITableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="89"/>
+                <frame key="frameInset" width="320" height="119.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relationship to cardmember" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyj-EO-tZG">
@@ -26,6 +26,9 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Eh-gf-YGY" userLabel="relationshipLabel">
+                        <constraints>
+                            <constraint firstAttribute="height" id="wpF-Ho-XaJ"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -42,6 +45,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="cellLabel" destination="5Eh-gf-YGY" id="7A0-CC-BOq"/>
+                <outlet property="cellLabelHeight" destination="wpF-Ho-XaJ" id="Mvw-nz-bqw"/>
             </connections>
             <point key="canvasLocation" x="34" y="122"/>
         </tableViewCell>

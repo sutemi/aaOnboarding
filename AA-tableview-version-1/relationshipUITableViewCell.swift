@@ -12,6 +12,7 @@ class relationshipUITableViewCell: UITableViewCell {
 
     
     @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,11 +25,12 @@ class relationshipUITableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-        if cellLabel.text == "" {
-            cellLabel.isHidden = true
-        } else {
-            cellLabel.isHidden = false
-        }
+//        if cellLabel.text == "" {
+//            cellLabel.isHidden = true
+//        } else {
+//            cellLabel.isHidden = false
+//        }
     }
+
     
 }

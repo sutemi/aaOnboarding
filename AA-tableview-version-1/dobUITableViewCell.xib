@@ -9,13 +9,21 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellDOB" rowHeight="125" id="KGk-i7-Jjw" customClass="dobUITableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="125"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="cellDOB" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellDOB" rowHeight="125" id="KGk-i7-Jjw" customClass="dobUITableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <frame key="frameInset" width="320" height="124"/>
+                <frame key="frameInset" width="320" height="149"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="cellLabel" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bva-gm-Kkg" userLabel="dobLabel">
+                        <constraints>
+                            <constraint firstAttribute="height" id="Ih3-Ia-BiQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="mm/dd/yyyy" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x8O-bM-Wbt" customClass="formUITextField" customModule="AA_tableview_version_1" customModuleProvider="target">
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="9HK-5E-biG"/>
@@ -24,11 +32,6 @@
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bva-gm-Kkg" userLabel="dobLabel">
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date of birth" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELy-Lf-OTN">
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -53,6 +56,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="cellLabel" destination="Bva-gm-Kkg" id="8FX-Fq-slP"/>
+                <outlet property="cellLabelHeight" destination="Ih3-Ia-BiQ" id="LeH-3u-6EE"/>
                 <outlet property="dobField" destination="x8O-bM-Wbt" id="FaF-sk-FgB"/>
             </connections>
             <point key="canvasLocation" x="92" y="94.5"/>

@@ -13,6 +13,8 @@ class dobUITableViewCell: UITableViewCell {
     
 
     @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
+    
 
     @IBOutlet weak var dobField: formUITextField!
     
@@ -33,30 +35,21 @@ class dobUITableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-        if cellLabel.text == "" {
-            cellLabel.isHidden = true
-        } else {
-            cellLabel.isHidden = false
-        }
+//        if cellLabel.text == "" {
+//            cellLabel.isHidden = true
+//        } else {
+//            cellLabel.isHidden = false
+//        }
     }
     
     
     func textFieldDidChange(sender:formUITextField) {
-        
-        switch sender {
-        case dobField:
-            print("editing: firstNameField")
-            break
-        default:
-            break
-        }
-        
-        
-        
         if dobField.text != "" {
-            //            self.isComplete = true
+            let labelText = "\(dobField.text!)"
+            cellLabel.text = labelText
+        } else {
+            cellLabel.text = ""
         }
-        
     }
     
     

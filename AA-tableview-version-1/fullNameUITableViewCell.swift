@@ -11,6 +11,7 @@ import UIKit
 class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
 
     
+    @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
     @IBOutlet weak var cellLabel: UILabel!
     
     @IBOutlet weak var firstNameField: formUITextField!
@@ -27,7 +28,7 @@ class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
         super.awakeFromNib()
         // Initialization code
 
-        cellLabel.setLineSpacing(sender: self.cellLabel, amt: 4.0, align: "left")
+//        cellLabel.setLineSpacing(sender: self.cellLabel, amt: 4.0, align: "left")
         
         firstNameField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
         
@@ -45,12 +46,6 @@ class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
-//        if nameLabel.text == "" {
-//            nameLabel.isHidden = true
-//        } else {
-//            nameLabel.isHidden = false
-//        }
     }
     
     
@@ -70,39 +65,30 @@ class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
     
     func textFieldDidChange(sender:formUITextField) {
         
-        switch sender {
-        case firstNameField:
-            print("entry: \(firstNameField.text!)")
-            break
-        case miField:
-            print("entry: \(miField.text!)")
-            break
-        case lastNameField:
-            print("entry: \(lastNameField.text!)")
-            break
-        case suffixField:
-            print("entry: \(suffixField.text!)")
-            break
-        default:
-            break
-        }
+//        switch sender {
+//        case firstNameField:
+//            print("entry: \(firstNameField.text!)")
+//            break
+//        case miField:
+//            print("entry: \(miField.text!)")
+//            break
+//        case lastNameField:
+//            print("entry: \(lastNameField.text!)")
+//            break
+//        case suffixField:
+//            print("entry: \(suffixField.text!)")
+//            break
+//        default:
+//            break
+//        }
         
-//        var fullNameArray = [String]()
-//        fullNameArray.
         
         if firstNameField.text != "" || lastNameField.text != "" {
-//            self.isComplete = true
-            
-            
-            cellLabel.isHidden = false
-            
-            let labelText = "\(firstNameField.text!) \(miField.text) \(lastNameField.text!) \(suffixField.text)"
+            let labelText = "\(firstNameField.text!) \(miField.text!) \(lastNameField.text!) \(suffixField.text!)"
             cellLabel.text = labelText
         } else {
-            cellLabel.isHidden = true
+            cellLabel.text = ""
         }
-
-
     }
     
     
