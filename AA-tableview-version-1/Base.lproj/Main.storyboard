@@ -7,17 +7,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="AmericanSans-Bold.ttf">
-            <string>AmericanSans-Bold</string>
-        </array>
-        <array key="AmericanSans-Book.ttf">
-            <string>AmericanSansBook</string>
-        </array>
         <array key="AmericanSans-BookItalic.ttf">
             <string>AmericanSansBook-Italic</string>
         </array>
         <array key="AmericanSans-Italic.ttf">
             <string>AmericanSans-Italic</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </array>
+        <array key="barclaycardco_rg-webfont.ttf">
+            <string>BarclaycardCo-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -59,7 +59,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="nx2-Pc-VcY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="nx2-Pc-VcY">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="7WO-Av-4Z8"/>
                                     <constraint firstAttribute="width" constant="185" id="Ae9-mw-88U"/>
@@ -74,7 +74,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kx8-CH-IKW">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FINISH CONFIGURING YOUR ACCOUNT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzc-dm-LTu">
-                                        <fontDescription key="fontDescription" name="AmericanSans-Bold" family="AmericanSans" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="16"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -90,7 +90,7 @@
                                             <constraint firstAttribute="width" constant="290" id="hIr-Dq-Uuv"/>
                                         </constraints>
                                         <string key="text">Complete your profile by configuring your alert notifications, adding authorized users, setting up repeat payments, and much more.</string>
-                                        <fontDescription key="fontDescription" name="AmericanSansBook" family="AmericanSans Book" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -100,7 +100,7 @@
                                             <constraint firstAttribute="width" constant="285" id="OTV-kF-Pzo"/>
                                             <constraint firstAttribute="height" constant="65" id="iqx-e5-ybD"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanSans-Bold" family="AmericanSans" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                                         <state key="normal" title="Continue"/>
                                         <connections>
                                             <action selector="nextClickedWithSender:" destination="WfT-PH-6kw" eventType="touchUpInside" id="6lm-rg-Mrm"/>
@@ -153,7 +153,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="QQ4-D2-6Bz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="QQ4-D2-6Bz">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="Ql2-Hz-8JB"/>
                                     <constraint firstAttribute="width" constant="185" id="ddd-Qz-EU7"/>
@@ -168,7 +168,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5uk-MP-zEm">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD AN AUTHORIZED USER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeZ-li-ACf">
-                                        <fontDescription key="fontDescription" name="AmericanSans-Bold" family="AmericanSans" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="16"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -183,7 +183,7 @@
                                             <constraint firstAttribute="width" constant="290" id="V0U-uG-u1X"/>
                                             <constraint firstAttribute="height" constant="43" id="mKt-gt-OF3"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanSansBook" family="AmericanSans Book" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -196,7 +196,7 @@
                                             <constraint firstAttribute="height" constant="65" id="q1T-yj-lEp"/>
                                             <constraint firstAttribute="width" constant="285" id="xpG-hw-rUh"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanSans-Bold" family="AmericanSans" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                                         <state key="normal" title="Add an authorized user"/>
                                         <connections>
                                             <segue destination="PQB-yL-bVW" kind="show" id="hln-FY-Q0Y"/>
@@ -251,7 +251,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Heq-tO-9u8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Heq-tO-9u8">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="9ZN-MY-UaG"/>
                                     <constraint firstAttribute="width" constant="185" id="bSo-2P-ljy"/>
@@ -272,7 +272,7 @@
                                                     <constraint firstAttribute="width" constant="250" id="Fex-2o-aI9"/>
                                                     <constraint firstAttribute="height" constant="20" id="QWd-0o-UGI"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="17"/>
                                                 <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -281,14 +281,14 @@
                                                     <constraint firstAttribute="width" constant="290" id="5aC-p4-z8L"/>
                                                     <constraint firstAttribute="height" constant="43" id="Lyq-dc-yxl"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                                 <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ECV-nU-6AI" userLabel="Why Stack View">
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHY DO WE NEED THIS INFORMATION?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmK-I6-JDx">
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
                                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -390,7 +390,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="P4H-46-zVJ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -444,10 +444,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Spouse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkY-wM-6Cn">
-                                                    <frame key="frameInset" minX="40" minY="18.5" width="44.5" height="14"/>
+                                                    <frame key="frameInset" minX="40" minY="19" width="65" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="AmericanSansBook" family="AmericanSans Book" pointSize="14"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                                    <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -465,8 +465,8 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Child" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LzI-Mo-GXK">
                                                     <frame key="frameInset" minX="40" minY="18.5" width="44.5" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="AmericanSansBook" family="AmericanSans Book" pointSize="14"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                                    <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -484,8 +484,8 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIM-lf-Rmx">
                                                     <frame key="frameInset" minX="40" minY="18.5" width="44.5" height="14"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="AmericanSansBook" family="AmericanSans Book" pointSize="14"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
+                                                    <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -509,7 +509,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zhf-IE-I3l" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ZtD-v5-ehG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5006" y="-1117"/>
+            <point key="canvasLocation" x="5005.6000000000004" y="-1117.6911544227887"/>
         </scene>
         <!--Countries ListTVC-->
         <scene sceneID="sXu-pU-JdZ">
@@ -563,7 +563,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="NzA-9A-mre">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="NzA-9A-mre">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="5ak-8A-Ne1"/>
                                     <constraint firstAttribute="height" constant="64" id="J04-gF-KcY"/>
@@ -578,7 +578,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNs-C3-XWV">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCHEDULE REPEAT PAYMENTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxZ-zs-jiP">
-                                        <fontDescription key="fontDescription" name="AmericanSans-Bold" family="AmericanSans" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="16"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -593,7 +593,7 @@
                                             <constraint firstAttribute="width" constant="300" id="Fq6-Cf-QLp"/>
                                             <constraint firstAttribute="height" constant="43" id="oFz-AM-8Of"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanSansBook" family="AmericanSans Book" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -606,7 +606,7 @@
                                             <constraint firstAttribute="height" constant="65" id="HIR-eA-zyH"/>
                                             <constraint firstAttribute="width" constant="285" id="mdb-Ik-hEn"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanSans-Bold" family="AmericanSans" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                                         <state key="normal" title="Schedule repeat payments"/>
                                         <connections>
                                             <segue destination="cS8-2T-eGi" kind="show" id="Fys-95-P5q"/>
@@ -661,7 +661,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="OkP-Qe-GbC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="OkP-Qe-GbC">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="CKN-XE-SOP"/>
                                     <constraint firstAttribute="width" constant="185" id="ovW-mB-lFd"/>
@@ -676,7 +676,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IwA-GH-kHP">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FRAUD ALERTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUo-so-oOa">
-                                        <fontDescription key="fontDescription" name="AmericanSans-Bold" family="AmericanSans" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="16"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -691,7 +691,7 @@
                                             <constraint firstAttribute="height" constant="43" id="Fgj-SM-Hz3"/>
                                             <constraint firstAttribute="width" constant="250" id="YGM-xw-QYE"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanSansBook" family="AmericanSans Book" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -704,7 +704,7 @@
                                             <constraint firstAttribute="width" constant="285" id="7qO-eO-WgO"/>
                                             <constraint firstAttribute="height" constant="65" id="T1F-mk-g98"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanSans-Bold" family="AmericanSans" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                                         <state key="normal" title="Set up my fraud alerts"/>
                                         <connections>
                                             <segue destination="QCx-pp-7Li" kind="show" identifier="mobileTextSegue" id="jn8-9f-oPI"/>
@@ -759,7 +759,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="S2k-fy-2lC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="S2k-fy-2lC">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="6Wr-cd-L1G"/>
                                     <constraint firstAttribute="height" constant="64" id="lEg-Hx-AJo"/>
@@ -774,7 +774,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1se-Lb-4Gn">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACCOUNT SERVICING ALERTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMv-pr-Zv3">
-                                        <fontDescription key="fontDescription" name="AmericanSans-Bold" family="AmericanSans" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="16"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -789,7 +789,7 @@
                                             <constraint firstAttribute="width" constant="325" id="qS9-aL-xh6"/>
                                             <constraint firstAttribute="height" constant="43" id="sDE-ci-YJ7"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanSansBook" family="AmericanSans Book" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -802,7 +802,7 @@
                                             <constraint firstAttribute="width" constant="285" id="2Jb-tY-3OO"/>
                                             <constraint firstAttribute="height" constant="65" id="xGL-Db-Htf"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanSans-Bold" family="AmericanSans" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                                         <state key="normal" title="Set up service alerts"/>
                                         <connections>
                                             <segue destination="XND-lv-uC3" kind="show" id="dGE-Bu-XyZ"/>
@@ -857,7 +857,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="hDf-XX-aeG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="hDf-XX-aeG">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="Smd-IC-Int"/>
                                     <constraint firstAttribute="height" constant="64" id="gDo-sa-7d3"/>
@@ -872,7 +872,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0y7-RR-taf">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAPERLESS STATEMENTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qn7-hk-hoY">
-                                        <fontDescription key="fontDescription" name="AmericanSans-Bold" family="AmericanSans" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="16"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -887,7 +887,7 @@
                                             <constraint firstAttribute="height" constant="43" id="Mec-jL-BIw"/>
                                             <constraint firstAttribute="width" constant="250" id="lbX-x3-bRJ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanSansBook" family="AmericanSans Book" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -900,7 +900,7 @@
                                             <constraint firstAttribute="height" constant="65" id="iA6-cH-K7K"/>
                                             <constraint firstAttribute="width" constant="285" id="ojt-WU-LJN"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanSans-Bold" family="AmericanSans" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                                         <state key="normal" title="Enroll in paperless statements"/>
                                         <connections>
                                             <segue destination="lW1-WN-hDG" kind="show" id="Mbb-4t-iqs"/>
@@ -955,7 +955,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="57e-jl-Uqn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="57e-jl-Uqn">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="aq7-Sf-vp1"/>
                                     <constraint firstAttribute="height" constant="64" id="sev-Qy-G2Z"/>
@@ -970,7 +970,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLF-Us-ago">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TouchID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p0L-jM-S37">
-                                        <fontDescription key="fontDescription" name="AmericanSans-Bold" family="AmericanSans" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="16"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -985,7 +985,7 @@
                                             <constraint firstAttribute="height" constant="43" id="89r-QM-jLu"/>
                                             <constraint firstAttribute="width" constant="290" id="ZB3-UB-hhu"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanSansBook" family="AmericanSans Book" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -998,7 +998,7 @@
                                             <constraint firstAttribute="height" constant="65" id="NdH-Rz-eih"/>
                                             <constraint firstAttribute="width" constant="285" id="eCl-HO-K1Z"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanSans-Bold" family="AmericanSans" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                                         <state key="normal" title="Enable TouchID"/>
                                         <connections>
                                             <segue destination="zr2-Ma-Gnu" kind="show" id="uM4-U0-FsZ"/>
@@ -1053,7 +1053,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="qAi-ao-LKK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="qAi-ao-LKK">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="Fb2-Oy-Hh1"/>
                                     <constraint firstAttribute="width" constant="185" id="IaQ-9k-Uyz"/>
@@ -1068,7 +1068,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ycb-Tx-tYq">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KNOW YOUR FICO CREDIT SCORE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtq-K1-xl7">
-                                        <fontDescription key="fontDescription" name="AmericanSans-Bold" family="AmericanSans" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="16"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1080,10 +1080,10 @@
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Free access to your FICO Score anytime – at BarclaycardUS.com or through the Barclaycard Mobile App." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDM-UV-7Dc">
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="260" id="GCm-hZ-lQ4"/>
+                                            <constraint firstAttribute="width" constant="350" id="GCm-hZ-lQ4"/>
                                             <constraint firstAttribute="height" constant="43" id="uBl-Hu-vEV"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanSansBook" family="AmericanSans Book" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1096,7 +1096,7 @@
                                             <constraint firstAttribute="width" constant="285" id="DRm-Qb-6NI"/>
                                             <constraint firstAttribute="height" constant="65" id="Ivu-nK-Ahm"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="AmericanSans-Bold" family="AmericanSans" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="15"/>
                                         <state key="normal" title="View your FICO score"/>
                                         <connections>
                                             <segue destination="Dl0-HR-A09" kind="show" id="mHn-f0-nHE"/>
@@ -1173,7 +1173,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="cSg-90-hga">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="cSg-90-hga">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="5gf-Rm-Usv"/>
                                     <constraint firstAttribute="height" constant="64" id="RIY-Eo-6hO"/>
@@ -1188,7 +1188,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Fq-ZR-TdV">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Excellent!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxZ-GU-AzK">
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="17"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1201,9 +1201,9 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've successfully added an authorized user. To add additional authroized users, visit BarclaycardUS.com" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ga-Ny-Dp7">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="43" id="LHR-5w-xa6"/>
-                                            <constraint firstAttribute="width" constant="250" id="lIq-Xx-j69"/>
+                                            <constraint firstAttribute="width" constant="300" id="lIq-Xx-j69"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1257,7 +1257,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="hcD-Y3-Moo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="hcD-Y3-Moo">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="EXu-mS-duE"/>
                                     <constraint firstAttribute="width" constant="185" id="hJl-rY-2me"/>
@@ -1276,9 +1276,9 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCHEDULE REPEAT PAYMENTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31c-N7-k9M">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="13k-wE-Ny5"/>
-                                                    <constraint firstAttribute="width" constant="250" id="kfD-xJ-ddj"/>
+                                                    <constraint firstAttribute="width" constant="300" id="kfD-xJ-ddj"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="17"/>
                                                 <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1287,7 +1287,7 @@
                                                     <constraint firstAttribute="height" constant="43" id="0fb-M1-Haj"/>
                                                     <constraint firstAttribute="width" constant="325" id="4Jy-Bf-2wg"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                                 <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1362,7 +1362,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="JdG-X4-wd2"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -1439,9 +1439,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bank 1 on file" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="74s-Pb-GNS">
-                                                    <frame key="frameInset" minX="60" minY="17" width="86" height="17"/>
+                                                    <frame key="frameInset" minX="60" minY="17" width="114" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1457,9 +1457,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bank 2 on file" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVl-Mx-w4C">
-                                                    <frame key="frameInset" minX="60" minY="17" width="88" height="17"/>
+                                                    <frame key="frameInset" minX="60" minY="17" width="122" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1475,9 +1475,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add a new bank account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93a-R9-ubW">
-                                                    <frame key="frameInset" minX="60" minY="17" width="159" height="17"/>
+                                                    <frame key="frameInset" minX="60" minY="17" width="199" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1502,7 +1502,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ukr-VF-Jsw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4343" y="552"/>
+            <point key="canvasLocation" x="4341.6000000000004" y="551.87406296851577"/>
         </scene>
         <!--ADD A NEW BANK ACCOUNT-->
         <scene sceneID="bnu-7h-oal">
@@ -1521,7 +1521,7 @@
                                     <constraint firstAttribute="width" constant="325" id="K4g-tT-bxQ"/>
                                     <constraint firstAttribute="height" constant="43" id="PF5-cy-kqQ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                 <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1641,9 +1641,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Personal checking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mY9-dB-aZI">
-                                                    <frame key="frameInset" minX="60" minY="17" width="119" height="17"/>
+                                                    <frame key="frameInset" minX="60" minY="17" width="144" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1659,9 +1659,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Personal savings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txn-yF-XIT">
-                                                    <frame key="frameInset" minX="60" minY="17" width="109" height="17"/>
+                                                    <frame key="frameInset" minX="60" minY="17" width="132" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1679,7 +1679,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Business checking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1u-1x-9zQ">
                                                     <frame key="frameInset" minX="60" minY="17" width="120" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1695,9 +1695,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Business savings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2a-If-RQb">
-                                                    <frame key="frameInset" minX="60" minY="17" width="111" height="17"/>
+                                                    <frame key="frameInset" minX="60" minY="17" width="136" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1713,9 +1713,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Money market" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfL-rO-y2e">
-                                                    <frame key="frameInset" minX="60" minY="17" width="92" height="17"/>
+                                                    <frame key="frameInset" minX="60" minY="17" width="152" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1737,7 +1737,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UTl-rs-UXt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6146" y="552"/>
+            <point key="canvasLocation" x="6144.8000000000002" y="551.87406296851577"/>
         </scene>
         <!--SCHEDULE REPEAT PAYMENTS-->
         <scene sceneID="dg0-bR-PuW">
@@ -1759,9 +1759,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minimum payment due" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bur-Tt-buY">
-                                                    <frame key="frameInset" minX="60" minY="17" width="147" height="17"/>
+                                                    <frame key="frameInset" minX="60" minY="17" width="186" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1777,9 +1777,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Statement balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2I-3S-Bli">
-                                                    <frame key="frameInset" minX="60" minY="17" width="122" height="17"/>
+                                                    <frame key="frameInset" minX="60" minY="17" width="168" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1798,8 +1798,8 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="bnW-MX-Yh7"/>
                                                     </constraints>
-                                                    <nil key="textColor"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
@@ -1850,7 +1850,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The day of your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkV-O2-Hsj">
                                                     <frame key="frameInset" minX="60" minY="17" width="222" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1866,9 +1866,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1 day before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8W-ai-1Mk">
-                                                    <frame key="frameInset" minX="60" minY="17" width="232" height="17"/>
+                                                    <frame key="frameInset" minX="60" minY="17" width="266" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1884,9 +1884,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2 days before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiU-UG-R6L">
-                                                    <frame key="frameInset" minX="60" minY="17" width="241" height="17"/>
+                                                    <frame key="frameInset" minX="60" minY="17" width="273" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1902,9 +1902,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 days before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D29-8S-Z3h">
-                                                    <frame key="frameInset" minX="60" minY="17" width="241" height="17"/>
+                                                    <frame key="frameInset" minX="60" minY="17" width="285" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1920,9 +1920,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4 days before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKL-PZ-hMe">
-                                                    <frame key="frameInset" minX="60" minY="17" width="242" height="17"/>
+                                                    <frame key="frameInset" minX="60" minY="17" width="269" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1938,9 +1938,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5 days before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3M-VW-poA">
-                                                    <frame key="frameInset" minX="60" minY="17" width="241" height="17"/>
+                                                    <frame key="frameInset" minX="60" minY="17" width="271" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1956,9 +1956,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="6 days before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofj-JR-eLt">
-                                                    <frame key="frameInset" minX="60" minY="17" width="242" height="17"/>
+                                                    <frame key="frameInset" minX="60" minY="17" width="270" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1974,9 +1974,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="7 days before your payment due date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FP6-AS-CGk">
-                                                    <frame key="frameInset" minX="60" minY="17" width="241" height="17"/>
+                                                    <frame key="frameInset" minX="60" minY="17" width="267" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1998,7 +1998,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LKH-b8-dvT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5006" y="1532"/>
+            <point key="canvasLocation" x="5005.6000000000004" y="1531.4842578710645"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yLj-4z-xRT">
@@ -2012,7 +2012,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="lYU-jI-bdq">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="lYU-jI-bdq">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="HiG-oT-dY2"/>
                                     <constraint firstAttribute="width" constant="185" id="JWx-6O-cpW"/>
@@ -2031,7 +2031,7 @@
                                             <constraint firstAttribute="width" constant="250" id="RLp-64-3Oj"/>
                                             <constraint firstAttribute="height" constant="20" id="d1A-m2-wyf"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="17"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2040,7 +2040,7 @@
                                             <constraint firstAttribute="width" constant="360" id="t4c-wK-KIS"/>
                                             <constraint firstAttribute="height" constant="43" id="x4b-hM-45l"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2050,13 +2050,15 @@
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="89c-ZG-zuu">
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primary text messaging telephone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZd-22-dyd">
-                                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Primary text messaging telephone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZd-22-dyd">
+                                                                <frame key="frameInset" width="286" height="10"/>
+                                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
                                                                 <color key="textColor" red="0.21176470589999999" green="0.28627450980000002" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000-000-0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9P-on-VVU">
-                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="000-000-0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M9P-on-VVU">
+                                                                <frame key="frameInset" minY="18" width="286" height="20"/>
+                                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                                 <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -2084,12 +2086,12 @@
                                             <constraint firstAttribute="height" constant="80" id="PzE-1I-KKf"/>
                                         </constraints>
                                         <string key="text">By providing your telephone number, you authorize Barclays Bank Deleware (Barclaycard) and its affiliates, agents, and independent contractors, to contact you regarding your accounts. This includes but is not limited to calls placed to your mobile/cell or other phone using an automated dialing service.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
+                                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please note:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abY-LK-ex7">
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.21176470589999999" green="0.28627450980000002" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2098,6 +2100,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="CIq-Do-vTz"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                         <state key="normal" title="Enroll"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="targetIndex">
@@ -2113,8 +2116,8 @@
                                             <constraint firstAttribute="width" constant="335" id="73T-UP-Fhr"/>
                                             <constraint firstAttribute="height" constant="30" id="aYF-mD-B4t"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
+                                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -2171,7 +2174,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="ktN-Df-qy3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="ktN-Df-qy3">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="bV4-D7-oi5"/>
                                     <constraint firstAttribute="height" constant="64" id="wya-jw-soX"/>
@@ -2190,19 +2193,19 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ACCOUNT SERVICING ALERTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oui-wY-8Dp">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="F7x-Ry-mXw"/>
-                                                    <constraint firstAttribute="width" constant="250" id="khz-tA-UfG"/>
+                                                    <constraint firstAttribute="width" constant="300" id="khz-tA-UfG"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="17"/>
                                                 <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7a-TY-Yap">
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="43" id="cpW-LR-Ojv"/>
+                                                    <constraint firstAttribute="height" constant="50" id="cpW-LR-Ojv"/>
                                                     <constraint firstAttribute="width" constant="325" id="v2w-hE-T7s"/>
                                                 </constraints>
                                                 <string key="text">To complete enrollment in text messaging, you must respond to the confirmatino message within 14 days. View the mobile Terms and Conditions for text messaging.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                                 <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -2256,7 +2259,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="5Yp-9g-Mth"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -2312,7 +2315,7 @@
                                     <constraint firstAttribute="width" constant="325" id="3BJ-cC-Gjx"/>
                                     <constraint firstAttribute="height" constant="43" id="j8X-D8-rKH"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                 <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2326,13 +2329,15 @@
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="smr-6e-lRl">
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMp-w1-eCq">
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Text message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMp-w1-eCq">
+                                                <frame key="frameInset" width="276" height="20"/>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                 <color key="textColor" red="0.21176470589999999" green="0.28627450980000002" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000-000-0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNi-Au-z83">
-                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="000-000-0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNi-Au-z83">
+                                                <frame key="frameInset" minY="24" width="276" height="14"/>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -2356,13 +2361,15 @@
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="jlI-0z-8Vl">
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Primary email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7b-4C-snm">
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Primary email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7b-4C-snm">
+                                                <frame key="frameInset" width="276" height="20"/>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                 <color key="textColor" red="0.21176470589999999" green="0.28627450980000002" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="john.doe@email.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neh-Yl-3Em">
-                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="john.doe@email.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neh-Yl-3Em">
+                                                <frame key="frameInset" minY="24" width="276" height="14"/>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -2426,7 +2433,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="jwt-sX-Qn8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="jwt-sX-Qn8">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="3ic-Jf-7L0"/>
                                     <constraint firstAttribute="width" constant="185" id="rWd-jA-PhH"/>
@@ -2445,7 +2452,7 @@
                                             <constraint firstAttribute="width" constant="250" id="9Ne-17-Kwi"/>
                                             <constraint firstAttribute="height" constant="20" id="Pim-ij-by4"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="17"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2454,7 +2461,7 @@
                                             <constraint firstAttribute="width" constant="360" id="Gom-aR-K4B"/>
                                             <constraint firstAttribute="height" constant="43" id="UrR-da-nPc"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2462,7 +2469,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="285" id="7eS-Q4-f3v"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
                                         <color key="textColor" red="0.21176470589999999" green="0.28627450980000002" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2472,7 +2479,7 @@
                                             <constraint firstAttribute="width" constant="325" id="7rU-RZ-oqv"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="30" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XpT-sK-vJ7">
@@ -2480,7 +2487,7 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="s2B-ls-lN4"/>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZg-LM-IKd">
                                                 <string key="text">Yes. I want to receive Paperless Statements. I acknowledge I will not receive a paper statement by U.S. Mail and I agree to receive my statement online only.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -2495,7 +2502,7 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="AlQ-aR-FA8"/>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nga-P3-nqa">
                                                 <string key="text">I have read and understand the disclosures and agree that my computer has the hardware and software capable of viewing, printing and saving my monthly statement as described in the disclosures.</string>
-                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -2506,6 +2513,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyD-Dq-4JG">
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                         <state key="normal" title="View disclosures">
                                             <color key="titleColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -2513,11 +2521,11 @@
                                             <segue destination="Zbg-eg-Vzv" kind="show" id="P5N-EM-gFY"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXa-0T-PsQ" customClass="btnBottomUIButton" customModule="AA_tableview_version_1" customModuleProvider="target">
-                                        <frame key="frameInset" minY="452" width="375" height="78"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXa-0T-PsQ" customClass="btnBottomUIButton" customModule="AA_tableview_version_1" customModuleProvider="target">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="75" id="r1C-y4-qZh"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                         <state key="normal" title="Enroll"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="targetIndex">
@@ -2592,7 +2600,7 @@ You have the right to receive paper statements and can cancel your enrollment in
 
 It is important to update your email address when it changes, so we can notify you in a timely manner when your statement is available to view on the website. You can update your email address in the Alerts/Profile section. If our attempts to notify you via email are unsuccessful for two consecutive months, we will resume mailing your statement.</string>
                                 <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                             </textView>
@@ -2645,7 +2653,7 @@ It is important to update your email address when it changes, so we can notify y
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="999-JJ-XZr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="999-JJ-XZr">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="PHw-7K-g20"/>
                                     <constraint firstAttribute="width" constant="185" id="ywA-MU-GMn"/>
@@ -2664,7 +2672,7 @@ It is important to update your email address when it changes, so we can notify y
                                             <constraint firstAttribute="height" constant="20" id="8s9-Ie-KsH"/>
                                             <constraint firstAttribute="width" constant="250" id="OSX-ly-Sr1"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="17"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2673,7 +2681,7 @@ It is important to update your email address when it changes, so we can notify y
                                             <constraint firstAttribute="height" constant="43" id="9fU-aP-mRi"/>
                                             <constraint firstAttribute="width" constant="360" id="hda-JP-drD"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2683,19 +2691,21 @@ It is important to update your email address when it changes, so we can notify y
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vGe-vq-g9p">
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggf-g1-uSq">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ggf-g1-uSq">
+                                                                <frame key="frameInset" minX="20" width="295" height="10"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="295" id="T2y-rB-P2v"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
                                                                 <color key="textColor" red="0.21176470589999999" green="0.28627450980000002" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jmoo*****" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Gr-dS-hyO">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="jmoo*****" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Gr-dS-hyO">
+                                                                <frame key="frameInset" minX="20" minY="18" width="295" height="20"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="295" id="rQK-A3-8Tv"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                                                 <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -2720,7 +2730,7 @@ It is important to update your email address when it changes, so we can notify y
                                         <constraints>
                                             <constraint firstAttribute="width" constant="285" id="YBA-SX-DVq"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
                                         <color key="textColor" red="0.21176470589999999" green="0.28627450980000002" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -2729,14 +2739,15 @@ It is important to update your email address when it changes, so we can notify y
                                             <constraint firstAttribute="width" constant="325" id="2yq-QW-Q0q"/>
                                             <constraint firstAttribute="height" constant="50" id="VuW-PF-ZUf"/>
                                         </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3g-z7-KTn" customClass="btnBottomUIButton" customModule="AA_tableview_version_1" customModuleProvider="target">
                                         <constraints>
                                             <constraint firstAttribute="height" constant="78" id="JbH-1h-qXm"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="17"/>
                                         <state key="normal" title="Enable"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="targetIndex">
@@ -2819,7 +2830,7 @@ It is important to update your email address when it changes, so we can notify y
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="uWP-9n-ac0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="uWP-9n-ac0">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="VLt-Nm-4SX"/>
                                     <constraint firstAttribute="width" constant="185" id="aCk-Ah-66t"/>
@@ -2847,10 +2858,10 @@ It is important to update your email address when it changes, so we can notify y
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KNOW YOUR FICO CREDIT SCORE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEG-be-OuG">
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="267" id="CXh-iD-QQZ"/>
+                                                    <constraint firstAttribute="width" constant="300" id="CXh-iD-QQZ"/>
                                                     <constraint firstAttribute="height" constant="20.5" id="Qle-7H-Euz"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="AmericanSans-Bold" family="AmericanSans" pointSize="16"/>
+                                                <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="17"/>
                                                 <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -2866,7 +2877,7 @@ It is important to update your email address when it changes, so we can notify y
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Access your FICO® Score anytime - online or through our mobile app." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhK-FR-LfJ">
                                                                 <fontDescription key="fontDescription" name="AmericanSansBook-Italic" family="AmericanSans Book" pointSize="12"/>
-                                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -2881,7 +2892,7 @@ It is important to update your email address when it changes, so we can notify y
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Key factors that explain what is impacting your FICO® Score" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHi-cT-c6p">
                                                                 <fontDescription key="fontDescription" name="AmericanSans-Italic" family="AmericanSans" pointSize="12"/>
-                                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -2896,7 +2907,7 @@ It is important to update your email address when it changes, so we can notify y
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A chart tracking your recent FICO® Scores over time (up to 12 months)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Stb-So-GJn">
                                                                 <fontDescription key="fontDescription" name="AmericanSans-Italic" family="AmericanSans" pointSize="12"/>
-                                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -2911,7 +2922,7 @@ It is important to update your email address when it changes, so we can notify y
                                                             </imageView>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An email alert anytime we learn your FICO® Score has changed" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="64z-Mm-PoE">
                                                                 <fontDescription key="fontDescription" name="AmericanSans-Italic" family="AmericanSans" pointSize="12"/>
-                                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
@@ -2926,7 +2937,7 @@ It is important to update your email address when it changes, so we can notify y
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="325" id="ABY-tb-0EB"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="AmericanSansBook" family="AmericanSans Book" pointSize="12"/>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                                 <color key="textColor" red="0.21176470589999999" green="0.28627450980000002" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -2934,7 +2945,7 @@ It is important to update your email address when it changes, so we can notify y
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="325" id="yj6-GS-pje"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="AmericanSansBook" family="AmericanSans Book" pointSize="12"/>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                                 <color key="textColor" red="0.21176470589999999" green="0.28627450980000002" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -2942,7 +2953,7 @@ It is important to update your email address when it changes, so we can notify y
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="325" id="sUI-Z4-dth"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="AmericanSansBook" family="AmericanSans Book" pointSize="12"/>
+                                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                                 <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -2953,12 +2964,14 @@ It is important to update your email address when it changes, so we can notify y
                                                     <constraint firstAttribute="height" constant="1" id="xkA-aA-4DK"/>
                                                 </constraints>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r18-W8-zEP">
-                                                <frame key="frameInset" minY="515" width="335" height="900"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r18-W8-zEP">
+                                                <frame key="frameInset" minX="5" minY="525.5" width="325" height="1250"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="325" id="qHI-nx-Zvp"/>
+                                                </constraints>
                                                 <attributedString key="attributedText">
                                                     <fragment>
-                                                        <string key="content">By accessing your FICO® Score through this program you are subject to the following Terms of Use. The information provided is intended for the primary cardmember only and is offered solely for their own non-commercial, personal review, use and benefit. You (the primary cardmember) understand that if you give anyone else online access to your Barclaycard account(s), they will be able to view your FICO® Score as well as the factors impacting that score. 
+                                                        <mutableString key="content">By accessing your FICO® Score through this program you are subject to the following Terms of Use. The information provided is intended for the primary cardmember only and is offered solely for their own non-commercial, personal review, use and benefit. You (the primary cardmember) understand that if you give anyone else online access to your Barclaycard account(s), they will be able to view your FICO® Score as well as the factors impacting that score. 
 Barclaycard offers FICO® Score access at its own discretion. FICO® Score access is not a permanent feature of your account and may be removed at any time. To view your FICO® Score, your account with us must be open and active (having activity within the past 150 days). Not all accounts will have a FICO® Score to display including but not limited to, accounts without a United States address, accounts with unresolved credit bureau disputes,  accounts without charging privileges, and accounts opened (or transferred from another bank) within the past 40 days. 
 Your FICO® Score is created with the FICO® Score 8 version using your credit information at TransUnion.  It  can range from 300 to 850. Your FICO® Score is not an endorsement or a determination of your qualification for a loan or credit. Credit score models and score ranges may differ by lender.
 FICO and TransUnion are third-party providers and are not affiliated with Barclaycard. Barclaycard does not guarantee the accuracy of any credit information that is provided to you by these third parties. 
@@ -2970,15 +2983,15 @@ Understanding FICO® Scores
 Frequently Asked Questions About FICO® Scores 
 
 FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the United States and other countries. 
-</string>
+</mutableString>
                                                         <attributes>
-                                                            <font key="NSFont" size="12" name="AmericanSansBook"/>
+                                                            <font key="NSFont" size="12" name="OpenSans"/>
                                                         </attributes>
                                                     </fragment>
                                                     <fragment>
                                                         <string key="content">Barclaycard and Fair Isaac Corporation are not credit repair organizations as defined under federal or state law, including the Credit Repair Organizations Act. Barclaycard and Fair Isaac do not provide "credit repair" services or advice or assistance regarding "rebuilding" or "improving" your credit record, credit history or credit rating.</string>
                                                         <attributes>
-                                                            <font key="NSFont" size="12" name="AmericanSansBook"/>
+                                                            <font key="NSFont" size="12" name="OpenSans"/>
                                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" lineHeightMultiple="4" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
@@ -2994,11 +3007,13 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                                             <constraint firstItem="iVr-eS-1Qr" firstAttribute="top" secondItem="gBJ-Be-99m" secondAttribute="bottom" constant="50" id="KH4-hh-fVI"/>
                                             <constraint firstAttribute="height" constant="1500" id="KtN-Av-0Fd"/>
                                             <constraint firstItem="mwv-Ay-DFT" firstAttribute="top" secondItem="iVr-eS-1Qr" secondAttribute="bottom" constant="10" id="Ogl-EX-JfR"/>
+                                            <constraint firstItem="r18-W8-zEP" firstAttribute="top" secondItem="MKo-JA-arW" secondAttribute="bottom" constant="20" id="PaR-0F-vpa"/>
                                             <constraint firstItem="gBJ-Be-99m" firstAttribute="centerX" secondItem="JPH-uT-yAn" secondAttribute="centerX" id="SDD-bn-vtK"/>
                                             <constraint firstItem="oEG-be-OuG" firstAttribute="top" secondItem="JPH-uT-yAn" secondAttribute="top" constant="30" id="aHS-H0-GbH"/>
                                             <constraint firstItem="T1r-ad-W63" firstAttribute="top" secondItem="MKo-JA-arW" secondAttribute="bottom" constant="30" id="b6f-ta-CYS"/>
                                             <constraint firstItem="oEG-be-OuG" firstAttribute="centerX" secondItem="JPH-uT-yAn" secondAttribute="centerX" id="gS7-yE-MkE"/>
                                             <constraint firstItem="MKo-JA-arW" firstAttribute="centerX" secondItem="JPH-uT-yAn" secondAttribute="centerX" id="gk4-e6-jqh"/>
+                                            <constraint firstItem="r18-W8-zEP" firstAttribute="centerX" secondItem="JPH-uT-yAn" secondAttribute="centerX" id="pdt-mZ-r31"/>
                                             <constraint firstItem="mwv-Ay-DFT" firstAttribute="centerX" secondItem="JPH-uT-yAn" secondAttribute="centerX" id="r4s-wp-eRy"/>
                                             <constraint firstItem="iVr-eS-1Qr" firstAttribute="centerX" secondItem="JPH-uT-yAn" secondAttribute="centerX" id="tiW-du-x9D"/>
                                         </constraints>
@@ -3058,7 +3073,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="064-Fd-OXB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="064-Fd-OXB">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="BCl-xL-Irv"/>
                                     <constraint firstAttribute="height" constant="64" id="nVL-YL-5QD"/>
@@ -3073,7 +3088,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vAz-wj-dQw">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Excellent!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxx-on-sbR">
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="17"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -3085,10 +3100,10 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You've successfully scheduled repeat payments. Your repeat payment will start next billing cycle." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDV-uU-7wy">
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="250" id="nQK-rg-uxq"/>
+                                            <constraint firstAttribute="width" constant="300" id="nQK-rg-uxq"/>
                                             <constraint firstAttribute="height" constant="43" id="tjd-x5-Wsu"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -3142,7 +3157,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="45I-2s-7lm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="45I-2s-7lm">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="Ja8-a8-3Ds"/>
                                     <constraint firstAttribute="width" constant="185" id="UUm-U4-Z7C"/>
@@ -3157,7 +3172,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ppp-2X-iMm">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Excellent!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WB2-Do-Pq5">
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="17"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -3172,7 +3187,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                                             <constraint firstAttribute="height" constant="43" id="CSy-Qn-Caj"/>
                                             <constraint firstAttribute="width" constant="250" id="Fhh-JE-pVZ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -3226,7 +3241,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="uiG-Lk-UNy">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="uiG-Lk-UNy">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="8r6-Ge-KHC"/>
                                     <constraint firstAttribute="height" constant="64" id="lO4-84-wRR"/>
@@ -3241,7 +3256,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4Q-S7-WYM">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Excellent!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmh-bd-q4A">
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="17"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -3256,7 +3271,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                                             <constraint firstAttribute="width" constant="250" id="mOw-Es-8k7"/>
                                             <constraint firstAttribute="height" constant="43" id="pLD-xR-YGX"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -3310,7 +3325,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="KVJ-Lc-VtB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="KVJ-Lc-VtB">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="WKK-Xl-qca"/>
                                     <constraint firstAttribute="height" constant="64" id="Yf9-Nc-FdO"/>
@@ -3325,7 +3340,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGD-2Q-Yf7">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Excellent!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5F-bP-WSF">
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="17"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -3340,7 +3355,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                                             <constraint firstAttribute="height" constant="43" id="7io-ue-CgQ"/>
                                             <constraint firstAttribute="width" constant="250" id="m0c-oG-GH0"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -3394,7 +3409,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="ozW-H6-fW6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="ozW-H6-fW6">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="50e-a7-bT8"/>
                                     <constraint firstAttribute="height" constant="64" id="Swg-Tv-IDr"/>
@@ -3409,7 +3424,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FoJ-PT-JHL">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Excellent!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asj-iu-lZn">
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="17"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -3424,7 +3439,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                                             <constraint firstAttribute="width" constant="250" id="OsM-bf-qRX"/>
                                             <constraint firstAttribute="height" constant="43" id="nJV-cO-cNv"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -3478,7 +3493,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aa_aadv_logo" translatesAutoresizingMaskIntoConstraints="NO" id="bb6-cN-Voe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bcus-logo" translatesAutoresizingMaskIntoConstraints="NO" id="bb6-cN-Voe">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="72e-Mu-bo7"/>
                                     <constraint firstAttribute="width" constant="185" id="ZxW-ns-zIA"/>
@@ -3493,7 +3508,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P4e-PK-q3x">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Excellent!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLb-Xz-AV7">
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="BarclaycardCo-Regular" family="Barclaycard Co" pointSize="17"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -3508,7 +3523,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
                                             <constraint firstAttribute="width" constant="250" id="DdT-Oz-lUB"/>
                                             <constraint firstAttribute="height" constant="43" id="wk0-OZ-bIY"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -3588,7 +3603,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
         </scene>
     </scenes>
     <resources>
-        <image name="aa_aadv_logo" width="315" height="64"/>
+        <image name="bcus-logo" width="98" height="21"/>
         <image name="icon-auth-user@1x-1" width="251" height="251"/>
         <image name="icon-chart" width="88" height="88"/>
         <image name="icon-complete@1x" width="245" height="246"/>
@@ -3603,7 +3618,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
         <image name="icon-touch-id@1x" width="251" height="252"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="HKQ-um-Qdy"/>
+        <segue reference="s6m-7o-Dfg"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
 </document>

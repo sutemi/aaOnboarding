@@ -33,21 +33,26 @@ class dobUITableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-//        if cellLabel.text == "" {
-//            cellLabel.isHidden = true
+        
+//        if cellLabel.text != "" {
+//            self.cellLabel.isHidden = false
 //        } else {
-//            cellLabel.isHidden = false
+//            self.cellLabel.isHidden = true
 //        }
+
     }
     
     
     func textFieldDidChange(sender:formUITextField) {
         if dobField.text != "" {
+//            self.cellLabel.isHidden = false
+            self.cellLabelHeight.constant = 20
             let labelText = "\(dobField.text!)"
             cellLabel.text = labelText
+            
         } else {
+//            self.cellLabel.isHidden = true
+            self.cellLabelHeight.constant = 1
             cellLabel.text = ""
         }
     }

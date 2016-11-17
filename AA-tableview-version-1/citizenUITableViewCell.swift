@@ -12,11 +12,11 @@ import UIKit
 
 class citizenUITableViewCell: UITableViewCell {
 
-   var tapAction: ((UITableViewCell) -> Void)?
-    @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
+    var tapAction: ((UITableViewCell) -> Void)?
     
-
+    @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
     @IBOutlet weak var cellLabel: UILabel!
+    
     @IBOutlet weak var switchNo: UISwitch!
     @IBOutlet weak var switchYes: UISwitch!
 
@@ -49,11 +49,10 @@ class citizenUITableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
-//        if cellLabel.text == "" {
-//            cellLabel.isHidden = true
+//        if cellLabel.text != "" {
+//            self.cellLabel.isHidden = false
 //        } else {
-//            cellLabel.isHidden = false
+//            self.cellLabel.isHidden = true
 //        }
     }
 

@@ -41,6 +41,10 @@
 		3363F75D1DC10C3E00F375F3 /* customColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F75C1DC10C3E00F375F3 /* customColors.swift */; };
 		337D04991DBBE338001AAABF /* splashOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337D04981DBBE338001AAABF /* splashOneVC.swift */; };
 		3382AFD71DD4C6110078E8C8 /* servicingSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3382AFD61DD4C6110078E8C8 /* servicingSettingsVC.swift */; };
+		33B6B5CD1DDE1A6F00FA27FE /* barclaycardco_lt-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33B6B5C91DDE1A6F00FA27FE /* barclaycardco_lt-webfont.ttf */; };
+		33B6B5CE1DDE1A6F00FA27FE /* barclaycardco_rg-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33B6B5CA1DDE1A6F00FA27FE /* barclaycardco_rg-webfont.ttf */; };
+		33B6B5CF1DDE1A6F00FA27FE /* glyphicons-halflings-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33B6B5CB1DDE1A6F00FA27FE /* glyphicons-halflings-regular.ttf */; };
+		33B6B5D01DDE1A6F00FA27FE /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33B6B5CC1DDE1A6F00FA27FE /* OpenSans-Regular.ttf */; };
 		33C9DDCB1DB6597700D29065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDCA1DB6597700D29065 /* AppDelegate.swift */; };
 		33C9DDCD1DB6597700D29065 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDCC1DB6597700D29065 /* MainViewController.swift */; };
 		33C9DDD01DB6597700D29065 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DDCE1DB6597700D29065 /* Main.storyboard */; };
@@ -128,6 +132,10 @@
 		3363F75C1DC10C3E00F375F3 /* customColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customColors.swift; sourceTree = "<group>"; };
 		337D04981DBBE338001AAABF /* splashOneVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splashOneVC.swift; sourceTree = "<group>"; };
 		3382AFD61DD4C6110078E8C8 /* servicingSettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = servicingSettingsVC.swift; sourceTree = "<group>"; };
+		33B6B5C91DDE1A6F00FA27FE /* barclaycardco_lt-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "barclaycardco_lt-webfont.ttf"; path = "Assets.xcassets/Fonts/barclaycardco_lt-webfont.ttf"; sourceTree = "<group>"; };
+		33B6B5CA1DDE1A6F00FA27FE /* barclaycardco_rg-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "barclaycardco_rg-webfont.ttf"; path = "Assets.xcassets/Fonts/barclaycardco_rg-webfont.ttf"; sourceTree = "<group>"; };
+		33B6B5CB1DDE1A6F00FA27FE /* glyphicons-halflings-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "glyphicons-halflings-regular.ttf"; path = "Assets.xcassets/Fonts/glyphicons-halflings-regular.ttf"; sourceTree = "<group>"; };
+		33B6B5CC1DDE1A6F00FA27FE /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Regular.ttf"; path = "Assets.xcassets/Fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		33C9DDC71DB6597700D29065 /* AA-tableview-version-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AA-tableview-version-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C9DDCA1DB6597700D29065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33C9DDCC1DB6597700D29065 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +204,10 @@
 		330632B71DC3933B004ADEB7 /* FONTS */ = {
 			isa = PBXGroup;
 			children = (
+				33B6B5C91DDE1A6F00FA27FE /* barclaycardco_lt-webfont.ttf */,
+				33B6B5CA1DDE1A6F00FA27FE /* barclaycardco_rg-webfont.ttf */,
+				33B6B5CB1DDE1A6F00FA27FE /* glyphicons-halflings-regular.ttf */,
+				33B6B5CC1DDE1A6F00FA27FE /* OpenSans-Regular.ttf */,
 				330632A11DC3932F004ADEB7 /* AmericanSans-Bold.ttf */,
 				330632A21DC3932F004ADEB7 /* AmericanSans-BoldItalic.ttf */,
 				330632A31DC3932F004ADEB7 /* AmericanSans-Book.ttf */,
@@ -497,17 +509,21 @@
 				33C9DDEF1DB6C07C00D29065 /* dobUITableViewCell.xib in Resources */,
 				33C9DDD21DB6597700D29065 /* Assets.xcassets in Resources */,
 				33C9DE1B1DB9352E00D29065 /* paymentDateTableViewCell.xib in Resources */,
+				33B6B5CD1DDE1A6F00FA27FE /* barclaycardco_lt-webfont.ttf in Resources */,
 				33C9DE131DB92EFA00D29065 /* whichAccountTableViewCell.xib in Resources */,
 				33C9DE171DB933CB00D29065 /* amountTableViewCell.xib in Resources */,
 				330632B01DC3932F004ADEB7 /* AmericanSans-Italic.ttf in Resources */,
 				330632B11DC3932F004ADEB7 /* AmericanSans-Light.ttf in Resources */,
+				33B6B5D01DDE1A6F00FA27FE /* OpenSans-Regular.ttf in Resources */,
 				330632B51DC3932F004ADEB7 /* AmericanSans-Regular.otf in Resources */,
 				330632AC1DC3932F004ADEB7 /* AmericanSans-Bold.ttf in Resources */,
 				330632AD1DC3932F004ADEB7 /* AmericanSans-BoldItalic.ttf in Resources */,
 				33C9DDD01DB6597700D29065 /* Main.storyboard in Resources */,
+				33B6B5CE1DDE1A6F00FA27FE /* barclaycardco_rg-webfont.ttf in Resources */,
 				33C9DE2B1DB95E8700D29065 /* reaccountTableViewCell.xib in Resources */,
 				330632AE1DC3932F004ADEB7 /* AmericanSans-Book.ttf in Resources */,
 				33C9DDF51DB6EB8200D29065 /* relationshipUITableViewCell.xib in Resources */,
+				33B6B5CF1DDE1A6F00FA27FE /* glyphicons-halflings-regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

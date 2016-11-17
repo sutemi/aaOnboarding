@@ -19,21 +19,22 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
     var selectedIndexPath:IndexPath? = nil
     
     var isFirstTimeLoading: Bool = true
+    
     var maxHeight:CGFloat!
     var minHeight:CGFloat!
     
     let labelHeight:CGFloat = 20
     
     var row0Min:CGFloat = 50
-    var row0Max:CGFloat = 273
+    var row0Max:CGFloat = 300
     var row1Min:CGFloat = 50
-    var row1Max:CGFloat = 120
+    var row1Max:CGFloat = 150
     var row2Min:CGFloat = 50
-    var row2Max:CGFloat = 50
+    var row2Max:CGFloat = 70
     var row3Min:CGFloat = 50
-    var row3Max:CGFloat = 140
+    var row3Max:CGFloat = 170
     var row4Min:CGFloat = 50
-    var row4Max:CGFloat = 384
+    var row4Max:CGFloat = 420
 
     
     
@@ -68,6 +69,7 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
@@ -143,7 +145,7 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
         }
         
         
-        print("height range \(indexVal): \(minHeight) - \(maxHeight)")
+//        print("RANGE \(indexVal): \(minHeight) - \(maxHeight)")
         
         
         if selectedIndexPath != nil {
@@ -188,81 +190,80 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
         }
         
         
-        
+
 
             
         switch indexPath.row {
             case 0:
                 let cell = tableView.cellForRow(at: indexPath) as! fullNameUITableViewCell
                 if cell.cellLabel.text == "" {
-                    cell.cellLabelHeight.constant = 0
+                    cell.cellLabelHeight.constant = 1
                     row0Min = 50
-                    row0Max = 273
+                    row0Max = 300
                 } else {
-                    cell.cellLabel.isHidden = false
+//                    cell.cellLabel.isHidden = false
                     cell.cellLabelHeight.constant = labelHeight
-                    row0Min = row0Min + labelHeight
-                    row0Max = row0Max + labelHeight
+                    row0Min = 50 + labelHeight
+                    row0Max = 300 + labelHeight
                 }
                 
             case 1:
                 let cell = tableView.cellForRow(at: indexPath) as! dobUITableViewCell
                 if cell.cellLabel.text == "" {
-                    cell.cellLabelHeight.constant = 0
+                    cell.cellLabelHeight.constant = 1
                     row1Min = 50
-                    row1Max = 120
+                    row1Max = 150
                 } else {
-                    cell.cellLabel.isHidden = false
+//                    cell.cellLabel.isHidden = false
                     cell.cellLabelHeight.constant = labelHeight
-                    row1Min = row1Min + labelHeight
-                    row1Max = row1Max + labelHeight
+                    row1Min = 50 + labelHeight
+                    row1Max = 150 + labelHeight
                 }
                 
             case 2:
                 let cell = tableView.cellForRow(at: indexPath) as! relationshipUITableViewCell
                 if cell.cellLabel.text == "" {
-                    cell.cellLabelHeight.constant = 0
+                    cell.cellLabelHeight.constant = 1
                     row2Min = 50
                     row2Max = 50
                 } else {
-                    cell.cellLabel.isHidden = false
+//                    cell.cellLabel.isHidden = false
                     cell.cellLabelHeight.constant = labelHeight
-                    row2Min = row2Min + labelHeight
-                    row2Max = row2Max + labelHeight
+                    row2Min = 50 + labelHeight
+                    row2Max = 50 + labelHeight
                 }
                 
             case 3:
                 let cell = tableView.cellForRow(at: indexPath) as! citizenUITableViewCell
                 if cell.cellLabel.text == "" {
-                    cell.cellLabelHeight.constant = 0
+                    cell.cellLabelHeight.constant = 1
                     row3Min = 50
-                    row3Max = 140
+                    row3Max = 170
                 } else {
-                    cell.cellLabel.isHidden = false
+//                    cell.cellLabel.isHidden = false
                     cell.cellLabelHeight.constant = labelHeight
-                    row3Min = row3Min + labelHeight
-                    row3Max = row3Max + labelHeight
+                    row3Min = 50 + labelHeight
+                    row3Max = 170 + labelHeight
                 }
                 
             case 4:
                 let cell = tableView.cellForRow(at: indexPath) as! addressUITableViewCell
                 if cell.cellLabel.text == "" {
-                    cell.cellLabelHeight.constant = 0
+                    cell.cellLabelHeight.constant = 1
                     row4Min = 50
-                    row4Max = 384
+                    row4Max = 420
                 } else {
-                    cell.cellLabel.isHidden = false
+//                    cell.cellLabel.isHidden = false
                     cell.cellLabelHeight.constant = labelHeight
-                    row4Min = row4Min + labelHeight
-                    row4Max = row4Max + labelHeight
+                    row4Min = 50 + labelHeight
+                    row4Max = 420 + labelHeight
                 }
                 
             default: break
         }
         
         
-        
-        
+
         
         self.isFirstTimeLoading = false
     

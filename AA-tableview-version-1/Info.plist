@@ -4,6 +4,10 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>barclaycardco_lt-webfont.ttf</string>
+		<string>barclaycardco_rg-webfont.ttf</string>
+		<string>OpenSans-Regular.ttf</string>
+		<string>glyphicons-halflings-regular.ttf</string>
 		<string>AmericanSans-Bold.ttf</string>
 		<string>AmericanSans-BoldItalic.ttf</string>
 		<string>AmericanSans-Book.ttf</string>

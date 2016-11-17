@@ -14,6 +14,7 @@ class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
     @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
     @IBOutlet weak var cellLabel: UILabel!
     
+    
     @IBOutlet weak var firstNameField: formUITextField!
     @IBOutlet weak var miField: formUITextField!
     @IBOutlet weak var lastNameField: formUITextField!
@@ -27,10 +28,13 @@ class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        cellLabelHeight.constant = 1
 
 //        cellLabel.setLineSpacing(sender: self.cellLabel, amt: 4.0, align: "left")
         
         firstNameField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
+        firstNameField.delegate = self
         
         miField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
         miField.delegate = self
@@ -45,6 +49,12 @@ class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        
+//        if cellLabel.text != "" {
+//            self.cellLabel.isHidden = false
+//        } else {
+//            self.cellLabel.isHidden = true
+//        }
 
     }
     
@@ -65,30 +75,22 @@ class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
     
     func textFieldDidChange(sender:formUITextField) {
         
-//        switch sender {
-//        case firstNameField:
-//            print("entry: \(firstNameField.text!)")
-//            break
-//        case miField:
-//            print("entry: \(miField.text!)")
-//            break
-//        case lastNameField:
-//            print("entry: \(lastNameField.text!)")
-//            break
-//        case suffixField:
-//            print("entry: \(suffixField.text!)")
-//            break
-//        default:
-//            break
-//        }
-        
         
         if firstNameField.text != "" || lastNameField.text != "" {
+            cellLabel.isHidden = false
+            cellLabelHeight.constant = 20
+            
             let labelText = "\(firstNameField.text!) \(miField.text!) \(lastNameField.text!) \(suffixField.text!)"
             cellLabel.text = labelText
+            
         } else {
+            
+            cellLabelHeight.constant = 1
+            cellLabel.isHidden = true
+            
             cellLabel.text = ""
         }
+
     }
     
     

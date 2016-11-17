@@ -24,11 +24,10 @@ class relationshipUITableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
-//        if cellLabel.text == "" {
-//            cellLabel.isHidden = true
+//        if cellLabel.text != "" {
+//            self.cellLabel.isHidden = false
 //        } else {
-//            cellLabel.isHidden = false
+//            self.cellLabel.isHidden = true
 //        }
     }
 

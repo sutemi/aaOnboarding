@@ -13,13 +13,14 @@ class addressUITableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
     
     @IBOutlet weak var streetField: formUITextField!
     @IBOutlet weak var zipField: formUITextField!
     @IBOutlet weak var cityField: formUITextField!
     @IBOutlet weak var stateField: formUITextField!
     
-    @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
+    
    
     
     
@@ -42,11 +43,10 @@ class addressUITableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
-//        if cellLabel.text == "" {
-//            cellLabel.isHidden = true
+//        if cellLabel.text != "" {
+//            self.cellLabel.isHidden = false
 //        } else {
-//            cellLabel.isHidden = false
+//            self.cellLabel.isHidden = true
 //        }
         
     }
@@ -54,9 +54,13 @@ class addressUITableViewCell: UITableViewCell {
     
     func textFieldDidChange(sender:formUITextField) {
         if streetField.text != "" || cityField.text != "" || stateField.text != "" || zipField.text != "" {
+            cellLabelHeight.constant = 20
+//            self.cellLabel.isHidden = false
             let labelText = "\(streetField.text!), \(cityField.text!), \(stateField.text!) \(zipField.text!)"
             cellLabel.text = labelText
         } else {
+            cellLabelHeight.constant = 1
+//            self.cellLabel.isHidden = true
             cellLabel.text = ""
         }
     }
