@@ -45,6 +45,7 @@
 		33B6B5CE1DDE1A6F00FA27FE /* barclaycardco_rg-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33B6B5CA1DDE1A6F00FA27FE /* barclaycardco_rg-webfont.ttf */; };
 		33B6B5CF1DDE1A6F00FA27FE /* glyphicons-halflings-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33B6B5CB1DDE1A6F00FA27FE /* glyphicons-halflings-regular.ttf */; };
 		33B6B5D01DDE1A6F00FA27FE /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33B6B5CC1DDE1A6F00FA27FE /* OpenSans-Regular.ttf */; };
+		33C676B41DDF553F00F71B7C /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C676B31DDF553F00F71B7C /* UserManager.swift */; };
 		33C9DDCB1DB6597700D29065 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDCA1DB6597700D29065 /* AppDelegate.swift */; };
 		33C9DDCD1DB6597700D29065 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDCC1DB6597700D29065 /* MainViewController.swift */; };
 		33C9DDD01DB6597700D29065 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DDCE1DB6597700D29065 /* Main.storyboard */; };
@@ -136,6 +137,7 @@
 		33B6B5CA1DDE1A6F00FA27FE /* barclaycardco_rg-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "barclaycardco_rg-webfont.ttf"; path = "Assets.xcassets/Fonts/barclaycardco_rg-webfont.ttf"; sourceTree = "<group>"; };
 		33B6B5CB1DDE1A6F00FA27FE /* glyphicons-halflings-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "glyphicons-halflings-regular.ttf"; path = "Assets.xcassets/Fonts/glyphicons-halflings-regular.ttf"; sourceTree = "<group>"; };
 		33B6B5CC1DDE1A6F00FA27FE /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Regular.ttf"; path = "Assets.xcassets/Fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		33C676B31DDF553F00F71B7C /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		33C9DDC71DB6597700D29065 /* AA-tableview-version-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AA-tableview-version-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C9DDCA1DB6597700D29065 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33C9DDCC1DB6597700D29065 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				3363F7541DBFE5B900F375F3 /* UIViewControllerBaseClass.swift */,
 				3363F75C1DC10C3E00F375F3 /* customColors.swift */,
 				33DF97B31DCB924000329650 /* UITableViewCellSelected.swift */,
+				33C676B31DDF553F00F71B7C /* UserManager.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -555,6 +558,7 @@
 				33DF97B21DCB765400329650 /* TEMPTableViewController.swift in Sources */,
 				3363F7581DC0F36800F375F3 /* touchIDSettingsVC.swift in Sources */,
 				33C9DE0B1DB82CE900D29065 /* delayedSuccessScreen.swift in Sources */,
+				33C676B41DDF553F00F71B7C /* UserManager.swift in Sources */,
 				33C9DE321DB960F900D29065 /* nicknameTableViewCell.swift in Sources */,
 				33C9DDDD1DB65CF900D29065 /* primaryEnabledUIButton.swift in Sources */,
 				330632C71DC3A278004ADEB7 /* splashEightVC.swift in Sources */,

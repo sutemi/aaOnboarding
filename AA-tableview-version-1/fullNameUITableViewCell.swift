@@ -11,7 +11,7 @@ import UIKit
 class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
 
     
-    @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
+//    @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
     @IBOutlet weak var cellLabel: UILabel!
     
     
@@ -29,7 +29,7 @@ class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
         super.awakeFromNib()
         // Initialization code
         
-        cellLabelHeight.constant = 1
+//        cellLabelHeight.constant = 1
 
 //        cellLabel.setLineSpacing(sender: self.cellLabel, amt: 4.0, align: "left")
         
@@ -76,23 +76,32 @@ class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
     func textFieldDidChange(sender:formUITextField) {
         
         
-        if firstNameField.text != "" || lastNameField.text != "" {
+        if firstNameField.text != "" || miField.text != "" || lastNameField.text != "" || suffixField.text != "" {
             cellLabel.isHidden = false
-            cellLabelHeight.constant = 20
             
-            let labelText = "\(firstNameField.text!) \(miField.text!) \(lastNameField.text!) \(suffixField.text!)"
-            cellLabel.text = labelText
+            UserManager.sharedManager.userFullName = "\(firstNameField.text!) \(miField.text!) \(lastNameField.text!) \(suffixField.text!)"
+            cellLabel.text = UserManager.sharedManager.userFullName
             
         } else {
             
-            cellLabelHeight.constant = 1
             cellLabel.isHidden = true
             
             cellLabel.text = ""
+//            if firstNameField.text == "" && miField.text == "" && lastNameField.text == "" && suffixField.text == "" {
+//                UserManager.sharedManager.userFullName = ""
+//            }
+            
         }
 
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        UserManager.sharedManager.userFullName = "\(firstNameField.text!) \(miField.text!) \(lastNameField.text!) \(suffixField.text!)"
+        cellLabel.text = UserManager.sharedManager.userFullName
+        textField.resignFirstResponder()
+        return true
+    }
     
     
     override func endEditing(_ force: Bool) -> Bool {

@@ -23,7 +23,7 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
     var maxHeight:CGFloat!
     var minHeight:CGFloat!
     
-    let labelHeight:CGFloat = 20
+    let labelHeight:CGFloat = 10
     
     var row0Min:CGFloat = 50
     var row0Max:CGFloat = 300
@@ -75,6 +75,9 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
         
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellFullName") as! fullNameUITableViewCell
+            if UserManager.sharedManager.userFullName.characters.count > 0 {
+                cell.cellLabel.text = UserManager.sharedManager.userFullName
+            }
             return cell
         } else if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellDOB") as! dobUITableViewCell
@@ -192,17 +195,16 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
         
 
 
-            
         switch indexPath.row {
             case 0:
                 let cell = tableView.cellForRow(at: indexPath) as! fullNameUITableViewCell
                 if cell.cellLabel.text == "" {
-                    cell.cellLabelHeight.constant = 1
-                    row0Min = 50
+//                    cell.cellLabelHeight.constant = 1
+                    row0Min = 40
                     row0Max = 300
                 } else {
 //                    cell.cellLabel.isHidden = false
-                    cell.cellLabelHeight.constant = labelHeight
+//                    cell.cellLabelHeight.constant = labelHeight
                     row0Min = 50 + labelHeight
                     row0Max = 300 + labelHeight
                 }
@@ -210,12 +212,12 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
             case 1:
                 let cell = tableView.cellForRow(at: indexPath) as! dobUITableViewCell
                 if cell.cellLabel.text == "" {
-                    cell.cellLabelHeight.constant = 1
+//                    cell.cellLabelHeight.constant = 1
                     row1Min = 50
                     row1Max = 150
                 } else {
 //                    cell.cellLabel.isHidden = false
-                    cell.cellLabelHeight.constant = labelHeight
+//                    cell.cellLabelHeight.constant = labelHeight
                     row1Min = 50 + labelHeight
                     row1Max = 150 + labelHeight
                 }

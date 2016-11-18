@@ -56,7 +56,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cL5-Hk-GtP">
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="40" id="5j1-cI-Odz"/>
+                            <constraint firstAttribute="height" constant="17" id="5j1-cI-Odz"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                         <color key="textColor" red="0.21176470589999999" green="0.28627450980000002" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -64,7 +64,7 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdQ-5T-hxX" userLabel="nameLabel">
                         <constraints>
-                            <constraint firstAttribute="height" constant="1" id="cs1-AU-9BJ"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="TWw-Vw-uMN"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -79,6 +79,7 @@
                     <constraint firstItem="LUT-op-EeQ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="E7l-Fm-6QV"/>
                     <constraint firstItem="YTU-SK-3sT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="FTu-9B-RfT"/>
                     <constraint firstItem="cL5-Hk-GtP" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="Ksh-rg-iYt"/>
+                    <constraint firstItem="EdQ-5T-hxX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="LRT-mq-gMm"/>
                     <constraint firstItem="syg-3L-MBl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="M5B-6r-vti"/>
                     <constraint firstItem="EdQ-5T-hxX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="PLS-Um-8vE"/>
                     <constraint firstItem="LUT-op-EeQ" firstAttribute="top" secondItem="EdQ-5T-hxX" secondAttribute="bottom" constant="10" id="WPa-cz-ha0"/>
@@ -88,13 +89,13 @@
                     <constraint firstItem="LUT-op-EeQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="iEu-n4-DFa"/>
                     <constraint firstItem="YTU-SK-3sT" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="iX1-uE-NYU"/>
                     <constraint firstItem="Zmf-IL-3v8" firstAttribute="top" secondItem="LUT-op-EeQ" secondAttribute="bottom" constant="-1" id="keB-90-al2"/>
+                    <constraint firstItem="EdQ-5T-hxX" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="kyx-cQ-2yq"/>
                     <constraint firstItem="Zmf-IL-3v8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="o3X-Kg-wwE"/>
-                    <constraint firstItem="EdQ-5T-hxX" firstAttribute="top" secondItem="cL5-Hk-GtP" secondAttribute="bottom" constant="2" id="zyk-aO-kUs"/>
+                    <constraint firstItem="EdQ-5T-hxX" firstAttribute="top" secondItem="cL5-Hk-GtP" secondAttribute="bottom" constant="1" id="zyk-aO-kUs"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="cellLabel" destination="EdQ-5T-hxX" id="zxx-0T-DvE"/>
-                <outlet property="cellLabelHeight" destination="cs1-AU-9BJ" id="vev-uM-cg9"/>
                 <outlet property="firstNameField" destination="LUT-op-EeQ" id="D2f-JI-Mmp"/>
                 <outlet property="lastNameField" destination="YTU-SK-3sT" id="zAg-37-OYl"/>
                 <outlet property="miField" destination="Zmf-IL-3v8" id="2qJ-49-tyj"/>
