@@ -23,7 +23,11 @@
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ofc-t4-gIC">
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LnM-Pp-w2w"/>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LnM-Pp-w2w">
+                                <connections>
+                                    <action selector="toggleFields:" destination="KGk-i7-Jjw" eventType="valueChanged" id="1cB-3e-KCe"/>
+                                </connections>
+                            </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Same as primary cardmembers address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7w9-hU-Uzx">
                                 <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="12"/>
                                 <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -77,7 +81,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authorized user address" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcM-zQ-sPT">
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="40" id="vgh-vA-AxM"/>
+                            <constraint firstAttribute="height" constant="17" id="vgh-vA-AxM"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                         <color key="textColor" red="0.21176470589999999" green="0.28627450980000002" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -85,7 +89,7 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f81-vy-895" userLabel="addressLabel">
                         <constraints>
-                            <constraint firstAttribute="height" constant="1" id="pdF-Pt-gXS"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="pdF-Pt-gXS"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -120,11 +124,13 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="aptField" destination="L3J-DX-m0v" id="4YX-Cd-82e"/>
                 <outlet property="cellLabel" destination="f81-vy-895" id="EHO-PZ-td3"/>
                 <outlet property="cellLabelHeight" destination="pdF-Pt-gXS" id="Ttb-bd-xla"/>
                 <outlet property="cityField" destination="1iW-2q-tTm" id="kNR-uQ-pz1"/>
                 <outlet property="stateField" destination="62b-rN-7ca" id="VZ8-dB-0cq"/>
                 <outlet property="streetField" destination="3PQ-f4-ML5" id="mYm-Nt-Q20"/>
+                <outlet property="toggle" destination="LnM-Pp-w2w" id="A6c-1T-HKz"/>
                 <outlet property="zipField" destination="D1r-kN-Cy0" id="9sd-ib-giB"/>
             </connections>
         </tableViewCell>

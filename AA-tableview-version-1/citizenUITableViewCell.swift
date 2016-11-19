@@ -24,6 +24,8 @@ class citizenUITableViewCell: UITableViewCell {
     @IBAction func switchedNo(_ sender:AnyObject) {
         if switchYes.isOn {
             switchYes.isOn = false
+        } else {
+            switchNo.isOn = true
         }
         tapAction!(self)
     }
@@ -31,10 +33,31 @@ class citizenUITableViewCell: UITableViewCell {
     @IBAction func switchedYes(_ sender: AnyObject) {
         if switchNo.isOn {
             switchNo.isOn = false
+        } else {
+            
         }
+        
+        UserManager.sharedManager.userCitizen = "U.S. Citizen"
+        cellLabel.text = UserManager.sharedManager.userCitizen
     }
     
     
+    @IBOutlet weak var checkTestButton: UIButton!
+    @IBAction func checkTest(_ sender: AnyObject) {
+        
+        print("IMAGE: \(checkTestButton.image(for: .normal))")
+        
+//        if checkTestButton.image(for: .normal) == UIImage(named: "bullet-open.png") {
+//            if let image = UIImage(named: "bullet-closed.png") {
+//                checkTestButton.setImage(image, for: .selected)
+//            }
+//        } else {
+//            if let image = UIImage(named: "bullet-open.png") {
+//                checkTestButton.setImage(image, for: .normal)
+//            }
+//        }
+        
+    }
     
     
     

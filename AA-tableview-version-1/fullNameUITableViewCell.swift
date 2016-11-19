@@ -20,18 +20,15 @@ class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
     @IBOutlet weak var lastNameField: formUITextField!
     @IBOutlet weak var suffixField: formUITextField!
     
-    var isComplete:Bool = false
+//    var isComplete:Bool = false
 
     
     
     
     override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
         
-//        cellLabelHeight.constant = 1
-
-//        cellLabel.setLineSpacing(sender: self.cellLabel, amt: 4.0, align: "left")
+        super.awakeFromNib()
+        
         
         firstNameField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
         firstNameField.delegate = self
@@ -40,6 +37,8 @@ class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
         miField.delegate = self
         
         lastNameField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
+        lastNameField.delegate = self
+        
         suffixField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
         suffixField.delegate = self
         
@@ -50,12 +49,6 @@ class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
-//        if cellLabel.text != "" {
-//            self.cellLabel.isHidden = false
-//        } else {
-//            self.cellLabel.isHidden = true
-//        }
-
     }
     
     
@@ -65,7 +58,7 @@ class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
         if textField == miField {
             return newLength <= 1 // Bool
         } else if textField == suffixField {
-            return newLength <= 3 // Bool
+            return newLength <= 2 // Bool
         }
             
         return true
@@ -77,19 +70,13 @@ class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
         
         
         if firstNameField.text != "" || miField.text != "" || lastNameField.text != "" || suffixField.text != "" {
-            cellLabel.isHidden = false
             
             UserManager.sharedManager.userFullName = "\(firstNameField.text!) \(miField.text!) \(lastNameField.text!) \(suffixField.text!)"
             cellLabel.text = UserManager.sharedManager.userFullName
             
         } else {
             
-            cellLabel.isHidden = true
-            
             cellLabel.text = ""
-//            if firstNameField.text == "" && miField.text == "" && lastNameField.text == "" && suffixField.text == "" {
-//                UserManager.sharedManager.userFullName = ""
-//            }
             
         }
 
@@ -99,9 +86,14 @@ class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
         
         UserManager.sharedManager.userFullName = "\(firstNameField.text!) \(miField.text!) \(lastNameField.text!) \(suffixField.text!)"
         cellLabel.text = UserManager.sharedManager.userFullName
+        
         textField.resignFirstResponder()
         return true
+        
     }
+    
+    
+    
     
     
     override func endEditing(_ force: Bool) -> Bool {

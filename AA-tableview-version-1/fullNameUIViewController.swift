@@ -48,6 +48,7 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
         tableView.register(UINib(nibName:"relationshipUITableViewCell", bundle:nil), forCellReuseIdentifier: "cellRelationship")
         tableView.register(UINib(nibName:"citizenUITableViewCell", bundle:nil), forCellReuseIdentifier: "cellCitizen")
         tableView.register(UINib(nibName:"addressUITableViewCell", bundle:nil), forCellReuseIdentifier: "cellAddress")
+
         
         tableView.tableFooterView = UIView()
         
@@ -56,9 +57,11 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: false)
+        tableView.reloadData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        
     }
     
     
@@ -81,14 +84,24 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
             return cell
         } else if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellDOB") as! dobUITableViewCell
+            if UserManager.sharedManager.userDOB.characters.count > 0 {
+                cell.cellLabel.text = UserManager.sharedManager.userDOB
+            }
             return cell
         } else if indexPath.row == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellRelationship") as! relationshipUITableViewCell
+            if UserManager.sharedManager.userRelation.characters.count > 0 {
+                cell.cellLabel.text = UserManager.sharedManager.userRelation
+            }
             return cell
         } else if indexPath.row == 3 {
             
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellCitizen") as! citizenUITableViewCell
+            
+            if UserManager.sharedManager.userCitizen.characters.count > 0 {
+                cell.cellLabel.text = UserManager.sharedManager.userCitizen
+            }
             
             cell.tapAction = { (cell) in
                 self.selectCountryFromList()
@@ -162,8 +175,7 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
         } else {
             return minHeight
         }
-        
-        
+         
     }
     
     
@@ -184,6 +196,7 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
                 selectedIndexPath = indexPath
             }
         }
+
         
         if selectedIndexPath?.row == 2 {
             performSegue(withIdentifier: "showRelationshipSegue", sender: self)
@@ -199,12 +212,9 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
             case 0:
                 let cell = tableView.cellForRow(at: indexPath) as! fullNameUITableViewCell
                 if cell.cellLabel.text == "" {
-//                    cell.cellLabelHeight.constant = 1
                     row0Min = 40
                     row0Max = 300
                 } else {
-//                    cell.cellLabel.isHidden = false
-//                    cell.cellLabelHeight.constant = labelHeight
                     row0Min = 50 + labelHeight
                     row0Max = 300 + labelHeight
                 }
@@ -212,12 +222,9 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
             case 1:
                 let cell = tableView.cellForRow(at: indexPath) as! dobUITableViewCell
                 if cell.cellLabel.text == "" {
-//                    cell.cellLabelHeight.constant = 1
                     row1Min = 50
                     row1Max = 150
                 } else {
-//                    cell.cellLabel.isHidden = false
-//                    cell.cellLabelHeight.constant = labelHeight
                     row1Min = 50 + labelHeight
                     row1Max = 150 + labelHeight
                 }
@@ -225,12 +232,9 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
             case 2:
                 let cell = tableView.cellForRow(at: indexPath) as! relationshipUITableViewCell
                 if cell.cellLabel.text == "" {
-                    cell.cellLabelHeight.constant = 1
                     row2Min = 50
                     row2Max = 50
                 } else {
-//                    cell.cellLabel.isHidden = false
-                    cell.cellLabelHeight.constant = labelHeight
                     row2Min = 50 + labelHeight
                     row2Max = 50 + labelHeight
                 }
@@ -238,12 +242,9 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
             case 3:
                 let cell = tableView.cellForRow(at: indexPath) as! citizenUITableViewCell
                 if cell.cellLabel.text == "" {
-                    cell.cellLabelHeight.constant = 1
                     row3Min = 50
                     row3Max = 170
                 } else {
-//                    cell.cellLabel.isHidden = false
-                    cell.cellLabelHeight.constant = labelHeight
                     row3Min = 50 + labelHeight
                     row3Max = 170 + labelHeight
                 }
@@ -251,12 +252,9 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
             case 4:
                 let cell = tableView.cellForRow(at: indexPath) as! addressUITableViewCell
                 if cell.cellLabel.text == "" {
-                    cell.cellLabelHeight.constant = 1
                     row4Min = 50
                     row4Max = 420
                 } else {
-//                    cell.cellLabel.isHidden = false
-                    cell.cellLabelHeight.constant = labelHeight
                     row4Min = 50 + labelHeight
                     row4Max = 420 + labelHeight
                 }

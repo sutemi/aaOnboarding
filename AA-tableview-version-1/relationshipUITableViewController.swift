@@ -15,6 +15,7 @@ class relationshipUITableViewController: UITableViewController {
     @IBOutlet var relationTableView: UITableView!
     
     var selectedIndexPath:IndexPath? = nil
+    let relationships = ["Spouse", "Child", "Other"]
     
     
     override func viewDidLoad() {
@@ -70,12 +71,20 @@ class relationshipUITableViewController: UITableViewController {
                     selectedIndexPath = indexPath
                 }
         }
+        
+        UserManager.sharedManager.userRelation = relationships[indexPath.row]
  
     }
         
 
     override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
         return UITableViewCellEditingStyle(rawValue: 3)!
+    }
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print(sender)
     }
     
 

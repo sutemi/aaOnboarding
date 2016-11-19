@@ -8,7 +8,7 @@
 
 import UIKit
 
-class dobUITableViewCell: UITableViewCell {
+class dobUITableViewCell: UITableViewCell, UITextFieldDelegate {
 
     
 
@@ -18,43 +18,55 @@ class dobUITableViewCell: UITableViewCell {
 
     @IBOutlet weak var dobField: formUITextField!
     
-    var isComplete:Bool = false
     
     
     
     override func awakeFromNib() {
+        
         super.awakeFromNib()
-        // Initialization code
         
         dobField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
+        dobField.delegate = self
         
         self.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-//        if cellLabel.text != "" {
-//            self.cellLabel.isHidden = false
-//        } else {
-//            self.cellLabel.isHidden = true
-//        }
 
     }
     
     
     func textFieldDidChange(sender:formUITextField) {
+        
+        
         if dobField.text != "" {
-//            self.cellLabel.isHidden = false
-            self.cellLabelHeight.constant = 20
-            let labelText = "\(dobField.text!)"
-            cellLabel.text = labelText
+            
+            UserManager.sharedManager.userDOB = dobField.text!
+            cellLabel.text = UserManager.sharedManager.userDOB
             
         } else {
-//            self.cellLabel.isHidden = true
-            self.cellLabelHeight.constant = 1
+            
             cellLabel.text = ""
+            
         }
+        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        UserManager.sharedManager.userDOB = dobField.text!
+        cellLabel.text = UserManager.sharedManager.userDOB
+        
+        textField.resignFirstResponder()
+        return true
+        
+    }
+    
+    
+    override func endEditing(_ force: Bool) -> Bool {
+        self.resignFirstResponder()
+        return true
     }
     
     

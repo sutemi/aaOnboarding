@@ -24,7 +24,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Relationship to cardmember" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyj-EO-tZG">
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="40" id="o79-wD-pTs"/>
+                            <constraint firstAttribute="height" constant="17" id="o79-wD-pTs"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                         <color key="textColor" red="0.21176470589999999" green="0.28627450980000002" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -32,7 +32,7 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Eh-gf-YGY" userLabel="relationshipLabel">
                         <constraints>
-                            <constraint firstAttribute="height" constant="1" id="wpF-Ho-XaJ"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="wpF-Ho-XaJ"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -44,12 +44,12 @@
                     <constraint firstItem="5Eh-gf-YGY" firstAttribute="top" secondItem="nyj-EO-tZG" secondAttribute="bottom" id="X6e-jp-AHr"/>
                     <constraint firstItem="nyj-EO-tZG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Y8i-3C-aow"/>
                     <constraint firstItem="nyj-EO-tZG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="cUp-MA-ZDs"/>
-                    <constraint firstItem="5Eh-gf-YGY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="lec-3H-bbh"/>
+                    <constraint firstItem="5Eh-gf-YGY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="lec-3H-bbh"/>
                     <constraint firstItem="nyj-EO-tZG" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="oOi-S3-4zA"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="cellLabel" destination="5Eh-gf-YGY" id="7A0-CC-BOq"/>
+                <outlet property="cellLabel" destination="5Eh-gf-YGY" id="Vbo-TK-w8I"/>
                 <outlet property="cellLabelHeight" destination="wpF-Ho-XaJ" id="Mvw-nz-bqw"/>
             </connections>
             <point key="canvasLocation" x="34" y="122"/>

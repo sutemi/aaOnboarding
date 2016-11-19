@@ -14,21 +14,22 @@ class relationshipUITableViewCell: UITableViewCell {
     @IBOutlet weak var cellLabel: UILabel!
     @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         
+        
+        if UserManager.sharedManager.userRelation.characters.count > 0 {
+            cellLabel.text = UserManager.sharedManager.userRelation
+        }
+
         self.clipsToBounds = true
     }
-
+    
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-//        if cellLabel.text != "" {
-//            self.cellLabel.isHidden = false
-//        } else {
-//            self.cellLabel.isHidden = true
-//        }
     }
 
     

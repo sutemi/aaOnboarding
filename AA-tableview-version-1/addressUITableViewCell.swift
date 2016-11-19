@@ -16,10 +16,12 @@ class addressUITableViewCell: UITableViewCell {
     @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
     
     @IBOutlet weak var streetField: formUITextField!
+    @IBOutlet weak var aptField: formUITextField!
     @IBOutlet weak var zipField: formUITextField!
     @IBOutlet weak var cityField: formUITextField!
     @IBOutlet weak var stateField: formUITextField!
     
+    @IBOutlet weak var toggle: UISwitch!
     
    
     
@@ -51,6 +53,22 @@ class addressUITableViewCell: UITableViewCell {
         
     }
     
+    @IBAction func toggleFields(_ sender: AnyObject) {
+        
+        if toggle.isOn {
+            streetField.isEnabled = false
+            zipField.isEnabled = false
+            cityField.isEnabled = false
+            stateField.isEnabled = false
+            aptField.isEnabled = false
+        } else {
+            streetField.isEnabled = true
+            zipField.isEnabled = true
+            cityField.isEnabled = true
+            stateField.isEnabled = true
+            aptField.isEnabled = true
+        }
+    }
     
     func textFieldDidChange(sender:formUITextField) {
         if streetField.text != "" || cityField.text != "" || stateField.text != "" || zipField.text != "" {

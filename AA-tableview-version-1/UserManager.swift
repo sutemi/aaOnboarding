@@ -13,6 +13,9 @@ class UserManager: NSObject {
     static let sharedManager = UserManager()
     
     var userFullName: String = ""
-    var userFullDOB: String = ""
+    var userDOB: String = ""
+    var userRelation: String = ""
+    var userCitizen: String = ""
+    var userAddress: String = ""
     
 }

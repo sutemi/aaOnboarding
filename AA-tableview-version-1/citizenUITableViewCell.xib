@@ -23,7 +23,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is this person a United States citizen?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZW-Pw-o9C">
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="40" id="Ix3-x9-NDC"/>
+                            <constraint firstAttribute="height" constant="17" id="Ix3-x9-NDC"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                         <color key="textColor" red="0.21176470589999999" green="0.28627450980000002" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -59,32 +59,48 @@
                     </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tXn-Ea-7qI" userLabel="citizenLabel">
                         <constraints>
-                            <constraint firstAttribute="height" constant="1" id="zGE-oF-9o7"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="zGE-oF-9o7"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8r-nR-9r7">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="Akv-g6-uOr"/>
+                            <constraint firstAttribute="height" constant="24" id="Xm6-oH-xeC"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="bullet-open"/>
+                        <connections>
+                            <action selector="checkTest:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jda-yk-rcr"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="oCv-cL-vg6" secondAttribute="trailing" constant="8" id="1sH-5X-kIG"/>
                     <constraint firstItem="MZW-Pw-o9C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="2MQ-Ke-Ib4"/>
                     <constraint firstAttribute="trailing" secondItem="tXn-Ea-7qI" secondAttribute="trailing" id="3iG-Kd-k22"/>
                     <constraint firstItem="MZW-Pw-o9C" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Qoa-MU-mME"/>
-                    <constraint firstItem="tXn-Ea-7qI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Rxo-Ks-D1b"/>
+                    <constraint firstItem="tXn-Ea-7qI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="Rxo-Ks-D1b"/>
                     <constraint firstItem="oCv-cL-vg6" firstAttribute="top" secondItem="tXn-Ea-7qI" secondAttribute="bottom" constant="10" id="SHK-g9-lzl"/>
                     <constraint firstItem="tXn-Ea-7qI" firstAttribute="top" secondItem="MZW-Pw-o9C" secondAttribute="bottom" constant="2" id="Vgn-bT-Ccn"/>
+                    <constraint firstItem="z8r-nR-9r7" firstAttribute="top" secondItem="oCv-cL-vg6" secondAttribute="bottom" constant="-3" id="cyj-Od-NCC"/>
                     <constraint firstAttribute="trailing" secondItem="MZW-Pw-o9C" secondAttribute="trailing" id="iLt-ga-XnH"/>
+                    <constraint firstItem="z8r-nR-9r7" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="tZp-Lf-yE6"/>
                     <constraint firstItem="oCv-cL-vg6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="uS0-zH-kUf"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="cellLabel" destination="tXn-Ea-7qI" id="Uty-vJ-Vun"/>
                 <outlet property="cellLabelHeight" destination="zGE-oF-9o7" id="SqU-Xs-b3m"/>
+                <outlet property="checkTestButton" destination="z8r-nR-9r7" id="fWI-7N-ehh"/>
                 <outlet property="switchNo" destination="xvK-2H-2O9" id="M2Y-Ct-h7X"/>
                 <outlet property="switchYes" destination="VnE-6F-rI1" id="T9l-LJ-HG8"/>
             </connections>
             <point key="canvasLocation" x="34" y="53.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="bullet-open" width="55" height="56"/>
+    </resources>
 </document>
