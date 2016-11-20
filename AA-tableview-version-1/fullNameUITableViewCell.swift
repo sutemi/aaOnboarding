@@ -20,7 +20,6 @@ class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
     @IBOutlet weak var lastNameField: formUITextField!
     @IBOutlet weak var suffixField: formUITextField!
     
-//    var isComplete:Bool = false
 
     
     
@@ -43,7 +42,11 @@ class fullNameUITableViewCell: UITableViewCell, UITextFieldDelegate {
         suffixField.delegate = self
         
         self.clipsToBounds = true
+
+        
     }
+
+    
     
     
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -8,27 +8,60 @@
 
 import UIKit
 
-class reaccountTableViewCell: UITableViewCell {
+class reaccountTableViewCell: UITableViewCell, UITextFieldDelegate {
 
     
-    @IBOutlet weak var recctLabel: UILabel!
+    @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var reAcctField: formUITextField!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        reAcctField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
+        reAcctField.delegate = self
         
         self.clipsToBounds = true
     }
     
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+    
+    
+    func textFieldDidChange(sender:formUITextField) {
         
-        // Configure the view for the selected state
-        if recctLabel.text == "" {
-            recctLabel.isHidden = true
+        
+        if reAcctField.text != "" {
+            
+            UserManager.sharedManager.acctNewReNumber = reAcctField.text!
+            cellLabel.text = UserManager.sharedManager.acctNewReNumber
+            
         } else {
-            recctLabel.isHidden = false
+            
+            cellLabel.text = ""
+            
         }
+        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        UserManager.sharedManager.acctNewReNumber = reAcctField.text!
+        cellLabel.text = UserManager.sharedManager.acctNewReNumber
+        
+        textField.resignFirstResponder()
+        return true
+        
+    }
+    
+    
+    override func endEditing(_ force: Bool) -> Bool {
+        self.resignFirstResponder()
+        return true
     }
     
 }

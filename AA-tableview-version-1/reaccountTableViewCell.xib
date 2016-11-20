@@ -24,7 +24,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Re-enter bank account number" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0s-Ys-Bln">
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="40" id="t3B-es-xt2"/>
+                            <constraint firstAttribute="height" constant="17" id="t3B-es-xt2"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                         <color key="textColor" red="0.21176470589999999" green="0.28627450980000002" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,6 +39,9 @@
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxY-Uq-XNx" userLabel="recctLabel">
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="IZj-Ik-sM1"/>
+                        </constraints>
                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -57,7 +60,9 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="recctLabel" destination="dxY-Uq-XNx" id="gKk-JI-7kk"/>
+                <outlet property="cellLabel" destination="dxY-Uq-XNx" id="ZB7-Tb-s4b"/>
+                <outlet property="cellLabelHeight" destination="IZj-Ik-sM1" id="nng-mC-xWK"/>
+                <outlet property="reAcctField" destination="Zrh-Ak-knu" id="HM3-S5-11P"/>
             </connections>
         </tableViewCell>
     </objects>

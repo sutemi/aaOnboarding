@@ -8,26 +8,61 @@
 
 import UIKit
 
-class routingTableViewCell: UITableViewCell {
+class routingTableViewCell: UITableViewCell, UITextFieldDelegate {
 
-    @IBOutlet weak var routingLabel: UILabel!
+    @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
+
+    @IBOutlet weak var routingField: formUITextField!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        routingField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
+        routingField.delegate = self
         
         self.clipsToBounds = true
     }
     
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
-        if routingLabel.text == "" {
-            routingLabel.isHidden = true
-        } else {
-            routingLabel.isHidden = false
-        }
     }
+    
+    
+    func textFieldDidChange(sender:formUITextField) {
+        
+        
+        if routingField.text != "" {
+            
+            UserManager.sharedManager.acctNewRouting = routingField.text!
+            cellLabel.text = UserManager.sharedManager.acctNewRouting
+            
+        } else {
+            
+            cellLabel.text = ""
+            
+        }
+        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        UserManager.sharedManager.acctNewRouting = routingField.text!
+        cellLabel.text = UserManager.sharedManager.acctNewRouting
+        
+        textField.resignFirstResponder()
+        return true
+        
+    }
+    
+    
+    override func endEditing(_ force: Bool) -> Bool {
+        self.resignFirstResponder()
+        return true
+    }
+    
+
     
 }

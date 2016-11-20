@@ -14,6 +14,8 @@ class paymentDaysTVC: UITableViewController {
     
     
     @IBOutlet var daysTableView: UITableView!
+    
+    let days = ["The day of your payment due date", "1 day before your payment due date", "2 day before your payment due date", "3 day before your payment due date", "4 day before your payment due date", "5 day before your payment due date", "6 day before your payment due date", "7 day before your payment due date"]
 
     
     override func viewDidLoad() {
@@ -85,6 +87,8 @@ class paymentDaysTVC: UITableViewController {
                 selectedIndexPath = indexPath
             }
         }
+        
+        UserManager.sharedManager.acctDate = days[indexPath.row]
         
     }
     

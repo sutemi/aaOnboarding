@@ -11,6 +11,7 @@ import UIKit
 class relationshipUITableViewCell: UITableViewCell {
 
     
+
     @IBOutlet weak var cellLabel: UILabel!
     @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
     

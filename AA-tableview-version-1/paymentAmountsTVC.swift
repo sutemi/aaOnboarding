@@ -8,7 +8,7 @@
 
 import UIKit
 
-class paymentAmountsTVC: UITableViewController {
+class paymentAmountsTVC: UITableViewController, UITextFieldDelegate {
 
     var selectedIndexPath:IndexPath? = nil
     
@@ -21,7 +21,11 @@ class paymentAmountsTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        
+        otherAmountField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
+        otherAmountField.delegate = self
+        
+        
         
         pmtChoicesTableView.tableFooterView = UIView()
         
@@ -77,6 +81,18 @@ class paymentAmountsTVC: UITableViewController {
                 selectedIndexPath = indexPath
             }
         }
+        
+        
+        switch indexPath.row {
+        case 0:
+            UserManager.sharedManager.acctAmount = "Minimum payment due"
+            otherAmountField.text = ""
+        case 1:
+            UserManager.sharedManager.acctAmount = "Statement balance"
+            otherAmountField.text = ""
+        default:
+            break
+        }
 
         
 //        if selectedIndexPath?.row == 2 {
@@ -101,14 +117,44 @@ class paymentAmountsTVC: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        
         if indexPath.row == 0 || indexPath.row == 1 {
             return UITableViewCellEditingStyle(rawValue: 3)!
         }
         
         return .none
+       
+    }
+    
+    
+    
+    
+    func textFieldDidChange(sender:formUITextField) {
         
+        UserManager.sharedManager.acctAmount = otherAmountField.text!
         
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        UserManager.sharedManager.acctAmount = otherAmountField.text!
+        
+        textField.resignFirstResponder()
+        return true
+        
+    }
+    
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.resignFirstResponder()
+    }
+    
+//    override func endEditing(_ force: Bool) -> Bool {
+//        self.resignFirstResponder()
+//        return true
+//    }
+    
+    
     
     
     override func didReceiveMemoryWarning() {

@@ -24,9 +24,9 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank routing number" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrH-eg-KLR">
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="40" id="qXa-le-Fug"/>
+                            <constraint firstAttribute="height" constant="17" id="qXa-le-Fug"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                         <color key="textColor" red="0.21176470589999999" green="0.28627450980000002" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -39,6 +39,9 @@
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2e-v5-K0V" userLabel="routingLabel">
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="YSS-dY-OH2"/>
+                        </constraints>
                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -46,7 +49,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="vrH-eg-KLR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="Flz-Gi-d0x"/>
-                    <constraint firstItem="d2e-v5-K0V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Fmk-IP-vme"/>
+                    <constraint firstItem="d2e-v5-K0V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="Fmk-IP-vme"/>
                     <constraint firstItem="d2e-v5-K0V" firstAttribute="top" secondItem="vrH-eg-KLR" secondAttribute="bottom" id="Ibh-IM-OGO"/>
                     <constraint firstAttribute="trailingMargin" secondItem="d2e-v5-K0V" secondAttribute="trailing" id="Noj-Xr-PRC"/>
                     <constraint firstItem="vrH-eg-KLR" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="O0e-9i-hWv"/>
@@ -57,7 +60,9 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="routingLabel" destination="d2e-v5-K0V" id="Eo6-6U-guW"/>
+                <outlet property="cellLabel" destination="d2e-v5-K0V" id="gul-Hj-Vrj"/>
+                <outlet property="cellLabelHeight" destination="YSS-dY-OH2" id="IK7-1l-4Pl"/>
+                <outlet property="routingField" destination="3VF-z2-jnG" id="Keg-pK-jj7"/>
             </connections>
         </tableViewCell>
     </objects>

@@ -11,11 +11,17 @@ import UIKit
 class whichAccountTableViewCell: UITableViewCell {
 
     
-    @IBOutlet weak var whichAccountLabel: UILabel!
+    @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        
+        if UserManager.sharedManager.acctWhich.characters.count > 0 {
+            cellLabel.text = UserManager.sharedManager.acctWhich
+        }
         
         self.clipsToBounds = true
     }
@@ -23,12 +29,7 @@ class whichAccountTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
-        // Configure the view for the selected state
-        if whichAccountLabel.text == "" {
-            whichAccountLabel.isHidden = true
-        } else {
-            whichAccountLabel.isHidden = false
-        }
+
     }
     
 }

@@ -11,11 +11,16 @@ import UIKit
 class paymentDateTableViewCell: UITableViewCell {
 
     
-    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        if UserManager.sharedManager.acctDate.characters.count > 0 {
+            cellLabel.text = UserManager.sharedManager.acctDate
+        }
         
         self.clipsToBounds = true
     }
@@ -23,12 +28,7 @@ class paymentDateTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
-        // Configure the view for the selected state
-        if dateLabel.text == "" {
-            dateLabel.isHidden = true
-        } else {
-            dateLabel.isHidden = false
-        }
+        
     }
     
 }

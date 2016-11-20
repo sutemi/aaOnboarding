@@ -8,27 +8,59 @@
 
 import UIKit
 
-class accountTableViewCell: UITableViewCell {
+class accountTableViewCell: UITableViewCell, UITextFieldDelegate {
 
     
-    @IBOutlet weak var acctLabel: UILabel!
+    @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
     
+    @IBOutlet weak var acctField: formUITextField!
+    
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        acctField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
+        acctField.delegate = self
         
         self.clipsToBounds = true
     }
     
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
-        if acctLabel.text == "" {
-            acctLabel.isHidden = true
-        } else {
-            acctLabel.isHidden = false
-        }
     }
     
+    
+    func textFieldDidChange(sender:formUITextField) {
+        
+        
+        if acctField.text != "" {
+            
+            UserManager.sharedManager.acctNewNumber = acctField.text!
+            cellLabel.text = UserManager.sharedManager.acctNewNumber
+            
+        } else {
+            
+            cellLabel.text = ""
+            
+        }
+        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        UserManager.sharedManager.acctNewNumber = acctField.text!
+        cellLabel.text = UserManager.sharedManager.acctNewNumber
+        
+        textField.resignFirstResponder()
+        return true
+        
+    }
+    
+    
+    override func endEditing(_ force: Bool) -> Bool {
+        self.resignFirstResponder()
+        return true
+    }
 }

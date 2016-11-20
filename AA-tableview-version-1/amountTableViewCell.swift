@@ -11,11 +11,18 @@ import UIKit
 class amountTableViewCell: UITableViewCell {
 
     
-    @IBOutlet weak var amountLabel: UILabel!
+    @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
+    
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        
+        if UserManager.sharedManager.acctAmount.characters.count > 0 {
+            cellLabel.text = UserManager.sharedManager.acctAmount
+        }
         
         self.clipsToBounds = true
     }
@@ -23,12 +30,7 @@ class amountTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
-        // Configure the view for the selected state
-        if amountLabel.text == "" {
-            amountLabel.isHidden = true
-        } else {
-            amountLabel.isHidden = false
-        }
+
     }
     
 }

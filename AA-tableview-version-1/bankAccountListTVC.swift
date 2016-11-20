@@ -69,6 +69,12 @@ class bankAccountListTVC: UITableViewController {
                 selectedIndexPath = indexPath
             }
         }
+        
+        if indexPath.row == 0 {
+            UserManager.sharedManager.acctWhich = "Bank Account 1\n1234-5678-90123-23"
+        } else if indexPath.row == 1 {
+            UserManager.sharedManager.acctWhich = "Bank Account 2\n1234-5678-90123-23"
+        }
 
         
     }

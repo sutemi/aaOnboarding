@@ -52,8 +52,8 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
         
         tableView.tableFooterView = UIView()
         
-
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: false)
@@ -77,25 +77,36 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == 0 {
+            
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellFullName") as! fullNameUITableViewCell
+            
             if UserManager.sharedManager.userFullName.characters.count > 0 {
                 cell.cellLabel.text = UserManager.sharedManager.userFullName
             }
+            
             return cell
+            
         } else if indexPath.row == 1 {
+            
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellDOB") as! dobUITableViewCell
+            
             if UserManager.sharedManager.userDOB.characters.count > 0 {
                 cell.cellLabel.text = UserManager.sharedManager.userDOB
             }
+            
             return cell
+            
         } else if indexPath.row == 2 {
+            
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellRelationship") as! relationshipUITableViewCell
+            
             if UserManager.sharedManager.userRelation.characters.count > 0 {
                 cell.cellLabel.text = UserManager.sharedManager.userRelation
             }
-            return cell
-        } else if indexPath.row == 3 {
             
+            return cell
+            
+        } else if indexPath.row == 3 {
             
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellCitizen") as! citizenUITableViewCell
             
@@ -108,11 +119,22 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
             }
             
             return cell
+            
         } else if indexPath.row == 4 {
+            
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellAddress") as! addressUITableViewCell
+            
+            if UserManager.sharedManager.userAddress.characters.count > 0 {
+                cell.cellLabel.text = UserManager.sharedManager.userAddress
+            }
+            
             return cell
-        } else {
+            
+        }
+        else {
+            
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellAddress") as! addressUITableViewCell
+            
             return cell
         }
     }

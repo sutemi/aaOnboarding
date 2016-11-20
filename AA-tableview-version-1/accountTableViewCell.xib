@@ -24,7 +24,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank account number" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSy-ks-56D">
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="40" id="hBC-pP-Nk9"/>
+                            <constraint firstAttribute="height" constant="17" id="hBC-pP-Nk9"/>
                         </constraints>
                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
                         <color key="textColor" red="0.21176470589999999" green="0.28627450980000002" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,14 +39,17 @@
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rL-uE-Frb" userLabel="acctLabel">
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="N3V-x6-dj2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="qTv-AT-Agz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="4sy-6x-9dj"/>
-                    <constraint firstItem="8rL-uE-Frb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="6lR-zg-Qvf"/>
+                    <constraint firstItem="8rL-uE-Frb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="6lR-zg-Qvf"/>
                     <constraint firstItem="qTv-AT-Agz" firstAttribute="top" secondItem="8rL-uE-Frb" secondAttribute="bottom" constant="10" id="HOJ-MC-8hV"/>
                     <constraint firstItem="8rL-uE-Frb" firstAttribute="top" secondItem="sSy-ks-56D" secondAttribute="bottom" id="L71-ze-6v7"/>
                     <constraint firstAttribute="trailingMargin" secondItem="sSy-ks-56D" secondAttribute="trailing" id="UAL-Fu-8sN"/>
@@ -57,7 +60,9 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="acctLabel" destination="8rL-uE-Frb" id="kSr-Zl-T9w"/>
+                <outlet property="acctField" destination="qTv-AT-Agz" id="HaD-H2-uOX"/>
+                <outlet property="cellLabel" destination="8rL-uE-Frb" id="uSU-Pj-5En"/>
+                <outlet property="cellLabelHeight" destination="N3V-x6-dj2" id="ybd-Bn-Rtx"/>
             </connections>
         </tableViewCell>
     </objects>

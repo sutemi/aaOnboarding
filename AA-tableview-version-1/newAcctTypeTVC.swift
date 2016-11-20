@@ -14,6 +14,10 @@ class newAcctTypeTVC: UITableViewController {
     @IBOutlet var typeTableView: UITableView!
     var selectedIndexPath:IndexPath? = nil
     
+    
+    let types = ["Personal checking", "Personal savings", "Business checking", "Business savings", "Money market"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -85,6 +89,9 @@ class newAcctTypeTVC: UITableViewController {
                 selectedIndexPath = indexPath
             }
         }
+        
+        
+        UserManager.sharedManager.acctNewType = types[indexPath.row]
         
     }
     

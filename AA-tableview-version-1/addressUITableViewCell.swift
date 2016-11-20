@@ -23,7 +23,7 @@ class addressUITableViewCell: UITableViewCell {
     
     @IBOutlet weak var toggle: UISwitch!
     
-   
+//    var reloadAction: ((UITableViewCell) -> Void)?
     
     
     var isComplete:Bool = true
@@ -44,43 +44,59 @@ class addressUITableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-//        if cellLabel.text != "" {
-//            self.cellLabel.isHidden = false
-//        } else {
-//            self.cellLabel.isHidden = true
-//        }
         
     }
     
     @IBAction func toggleFields(_ sender: AnyObject) {
         
+//        reloadAction!(self)
+        
+        streetField.text = ""
+        zipField.text = ""
+        cityField.text = ""
+        stateField.text = ""
+        aptField.text = ""
+        cellLabel.text = ""
+        
+        UserManager.sharedManager.userAddress = ""
+        cellLabel.text = UserManager.sharedManager.userAddress
+        
         if toggle.isOn {
+            
             streetField.isEnabled = false
             zipField.isEnabled = false
             cityField.isEnabled = false
             stateField.isEnabled = false
             aptField.isEnabled = false
+            
+            UserManager.sharedManager.userAddress = "Same as primary cardmember's address"
+            
         } else {
+            
             streetField.isEnabled = true
             zipField.isEnabled = true
             cityField.isEnabled = true
             stateField.isEnabled = true
             aptField.isEnabled = true
         }
+        
+        cellLabel.text = UserManager.sharedManager.userAddress
+        
+        print("VALUE: \(UserManager.sharedManager.userAddress)")
+        print("LABEL: \(cellLabel.text)")
+        
     }
     
     func textFieldDidChange(sender:formUITextField) {
-        if streetField.text != "" || cityField.text != "" || stateField.text != "" || zipField.text != "" {
-            cellLabelHeight.constant = 20
-//            self.cellLabel.isHidden = false
-            let labelText = "\(streetField.text!), \(cityField.text!), \(stateField.text!) \(zipField.text!)"
-            cellLabel.text = labelText
+        if streetField.text == "" && cityField.text == "" && stateField.text == "" && zipField.text == "" {
+            UserManager.sharedManager.userAddress = ""
+            cellLabel.text = UserManager.sharedManager.userAddress
         } else {
-            cellLabelHeight.constant = 1
-//            self.cellLabel.isHidden = true
-            cellLabel.text = ""
+            UserManager.sharedManager.userAddress = "\(streetField.text!), \(cityField.text!), \(stateField.text!) \(zipField.text!)"
+            cellLabel.text = UserManager.sharedManager.userAddress
         }
+        
+        
     }
     
 }

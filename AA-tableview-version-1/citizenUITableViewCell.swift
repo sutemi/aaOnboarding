@@ -42,21 +42,17 @@ class citizenUITableViewCell: UITableViewCell {
     }
     
     
-    @IBOutlet weak var checkTestButton: UIButton!
-    @IBAction func checkTest(_ sender: AnyObject) {
+
+    
+    @IBAction func toggleRadios(_ sender: AnyObject) {
         
-        print("IMAGE: \(checkTestButton.image(for: .normal))")
+        print("SELECTED: \(sender.isSelected)")
         
-//        if checkTestButton.image(for: .normal) == UIImage(named: "bullet-open.png") {
-//            if let image = UIImage(named: "bullet-closed.png") {
-//                checkTestButton.setImage(image, for: .selected)
-//            }
-//        } else {
-//            if let image = UIImage(named: "bullet-open.png") {
-//                checkTestButton.setImage(image, for: .normal)
-//            }
-//        }
-        
+        if sender.isSelected == false {
+            sender.setSelected(true, animated: true)
+        } else {
+            sender.setSelected(false, animated: true)
+        }
     }
     
     

@@ -20,7 +20,6 @@ class newAccountDetailsVC: UIViewController, UITableViewDataSource, UITableViewD
         super.viewDidLoad()
         
         
-        
         tableView.register(UINib(nibName:"routingTableViewCell", bundle:nil), forCellReuseIdentifier: "cellRouting")
         tableView.register(UINib(nibName:"accountTableViewCell", bundle:nil), forCellReuseIdentifier: "cellAccount")
         tableView.register(UINib(nibName:"reaccountTableViewCell", bundle:nil), forCellReuseIdentifier: "cellReAccount")
@@ -40,39 +39,83 @@ class newAccountDetailsVC: UIViewController, UITableViewDataSource, UITableViewD
         
         //-----------
         
-        
-        
-        
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+        
+    }
+    
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
     
+    
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.row == 0 {
+            
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellRouting") as! routingTableViewCell
+            
+            if UserManager.sharedManager.acctNewRouting.characters.count > 0 {
+                cell.cellLabel.text = UserManager.sharedManager.acctNewRouting
+            }
+            
             return cell
+            
         } else if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellAccount") as! accountTableViewCell
+            
+            if UserManager.sharedManager.acctNewNumber.characters.count > 0 {
+                cell.cellLabel.text = UserManager.sharedManager.acctNewNumber
+            }
+            
             return cell
+            
         } else if indexPath.row == 2 {
+            
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellReAccount") as! reaccountTableViewCell
+            
+            if UserManager.sharedManager.acctNewReNumber.characters.count > 0 {
+                cell.cellLabel.text = UserManager.sharedManager.acctNewReNumber
+            }
+            
             return cell
+            
         } else if indexPath.row == 3 {
+            
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellType") as! typeTableViewCell
+            
+            if UserManager.sharedManager.acctNewType.characters.count > 0 {
+                cell.cellLabel.text = UserManager.sharedManager.acctNewType
+            }
+            
             return cell
+            
         } else if indexPath.row == 4 {
+            
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellNickname") as! nicknameTableViewCell
+            
+            if UserManager.sharedManager.acctNewNickname.characters.count > 0 {
+                cell.cellLabel.text = UserManager.sharedManager.acctNewNickname
+            }
+            
             return cell
+            
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "cellType") as! typeTableViewCell
             return cell
         }
+        
+        
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -148,16 +191,11 @@ class newAccountDetailsVC: UIViewController, UITableViewDataSource, UITableViewD
     
     
     @IBAction func unwindToAccountDetails(segue: UIStoryboardSegue) {}
+
     
     
     override func viewDidDisappear(_ animated: Bool) {
-//        super.viewWillDisappear(animated)
-//        navigationController?.setNavigationBarHidden(false, animated: true)
-//        
-//        let backItem = UIBarButtonItem()
-//        backItem.title = ""
-//        navigationItem.backBarButtonItem = backItem
-        
+  
     }
 
     

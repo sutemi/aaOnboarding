@@ -8,27 +8,63 @@
 
 import UIKit
 
-class nicknameTableViewCell: UITableViewCell {
+class nicknameTableViewCell: UITableViewCell, UITextFieldDelegate {
 
-    @IBOutlet weak var nicknameLabel: UILabel!
+
+    @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
     
+    @IBOutlet weak var nicknameField: formUITextField!
+   
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        nicknameField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
+        nicknameField.delegate = self
         
         self.clipsToBounds = true
     }
     
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+    
+    
+    func textFieldDidChange(sender:formUITextField) {
         
-        // Configure the view for the selected state
-        if nicknameLabel.text == "" {
-            nicknameLabel.isHidden = true
+        
+        if nicknameField.text != "" {
+            
+            UserManager.sharedManager.acctNewNickname = nicknameField.text!
+            cellLabel.text = UserManager.sharedManager.acctNewNickname
+            UserManager.sharedManager.acctWhich = UserManager.sharedManager.acctNewNickname
+            
         } else {
-            nicknameLabel.isHidden = false
+            
+            cellLabel.text = ""
+            
         }
+        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        UserManager.sharedManager.acctNewNickname = nicknameField.text!
+        cellLabel.text = UserManager.sharedManager.acctNewNickname
+        
+        UserManager.sharedManager.acctWhich = UserManager.sharedManager.acctNewNickname
+        
+        textField.resignFirstResponder()
+        return true
+        
+    }
+    
+    
+    override func endEditing(_ force: Bool) -> Bool {
+        self.resignFirstResponder()
+        return true
     }
     
 }

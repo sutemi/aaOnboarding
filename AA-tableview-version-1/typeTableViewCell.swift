@@ -11,11 +11,16 @@ import UIKit
 class typeTableViewCell: UITableViewCell {
 
     
-    @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet weak var cellLabelHeight: NSLayoutConstraint!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        if UserManager.sharedManager.acctNewType.characters.count > 0 {
+            cellLabel.text = UserManager.sharedManager.acctNewType
+        }
         
         self.clipsToBounds = true
     }
@@ -23,12 +28,7 @@ class typeTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
-        // Configure the view for the selected state
-        if typeLabel.text == "" {
-            typeLabel.isHidden = true
-        } else {
-            typeLabel.isHidden = false
-        }
+
     }
     
 }
