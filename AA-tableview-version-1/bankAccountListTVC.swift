@@ -98,6 +98,13 @@ class bankAccountListTVC: UITableViewController {
     
     
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        self.navigationItem.backBarButtonItem?.title = ""
+    }
+    
+    
+    
     @IBAction func unwindToAccountList(segue: UIStoryboardSegue) {}
 
     override func didReceiveMemoryWarning() {

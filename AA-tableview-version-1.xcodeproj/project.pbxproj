@@ -27,6 +27,9 @@
 		330632C51DC3A216004ADEB7 /* splashSevenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330632C41DC3A216004ADEB7 /* splashSevenVC.swift */; };
 		330632C71DC3A278004ADEB7 /* splashEightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330632C61DC3A278004ADEB7 /* splashEightVC.swift */; };
 		330632C91DC77F0F004ADEB7 /* countriesListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330632C81DC77F0F004ADEB7 /* countriesListTVC.swift */; };
+		332E6E6D1DE33A0000471A7D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332E6E6C1DE33A0000471A7D /* NotificationController.swift */; };
+		332E6E6F1DE33A3E00471A7D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332E6E6E1DE33A3E00471A7D /* BaseViewController.swift */; };
+		332E6E711DE33AB700471A7D /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332E6E701DE33AB700471A7D /* UIViewControllerExtension.swift */; };
 		334B6E781DB9B95A002FF8B7 /* paymentDaysTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B6E771DB9B95A002FF8B7 /* paymentDaysTVC.swift */; };
 		335116BA1DB99B68005FD2F4 /* autoFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335116B91DB99B68005FD2F4 /* autoFunctions.swift */; };
 		335116BC1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335116BB1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift */; };
@@ -121,6 +124,9 @@
 		330632C41DC3A216004ADEB7 /* splashSevenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splashSevenVC.swift; sourceTree = "<group>"; };
 		330632C61DC3A278004ADEB7 /* splashEightVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = splashEightVC.swift; sourceTree = "<group>"; };
 		330632C81DC77F0F004ADEB7 /* countriesListTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = countriesListTVC.swift; sourceTree = "<group>"; };
+		332E6E6C1DE33A0000471A7D /* NotificationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		332E6E6E1DE33A3E00471A7D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		332E6E701DE33AB700471A7D /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		334B6E771DB9B95A002FF8B7 /* paymentDaysTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paymentDaysTVC.swift; sourceTree = "<group>"; };
 		335116B91DB99B68005FD2F4 /* autoFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = autoFunctions.swift; sourceTree = "<group>"; };
 		335116BB1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+TextFieldDelegate.swift"; sourceTree = "<group>"; };
@@ -241,6 +247,9 @@
 				3363F75C1DC10C3E00F375F3 /* customColors.swift */,
 				33DF97B31DCB924000329650 /* UITableViewCellSelected.swift */,
 				33C676B31DDF553F00F71B7C /* UserManager.swift */,
+				332E6E6C1DE33A0000471A7D /* NotificationController.swift */,
+				332E6E6E1DE33A3E00471A7D /* BaseViewController.swift */,
+				332E6E701DE33AB700471A7D /* UIViewControllerExtension.swift */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -546,7 +555,9 @@
 			files = (
 				3382AFD71DD4C6110078E8C8 /* servicingSettingsVC.swift in Sources */,
 				3363F7551DBFE5B900F375F3 /* UIViewControllerBaseClass.swift in Sources */,
+				332E6E711DE33AB700471A7D /* UIViewControllerExtension.swift in Sources */,
 				33F3EFC71DBA538B00DFCFF6 /* servicingAlertsVC.swift in Sources */,
+				332E6E6D1DE33A0000471A7D /* NotificationController.swift in Sources */,
 				330632BF1DC3A0DA004ADEB7 /* splashFourVC.swift in Sources */,
 				330632C31DC3A1B7004ADEB7 /* splashSixVC.swift in Sources */,
 				33552E0C1DE2706400ECB1C8 /* cardDeliveryTableViewCell.swift in Sources */,
@@ -565,6 +576,7 @@
 				335116BC1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift in Sources */,
 				33DF97B21DCB765400329650 /* TEMPTableViewController.swift in Sources */,
 				3363F7581DC0F36800F375F3 /* touchIDSettingsVC.swift in Sources */,
+				332E6E6F1DE33A3E00471A7D /* BaseViewController.swift in Sources */,
 				33C9DE0B1DB82CE900D29065 /* delayedSuccessScreen.swift in Sources */,
 				33C676B41DDF553F00F71B7C /* UserManager.swift in Sources */,
 				33C9DE321DB960F900D29065 /* nicknameTableViewCell.swift in Sources */,

@@ -23,7 +23,7 @@ class newAcctTypeTVC: UITableViewController {
         
         // Do any additional setup after loading the view.
         
-        typeTableView.tableFooterView = UIView()
+        
         
         
         //--------------------------------------
@@ -32,21 +32,40 @@ class newAcctTypeTVC: UITableViewController {
     
         //--------------------------------------
         
-        
+        navigationController?.setNavigationBarHidden(false, animated: true)
 
         // Navbar
         
         let navitem = self.navigationItem
         let backItem = navitem.backBarButtonItem
+        self.navigationItem.title = "ADD A NEW BANK ACCOUNT"
         backItem?.title = ""
         backItem?.tintColor = UIColor.aaPrimaryBlue()
         
+        
         //-----------
         
+        typeTableView.tableFooterView = UIView()
         
         
-        navigationController?.setNavigationBarHidden(false, animated: true)
     }
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        
+        
+    }
+    
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+//        self.navigationItem.backBarButtonItem?.title = ""
+        
+    }
+    
+    
 
 
     override func didReceiveMemoryWarning() {

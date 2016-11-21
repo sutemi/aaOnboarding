@@ -66,56 +66,56 @@ class servicingAlertsVC: UIViewController, UITableViewDataSource, UITableViewDel
         case 0:
             
             if UserManager.sharedManager.acctServicingLabel1.characters.count > 0 {
-                UserManager.sharedManager.acctServicingLabel1 = UserManager.sharedManager.acctServicingLabel
+//                UserManager.sharedManager.acctServicingLabel1 = UserManager.sharedManager.acctServicingLabel
                 cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel1
             }
             
         case 1:
             
             if UserManager.sharedManager.acctServicingLabel2.characters.count > 0 {
-                UserManager.sharedManager.acctServicingLabel2 = UserManager.sharedManager.acctServicingLabel
+//                UserManager.sharedManager.acctServicingLabel2 = UserManager.sharedManager.acctServicingLabel
                 cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel2
             }
             
         case 2:
             
             if UserManager.sharedManager.acctServicingLabel3.characters.count > 0 {
-                UserManager.sharedManager.acctServicingLabel3 = UserManager.sharedManager.acctServicingLabel
+//                UserManager.sharedManager.acctServicingLabel3 = UserManager.sharedManager.acctServicingLabel
                 cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel3
             }
             
         case 3:
             
             if UserManager.sharedManager.acctServicingLabel4.characters.count > 0 {
-                UserManager.sharedManager.acctServicingLabel4 = UserManager.sharedManager.acctServicingLabel
+//                UserManager.sharedManager.acctServicingLabel4 = UserManager.sharedManager.acctServicingLabel
                 cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel4
             }
             
         case 4:
             
             if UserManager.sharedManager.acctServicingLabel5.characters.count > 0 {
-                UserManager.sharedManager.acctServicingLabel5 = UserManager.sharedManager.acctServicingLabel
+//                UserManager.sharedManager.acctServicingLabel5 = UserManager.sharedManager.acctServicingLabel
                 cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel5
             }
             
         case 5:
             
             if UserManager.sharedManager.acctServicingLabel6.characters.count > 0 {
-                UserManager.sharedManager.acctServicingLabel6 = UserManager.sharedManager.acctServicingLabel
+//                UserManager.sharedManager.acctServicingLabel6 = UserManager.sharedManager.acctServicingLabel
                 cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel6
             }
             
         case 6:
             
             if UserManager.sharedManager.acctServicingLabel7.characters.count > 0 {
-                UserManager.sharedManager.acctServicingLabel7 = UserManager.sharedManager.acctServicingLabel
+//                UserManager.sharedManager.acctServicingLabel7 = UserManager.sharedManager.acctServicingLabel
                 cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel7
             }
             
         case 7:
             
             if UserManager.sharedManager.acctServicingLabel8.characters.count > 0 {
-                UserManager.sharedManager.acctServicingLabel8 = UserManager.sharedManager.acctServicingLabel
+//                UserManager.sharedManager.acctServicingLabel8 = UserManager.sharedManager.acctServicingLabel
                 cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel8
             }
             
@@ -191,7 +191,8 @@ class servicingAlertsVC: UIViewController, UITableViewDataSource, UITableViewDel
         
         performSegue(withIdentifier: "alertControlsSegue", sender: self)
         
-        tableView.reloadRows(at: [indexPath], with: .automatic)
+//        tableView.reloadData()
+//        tableView.reloadRows(at: [indexPath], with: .automatic)
         
         
     }
@@ -267,7 +268,7 @@ class servicingAlertsVC: UIViewController, UITableViewDataSource, UITableViewDel
             }
             
         default:
-            return 50
+            return 70
         }
     }
    

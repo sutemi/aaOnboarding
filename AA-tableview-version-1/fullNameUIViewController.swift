@@ -192,8 +192,8 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
                     maxHeight = row1Max
                 
             case 2:
-                    minHeight = row2Min
-                    maxHeight = row2Max
+                    minHeight = 50
+                    maxHeight = 50
                 
             case 3:
                     minHeight = row3Min

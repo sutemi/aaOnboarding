@@ -28,7 +28,8 @@ class newAccountDetailsVC: UIViewController, UITableViewDataSource, UITableViewD
         
         tableView.tableFooterView = UIView()
         
-
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        
         
         // Navbar
         
@@ -37,15 +38,26 @@ class newAccountDetailsVC: UIViewController, UITableViewDataSource, UITableViewD
         backItem?.title = ""
         backItem?.tintColor = UIColor.aaPrimaryBlue()
         
+//        self.navigationController?.addBackbutton(title: "")
+        
         //-----------
         
-        navigationController?.setNavigationBarHidden(false, animated: true)
+        
     }
 
     
     
     override func viewWillAppear(_ animated: Bool) {
         tableView.reloadData()
+        
+    }
+    
+    
+    
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+//        self.navigationItem.backBarButtonItem?.title = ""
         
     }
     
@@ -196,6 +208,14 @@ class newAccountDetailsVC: UIViewController, UITableViewDataSource, UITableViewD
     
     override func viewDidDisappear(_ animated: Bool) {
   
+    }
+    
+    
+    
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
     }
 
     

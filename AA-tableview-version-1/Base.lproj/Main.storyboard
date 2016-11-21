@@ -426,7 +426,9 @@
                             <constraint firstItem="Heq-tO-9u8" firstAttribute="centerX" secondItem="6dd-aL-e8y" secondAttribute="centerX" id="t16-HZ-z8Y"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="C4I-6v-rxO"/>
+                    <navigationItem key="navigationItem" id="C4I-6v-rxO">
+                        <barButtonItem key="backBarButtonItem" title=" " id="T4M-EW-LgR"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="button" destination="7nP-fC-vtl" id="xCw-U1-o9D"/>
                         <outlet property="tableView" destination="zrM-iw-7fq" id="4ho-nH-fDX"/>
@@ -526,7 +528,7 @@
         <!--Countries ListTVC-->
         <scene sceneID="sXu-pU-JdZ">
             <objects>
-                <tableViewController storyboardIdentifier="countryList" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ceS-ky-USE" customClass="countriesListTVC" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="countryList" useStoryboardIdentifierAsRestorationIdentifier="YES" clearsSelectionOnViewWillAppear="NO" id="ceS-ky-USE" customClass="countriesListTVC" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cN8-fk-7rX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1404,7 +1406,9 @@
                             <constraint firstItem="eSQ-EJ-D7L" firstAttribute="leading" secondItem="3g8-jH-ytE" secondAttribute="leading" constant="20" id="zOH-7A-6oK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="gKw-dn-nJl"/>
+                    <navigationItem key="navigationItem" id="gKw-dn-nJl">
+                        <barButtonItem key="backBarButtonItem" title=" " id="HiT-C0-PKX"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="wb0-0C-bfw" id="vDe-dy-i1T"/>
                     </connections>
@@ -1434,7 +1438,7 @@
         <!--FROM WHICH BANK ACCOUNT?-->
         <scene sceneID="grM-LQ-rgt">
             <objects>
-                <tableViewController storyboardIdentifier="bankAcctList" title="FROM WHICH BANK ACCOUNT?" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4HH-1z-yt5" customClass="bankAccountListTVC" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="bankAcctList" title="FROM WHICH BANK ACCOUNT?" useStoryboardIdentifierAsRestorationIdentifier="YES" clearsSelectionOnViewWillAppear="NO" id="4HH-1z-yt5" customClass="bankAccountListTVC" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="3" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="gHP-rI-QVA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1525,10 +1529,10 @@
             </objects>
             <point key="canvasLocation" x="4341.6000000000004" y="551.87406296851577"/>
         </scene>
-        <!--ADD A NEW BANK ACCOUNT-->
+        <!--ADD NEW BANK ACCOUNT-->
         <scene sceneID="bnu-7h-oal">
             <objects>
-                <viewController storyboardIdentifier="newAcctDetails" title="ADD A NEW BANK ACCOUNT" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KbY-qj-EB8" customClass="newAccountDetailsVC" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="newAcctDetails" title="ADD NEW BANK ACCOUNT" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KbY-qj-EB8" customClass="newAccountDetailsVC" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cif-Qw-5yW"/>
                         <viewControllerLayoutGuide type="bottom" id="vea-n0-hFa"/>
@@ -1633,7 +1637,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Knj-xh-gKG" secondAttribute="trailing" constant="4" id="kfw-h5-gWg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="qMI-Gy-PRY"/>
+                    <navigationItem key="navigationItem" title="ADD NEW BANK ACCOUNT" id="qMI-Gy-PRY"/>
                     <connections>
                         <outlet property="tableView" destination="yg3-kP-glS" id="cpb-AD-HGN"/>
                     </connections>
@@ -1645,7 +1649,7 @@
         <!--ADD A NEW BANK ACCOUNT-->
         <scene sceneID="YXe-2V-19x">
             <objects>
-                <tableViewController storyboardIdentifier="newAcctType" title="ADD A NEW BANK ACCOUNT" useStoryboardIdentifierAsRestorationIdentifier="YES" id="X5R-Ty-j11" customClass="newAcctTypeTVC" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="newAcctType" title="ADD A NEW BANK ACCOUNT" useStoryboardIdentifierAsRestorationIdentifier="YES" clearsSelectionOnViewWillAppear="NO" id="X5R-Ty-j11" customClass="newAcctTypeTVC" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="3" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="bm0-yc-sZQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1778,7 +1782,7 @@
         <!--SCHEDULE REPEAT PAYMENTS-->
         <scene sceneID="dg0-bR-PuW">
             <objects>
-                <tableViewController storyboardIdentifier="paymentAmount" title="SCHEDULE REPEAT PAYMENTS" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7FG-uo-ayB" customClass="paymentAmountsTVC" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="paymentAmount" title="SCHEDULE REPEAT PAYMENTS" useStoryboardIdentifierAsRestorationIdentifier="YES" clearsSelectionOnViewWillAppear="NO" id="7FG-uo-ayB" customClass="paymentAmountsTVC" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="3" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="YHh-eP-3su">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1873,7 +1877,7 @@
         <!--SELECT MONTHLY PAYMENT DATE-->
         <scene sceneID="b5V-ms-AuY">
             <objects>
-                <tableViewController storyboardIdentifier="paymentDate" title="SELECT MONTHLY PAYMENT DATE" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ciU-9V-ufZ" customClass="paymentDaysTVC" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="paymentDate" title="SELECT MONTHLY PAYMENT DATE" useStoryboardIdentifierAsRestorationIdentifier="YES" clearsSelectionOnViewWillAppear="NO" id="ciU-9V-ufZ" customClass="paymentDaysTVC" customModule="AA_tableview_version_1" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="3" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" id="HyN-XW-nBs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2222,7 +2226,9 @@
                             <constraint firstItem="0oN-2j-OCV" firstAttribute="top" secondItem="UeI-Ls-M3g" secondAttribute="bottom" id="nRV-gW-9SF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Dtq-BP-rwa"/>
+                    <navigationItem key="navigationItem" id="Dtq-BP-rwa">
+                        <barButtonItem key="backBarButtonItem" title=" " id="nr5-UI-KWS"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rWE-8E-EnF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2355,7 +2361,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="aX0-Bu-JU9" secondAttribute="trailing" constant="4" id="yOt-NC-y0Z"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="ISg-pd-Ihm"/>
+                    <navigationItem key="navigationItem" id="ISg-pd-Ihm">
+                        <barButtonItem key="backBarButtonItem" title=" " id="XrV-1v-tYH"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="91O-Dh-odx" id="5O8-LL-uDh"/>
                     </connections>
@@ -2640,7 +2648,9 @@
                             <constraint firstItem="XIB-Mo-Zut" firstAttribute="leading" secondItem="cE5-eZ-f4l" secondAttribute="leading" id="xKe-f8-YsV"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Drz-vf-DTl"/>
+                    <navigationItem key="navigationItem" id="Drz-vf-DTl">
+                        <barButtonItem key="backBarButtonItem" title="  " id="z2Y-pX-GYC"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailField" destination="TCt-3Y-bGp" id="1HB-xU-j9z"/>
                     </connections>
@@ -2683,7 +2693,9 @@ It is important to update your email address when it changes, so we can notify y
                             <constraint firstItem="fPs-aX-FAG" firstAttribute="leading" secondItem="LGC-6U-aAH" secondAttribute="leadingMargin" constant="20" id="g4J-2Q-zQt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="PAPERLESS STATEMENT DISCLOSURE" id="TXg-Q9-1dl"/>
+                    <navigationItem key="navigationItem" title="PAPERLESS STATEMENT DISCLOSURE" id="TXg-Q9-1dl">
+                        <barButtonItem key="backBarButtonItem" title="  " id="SZS-ta-a71"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="textView" destination="fPs-aX-FAG" id="QVm-fI-4n0"/>
                     </connections>
@@ -2863,7 +2875,9 @@ It is important to update your email address when it changes, so we can notify y
                             <constraint firstAttribute="trailing" secondItem="UZ9-7a-CKV" secondAttribute="trailing" id="z3K-B5-BLa"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="kKb-nh-FqY"/>
+                    <navigationItem key="navigationItem" id="kKb-nh-FqY">
+                        <barButtonItem key="backBarButtonItem" title=" " id="nQX-es-KSx"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="password" destination="Y1U-XL-0dW" id="pZA-LJ-I2x"/>
                     </connections>
@@ -3690,7 +3704,7 @@ FICO and FICO Score are registered trademarks of Fair Isaac Corporation in the U
         <image name="icon-touch-id@1x" width="251" height="252"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="s6m-7o-Dfg"/>
+        <segue reference="HKQ-um-Qdy"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
 </document>
