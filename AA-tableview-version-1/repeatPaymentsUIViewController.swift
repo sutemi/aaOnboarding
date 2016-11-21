@@ -51,7 +51,7 @@ class repeatPaymentsUIViewController: UIViewController, UITableViewDataSource, U
         
         tableView.tableFooterView = UIView()
         
-        
+        navigationItem.hidesBackButton = true
        
     }
     
