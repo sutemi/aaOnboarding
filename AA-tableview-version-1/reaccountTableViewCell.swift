@@ -23,6 +23,10 @@ class reaccountTableViewCell: UITableViewCell, UITextFieldDelegate {
         reAcctField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
         reAcctField.delegate = self
         
+        if UserManager.sharedManager.acctNewReNumber.characters.count > 0 {
+            reAcctField.text = UserManager.sharedManager.acctNewReNumber
+        }
+        
         self.clipsToBounds = true
     }
     

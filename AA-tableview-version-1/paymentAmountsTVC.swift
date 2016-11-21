@@ -155,6 +155,13 @@ class paymentAmountsTVC: UITableViewController, UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         self.resignFirstResponder()
     }
+    
+    
+    
+    
+    
+    
+    
 
     
     override func didReceiveMemoryWarning() {

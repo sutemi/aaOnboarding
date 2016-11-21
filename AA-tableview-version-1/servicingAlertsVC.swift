@@ -48,6 +48,11 @@ class servicingAlertsVC: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    
     
     
     
@@ -148,31 +153,31 @@ class servicingAlertsVC: UIViewController, UITableViewDataSource, UITableViewDel
         case 1:
             let cell = tableView.cellForRow(at: indexPath) as! servicingAlertTableViewCell
             UserManager.sharedManager.acctServicingLabel2 = UserManager.sharedManager.acctServicingLabel
-            cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel1
+            cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel2
         case 2:
             let cell = tableView.cellForRow(at: indexPath) as! servicingAlertTableViewCell
             UserManager.sharedManager.acctServicingLabel3 = UserManager.sharedManager.acctServicingLabel
-            cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel1
+            cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel3
         case 3:
             let cell = tableView.cellForRow(at: indexPath) as! servicingAlertTableViewCell
             UserManager.sharedManager.acctServicingLabel4 = UserManager.sharedManager.acctServicingLabel
-            cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel1
+            cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel4
         case 4:
             let cell = tableView.cellForRow(at: indexPath) as! servicingAlertTableViewCell
             UserManager.sharedManager.acctServicingLabel5 = UserManager.sharedManager.acctServicingLabel
-            cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel1
+            cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel5
         case 5:
             let cell = tableView.cellForRow(at: indexPath) as! servicingAlertTableViewCell
             UserManager.sharedManager.acctServicingLabel6 = UserManager.sharedManager.acctServicingLabel
-            cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel1
+            cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel6
         case 6:
             let cell = tableView.cellForRow(at: indexPath) as! servicingAlertTableViewCell
             UserManager.sharedManager.acctServicingLabel7 = UserManager.sharedManager.acctServicingLabel
-            cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel1
+            cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel7
         case 7:
             let cell = tableView.cellForRow(at: indexPath) as! servicingAlertTableViewCell
             UserManager.sharedManager.acctServicingLabel8 = UserManager.sharedManager.acctServicingLabel
-            cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel1
+            cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel8
         default:
             let cell = tableView.cellForRow(at: indexPath) as! servicingAlertTableViewCell
             cell.cellLabel.text = UserManager.sharedManager.acctServicingLabel

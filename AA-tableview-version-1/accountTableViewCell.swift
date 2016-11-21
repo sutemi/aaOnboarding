@@ -23,6 +23,10 @@ class accountTableViewCell: UITableViewCell, UITextFieldDelegate {
         acctField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
         acctField.delegate = self
         
+        if UserManager.sharedManager.acctNewNumber.characters.count > 0 {
+            acctField.text = UserManager.sharedManager.acctNewNumber
+        }
+        
         self.clipsToBounds = true
     }
     

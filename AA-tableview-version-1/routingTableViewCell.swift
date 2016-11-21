@@ -22,6 +22,10 @@ class routingTableViewCell: UITableViewCell, UITextFieldDelegate {
         routingField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
         routingField.delegate = self
         
+        if UserManager.sharedManager.acctNewRouting.characters.count > 0 {
+            routingField.text = UserManager.sharedManager.acctNewRouting
+        }
+        
         self.clipsToBounds = true
     }
     

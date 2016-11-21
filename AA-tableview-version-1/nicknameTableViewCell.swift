@@ -23,6 +23,10 @@ class nicknameTableViewCell: UITableViewCell, UITextFieldDelegate {
         nicknameField.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
         nicknameField.delegate = self
         
+        if UserManager.sharedManager.acctNewNickname.characters.count > 0 {
+            nicknameField.text = UserManager.sharedManager.acctNewNickname
+        }
+        
         self.clipsToBounds = true
     }
     
