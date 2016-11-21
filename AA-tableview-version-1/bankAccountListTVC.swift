@@ -33,15 +33,21 @@ class bankAccountListTVC: UITableViewController {
         
         // Navbar
         
-        let navitem = self.navigationItem
-        let backItem = navitem.backBarButtonItem
-        backItem?.title = ""
-        backItem?.tintColor = UIColor.aaPrimaryBlue()
+//        let navitem = self.navigationItem
+//        let backItem = navitem.backBarButtonItem
+//        backItem?.title = ""
+//        backItem?.tintColor = UIColor.aaPrimaryBlue()
         
         //-----------
 
         navigationController?.setNavigationBarHidden(false, animated: true)
         
+        
+    }
+    
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
         
     }
 
@@ -81,12 +87,13 @@ class bankAccountListTVC: UITableViewController {
     
     
     override func viewDidDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
+        
         navigationController?.setNavigationBarHidden(false, animated: true)
         
-        let backItem = UIBarButtonItem()
-        backItem.title = ""
-        navigationItem.backBarButtonItem = backItem
+    }
+
+    
+    override func viewWillDisappear(_ animated: Bool) {
         
     }
     

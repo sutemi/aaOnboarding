@@ -40,10 +40,10 @@ class paymentAmountsTVC: UITableViewController, UITextFieldDelegate {
 
         // Navbar
         
-        let navitem = self.navigationItem
-        let backItem = navitem.backBarButtonItem
-        backItem?.title = ""
-        backItem?.tintColor = UIColor.aaPrimaryBlue()
+//        let navitem = self.navigationItem
+//        let backItem = navitem.backBarButtonItem
+//        backItem?.title = ""
+//        backItem?.tintColor = UIColor.aaPrimaryBlue()
         
         //-----------
         

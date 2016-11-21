@@ -61,6 +61,8 @@ class repeatPaymentsUIViewController: UIViewController, UITableViewDataSource, U
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        
         tableView.reloadData()
     }
     
@@ -186,6 +188,10 @@ class repeatPaymentsUIViewController: UIViewController, UITableViewDataSource, U
     
     
 
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationItem.backBarButtonItem?.title = ""
+    }
     
     
     

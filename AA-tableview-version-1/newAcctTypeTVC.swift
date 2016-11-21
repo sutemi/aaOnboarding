@@ -36,11 +36,11 @@ class newAcctTypeTVC: UITableViewController {
 
         // Navbar
         
-        let navitem = self.navigationItem
-        let backItem = navitem.backBarButtonItem
-        self.navigationItem.title = "ADD A NEW BANK ACCOUNT"
-        backItem?.title = ""
-        backItem?.tintColor = UIColor.aaPrimaryBlue()
+//        let navitem = self.navigationItem
+//        let backItem = navitem.backBarButtonItem
+//        self.navigationItem.title = "ADD A NEW BANK ACCOUNT"
+//        backItem?.title = ""
+//        backItem?.tintColor = UIColor.aaPrimaryBlue()
         
         
         //-----------
@@ -53,16 +53,20 @@ class newAcctTypeTVC: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
         
     }
     
     
+    override func viewDidDisappear(_ animated: Bool) {
+        
+    }
+    
     
     override func viewDidAppear(_ animated: Bool) {
-        
-//        self.navigationItem.backBarButtonItem?.title = ""
-        
+   
     }
     
     
