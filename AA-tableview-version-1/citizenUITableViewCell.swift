@@ -19,29 +19,6 @@ class citizenUITableViewCell: UITableViewCell {
     
     @IBOutlet weak var switchNo: UISwitch!
     @IBOutlet weak var switchYes: UISwitch!
-
-    
-    @IBAction func switchedNo(_ sender:AnyObject) {
-        if switchYes.isOn {
-            switchYes.isOn = false
-        } else {
-            switchNo.isOn = true
-        }
-        tapAction!(self)
-    }
-    
-    
-    @IBAction func switchedYes(_ sender: AnyObject) {
-        if switchNo.isOn {
-            switchNo.isOn = false
-        } else {
-            
-        }
-        
-        UserManager.sharedManager.userCitizen = "U.S. Citizen"
-        cellLabel.text = UserManager.sharedManager.userCitizen
-    }
-    
     
 
     
@@ -49,10 +26,33 @@ class citizenUITableViewCell: UITableViewCell {
         
         print("SELECTED: \(sender.isSelected)")
         
-        if sender.isSelected == false {
-            sender.setSelected(true, animated: true)
-        } else {
-            sender.setSelected(false, animated: true)
+        let toggle = sender as! UISwitch
+        
+        // turn YES > ON
+        if toggle.isOn == false && toggle.tag == 1 {
+            switchNo.isOn = false
+            UserManager.sharedManager.userCitizen = ""
+            cellLabel.text = UserManager.sharedManager.userCitizen
+        }
+        // turn YES > OFF
+        else if toggle.isOn == true && toggle.tag == 1 {
+            switchNo.isOn = false
+            UserManager.sharedManager.userCitizen = "U.S. Citizen"
+            cellLabel.text = UserManager.sharedManager.userCitizen
+        }
+        // turn NO > ON
+        else if toggle.isOn == false && toggle.tag == 2 {
+            switchYes.isOn = false
+            UserManager.sharedManager.userCitizen = ""
+            cellLabel.text = UserManager.sharedManager.userCitizen
+        }
+        // turn NO > OFF
+        else if toggle.isOn == true && toggle.tag == 2 {
+            switchYes.isOn = false
+            tapAction!(self)
+        }
+        else {
+            print("Switch Logic Error")
         }
     }
     

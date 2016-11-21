@@ -31,9 +31,9 @@
                     </label>
                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oCv-cL-vg6" userLabel="Stack radio buttons">
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VnE-6F-rI1">
+                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VnE-6F-rI1">
                                 <connections>
-                                    <action selector="switchedYes:" destination="KGk-i7-Jjw" eventType="valueChanged" id="uJq-Yp-abM"/>
+                                    <action selector="toggleRadios:" destination="KGk-i7-Jjw" eventType="valueChanged" id="faJ-4b-wbP"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="756" verticalHuggingPriority="251" horizontalCompressionResistancePriority="758" text="Yes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lnd-g6-fdx">
@@ -41,9 +41,9 @@
                                 <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xvK-2H-2O9">
+                            <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xvK-2H-2O9">
                                 <connections>
-                                    <action selector="switchedNo:" destination="KGk-i7-Jjw" eventType="valueChanged" id="74h-mn-aWG"/>
+                                    <action selector="toggleRadios:" destination="KGk-i7-Jjw" eventType="valueChanged" id="RMy-Vk-BCM"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="756" verticalHuggingPriority="251" horizontalCompressionResistancePriority="758" text="No" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TwZ-9e-ebl">
