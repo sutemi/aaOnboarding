@@ -34,7 +34,7 @@ class fullNameUIViewController: UIViewController, UITableViewDataSource, UITable
     var row2Min:CGFloat = 50
     var row2Max:CGFloat = 70
     var row3Min:CGFloat = 50
-    var row3Max:CGFloat = 170
+    var row3Max:CGFloat = 100
     var row4Min:CGFloat = 50
     var row4Max:CGFloat = 420
 
