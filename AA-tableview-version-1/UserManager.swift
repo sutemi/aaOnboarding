@@ -20,6 +20,7 @@ class UserManager: NSObject {
     var userRelation: String = ""
     var userCitizen: String = ""
     var userAddress: String = ""
+    var userDelivery: Bool = false
     
     // ADD BANK ACCOUNT
     // --------------------------

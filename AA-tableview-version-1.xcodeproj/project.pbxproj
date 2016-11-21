@@ -30,6 +30,8 @@
 		334B6E781DB9B95A002FF8B7 /* paymentDaysTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334B6E771DB9B95A002FF8B7 /* paymentDaysTVC.swift */; };
 		335116BA1DB99B68005FD2F4 /* autoFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335116B91DB99B68005FD2F4 /* autoFunctions.swift */; };
 		335116BC1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335116BB1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift */; };
+		33552E0C1DE2706400ECB1C8 /* cardDeliveryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33552E0A1DE2706400ECB1C8 /* cardDeliveryTableViewCell.swift */; };
+		33552E0D1DE2706400ECB1C8 /* cardDeliveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33552E0B1DE2706400ECB1C8 /* cardDeliveryTableViewCell.xib */; };
 		3363F74B1DBE5E8400F375F3 /* paperlessDisclosuresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F74A1DBE5E8400F375F3 /* paperlessDisclosuresVC.swift */; };
 		3363F74D1DBE7ED600F375F3 /* paperlessStatementsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F74C1DBE7ED600F375F3 /* paperlessStatementsVC.swift */; };
 		3363F74F1DBE8CE200F375F3 /* customNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F74E1DBE8CE200F375F3 /* customNavigationBar.swift */; };
@@ -122,6 +124,8 @@
 		334B6E771DB9B95A002FF8B7 /* paymentDaysTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paymentDaysTVC.swift; sourceTree = "<group>"; };
 		335116B91DB99B68005FD2F4 /* autoFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = autoFunctions.swift; sourceTree = "<group>"; };
 		335116BB1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+TextFieldDelegate.swift"; sourceTree = "<group>"; };
+		33552E0A1DE2706400ECB1C8 /* cardDeliveryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardDeliveryTableViewCell.swift; sourceTree = "<group>"; };
+		33552E0B1DE2706400ECB1C8 /* cardDeliveryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cardDeliveryTableViewCell.xib; sourceTree = "<group>"; };
 		3363F74A1DBE5E8400F375F3 /* paperlessDisclosuresVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paperlessDisclosuresVC.swift; sourceTree = "<group>"; };
 		3363F74C1DBE7ED600F375F3 /* paperlessStatementsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paperlessStatementsVC.swift; sourceTree = "<group>"; };
 		3363F74E1DBE8CE200F375F3 /* customNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customNavigationBar.swift; sourceTree = "<group>"; };
@@ -349,6 +353,8 @@
 				33C9DDFC1DB79FB800D29065 /* citizenUITableViewCell.xib */,
 				33C9DDFF1DB7A58F00D29065 /* addressUITableViewCell.swift */,
 				33C9DE001DB7A58F00D29065 /* addressUITableViewCell.xib */,
+				33552E0A1DE2706400ECB1C8 /* cardDeliveryTableViewCell.swift */,
+				33552E0B1DE2706400ECB1C8 /* cardDeliveryTableViewCell.xib */,
 			);
 			name = "Cells - Add User";
 			sourceTree = "<group>";
@@ -518,6 +524,7 @@
 				330632B01DC3932F004ADEB7 /* AmericanSans-Italic.ttf in Resources */,
 				330632B11DC3932F004ADEB7 /* AmericanSans-Light.ttf in Resources */,
 				33B6B5D01DDE1A6F00FA27FE /* OpenSans-Regular.ttf in Resources */,
+				33552E0D1DE2706400ECB1C8 /* cardDeliveryTableViewCell.xib in Resources */,
 				330632B51DC3932F004ADEB7 /* AmericanSans-Regular.otf in Resources */,
 				330632AC1DC3932F004ADEB7 /* AmericanSans-Bold.ttf in Resources */,
 				330632AD1DC3932F004ADEB7 /* AmericanSans-BoldItalic.ttf in Resources */,
@@ -542,6 +549,7 @@
 				33F3EFC71DBA538B00DFCFF6 /* servicingAlertsVC.swift in Sources */,
 				330632BF1DC3A0DA004ADEB7 /* splashFourVC.swift in Sources */,
 				330632C31DC3A1B7004ADEB7 /* splashSixVC.swift in Sources */,
+				33552E0C1DE2706400ECB1C8 /* cardDeliveryTableViewCell.swift in Sources */,
 				3363F75D1DC10C3E00F375F3 /* customColors.swift in Sources */,
 				33C9DDEE1DB6C07C00D29065 /* dobUITableViewCell.swift in Sources */,
 				33C9DDEB1DB691C300D29065 /* fullNameUIViewController.swift in Sources */,

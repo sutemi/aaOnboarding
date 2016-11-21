@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AA-tableview-version-1/citizenUITableViewCell.swift"
-            timestampString = "501281588.973698"
+            timestampString = "501391082.844772"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "toggleRadios(_:)"
             landmarkType = "7">
          </BreakpointContent>

@@ -30,6 +30,7 @@ class citizenUITableViewCell: UITableViewCell {
         tapAction!(self)
     }
     
+    
     @IBAction func switchedYes(_ sender: AnyObject) {
         if switchNo.isOn {
             switchNo.isOn = false

@@ -8,18 +8,40 @@
 
 import UIKit
 
-class touchIDSettingsVC: UIViewController {
+class touchIDSettingsVC: UIViewController, UITextFieldDelegate {
 
+    @IBOutlet weak var password: formUITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        password.addTarget(self, action: #selector(endEditing), for: UIControlEvents.editingChanged)
+        password.delegate = self
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(endEditing)))
+        
+        
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: false)
     }
+    
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true);
+        return false;
+    }
+    
+    
+    func endEditing(_ force: Bool) -> Bool {
+        self.resignFirstResponder()
+        return true
+    }
+    
     
 
     override func didReceiveMemoryWarning() {

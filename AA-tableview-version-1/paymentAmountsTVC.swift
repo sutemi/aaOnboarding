@@ -51,7 +51,7 @@ class paymentAmountsTVC: UITableViewController, UITextFieldDelegate {
 
         navigationController?.setNavigationBarHidden(false, animated: true)
         
-        otherAmountField.keyboardType = UIKeyboardType.numberPad
+//        otherAmountField.keyboardType = UIKeyboardType.numberPad
         
     }
     
@@ -93,12 +93,9 @@ class paymentAmountsTVC: UITableViewController, UITextFieldDelegate {
         default:
             break
         }
-
         
-//        if selectedIndexPath?.row == 2 {
-//            performSegue(withIdentifier: "makeNewAccountSegue", sender: self)
-//                }
-        
+        otherAmountField.resignFirstResponder()
+    
     }
     
     
@@ -129,15 +126,25 @@ class paymentAmountsTVC: UITableViewController, UITextFieldDelegate {
     
     
     
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        var row = NSIndexPath(row: 0, section: 0)
+        self.pmtChoicesTableView.deselectRow(at: row as IndexPath, animated: true)
+        
+        row = NSIndexPath(row: 1, section: 0)
+        self.pmtChoicesTableView.deselectRow(at: row as IndexPath, animated: true)
+    }
+    
+    
+    
     func textFieldDidChange(sender:formUITextField) {
         
-        UserManager.sharedManager.acctAmount = otherAmountField.text!
-        
+        UserManager.sharedManager.acctAmount = "$" + otherAmountField.text!
+ 
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
-        UserManager.sharedManager.acctAmount = otherAmountField.text!
+        UserManager.sharedManager.acctAmount = "$" + otherAmountField.text!
         
         textField.resignFirstResponder()
         return true
@@ -148,14 +155,7 @@ class paymentAmountsTVC: UITableViewController, UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         self.resignFirstResponder()
     }
-    
-//    override func endEditing(_ force: Bool) -> Bool {
-//        self.resignFirstResponder()
-//        return true
-//    }
-    
-    
-    
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

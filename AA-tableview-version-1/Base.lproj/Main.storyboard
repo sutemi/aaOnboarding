@@ -263,9 +263,9 @@
                                     <constraint firstAttribute="height" constant="1" id="6xy-X7-nau"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xR-vM-WG6">
+                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xR-vM-WG6">
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="937-0C-xhK">
+                                    <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="937-0C-xhK">
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD AN AUTHORIZED USER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gsf-J2-GHf">
                                                 <constraints>
@@ -287,11 +287,12 @@
                                             </label>
                                             <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ECV-nU-6AI" userLabel="Why Stack View">
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WHY DO WE NEED THIS INFORMATION?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmK-I6-JDx">
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nP-fC-vtl">
                                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="10"/>
-                                                        <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                        <state key="normal" title="Button">
+                                                            <color key="titleColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                    </button>
                                                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-info@2x" translatesAutoresizingMaskIntoConstraints="NO" id="VXW-3M-YHX" userLabel="info icon">
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="20" id="WtQ-FT-az4"/>
@@ -304,8 +305,11 @@
                                                     <constraint firstAttribute="width" constant="230" id="nk6-6W-wa3"/>
                                                 </constraints>
                                             </stackView>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zrM-iw-7fq">
+                                            <tableView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zrM-iw-7fq">
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="800" id="Te5-2Y-R0b"/>
+                                                </constraints>
                                                 <inset key="separatorInset" minX="8" minY="0.0" maxX="15" maxY="0.0"/>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="cellFullName" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellFullName" id="gti-Yj-P1Q" customClass="fullNameUITableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
@@ -354,6 +358,14 @@
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellDelivery" id="4VS-KK-BU7" userLabel="cellDelivery" customClass="addressUITableViewCell" customModule="AA_tableview_version_1" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="278" width="335" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4VS-KK-BU7" id="tzS-9F-f6W">
+                                                            <frame key="frameInset" width="335" height="49"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </tableViewCellContentView>
+                                                    </tableViewCell>
                                                 </prototypes>
                                                 <connections>
                                                     <outlet property="dataSource" destination="eRj-Kt-3eb" id="8DS-GP-9Zl"/>
@@ -365,24 +377,23 @@
                                         <constraints>
                                             <constraint firstItem="Gsf-J2-GHf" firstAttribute="centerX" secondItem="937-0C-xhK" secondAttribute="centerX" id="2Ch-L5-6pl"/>
                                             <constraint firstItem="zrM-iw-7fq" firstAttribute="leading" secondItem="937-0C-xhK" secondAttribute="leading" id="5Q5-o9-505"/>
+                                            <constraint firstAttribute="height" constant="1000" id="80c-Ge-xZ6"/>
                                             <constraint firstItem="FJJ-oD-buP" firstAttribute="centerX" secondItem="937-0C-xhK" secondAttribute="centerX" id="AaS-aB-3Yf"/>
-                                            <constraint firstAttribute="bottom" secondItem="zrM-iw-7fq" secondAttribute="bottom" id="GfQ-yI-XPO"/>
                                             <constraint firstItem="Gsf-J2-GHf" firstAttribute="top" secondItem="937-0C-xhK" secondAttribute="top" constant="30" id="J9x-bF-XSv"/>
                                             <constraint firstItem="ECV-nU-6AI" firstAttribute="top" secondItem="FJJ-oD-buP" secondAttribute="bottom" constant="40" id="Jer-MG-NvF"/>
                                             <constraint firstItem="FJJ-oD-buP" firstAttribute="top" secondItem="Gsf-J2-GHf" secondAttribute="bottom" constant="15" id="Rhh-gD-cM6"/>
-                                            <constraint firstAttribute="height" constant="850" id="oRM-Xz-wwP"/>
-                                            <constraint firstItem="zrM-iw-7fq" firstAttribute="top" secondItem="dmK-I6-JDx" secondAttribute="bottom" constant="40" id="vEu-FQ-m2K"/>
+                                            <constraint firstItem="zrM-iw-7fq" firstAttribute="top" secondItem="ECV-nU-6AI" secondAttribute="bottom" constant="40" id="f93-6J-caT"/>
                                             <constraint firstAttribute="trailing" secondItem="zrM-iw-7fq" secondAttribute="trailing" id="wyu-Nh-BRf"/>
                                             <constraint firstItem="ECV-nU-6AI" firstAttribute="centerX" secondItem="937-0C-xhK" secondAttribute="centerX" id="zni-4V-oo7"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="937-0C-xhK" firstAttribute="centerX" secondItem="4xR-vM-WG6" secondAttribute="centerX" id="8Q3-8q-bbP"/>
-                                    <constraint firstItem="937-0C-xhK" firstAttribute="leading" secondItem="4xR-vM-WG6" secondAttribute="leading" id="L9K-xV-ffN"/>
-                                    <constraint firstAttribute="bottom" secondItem="937-0C-xhK" secondAttribute="bottom" id="Nrl-Mh-PlS"/>
-                                    <constraint firstItem="937-0C-xhK" firstAttribute="top" secondItem="4xR-vM-WG6" secondAttribute="top" id="RWW-zx-mG4"/>
-                                    <constraint firstAttribute="trailing" secondItem="937-0C-xhK" secondAttribute="trailing" id="Vp5-bU-2Pz"/>
+                                    <constraint firstAttribute="bottom" secondItem="937-0C-xhK" secondAttribute="bottom" id="2tq-ut-Lgr"/>
+                                    <constraint firstItem="937-0C-xhK" firstAttribute="top" secondItem="4xR-vM-WG6" secondAttribute="top" id="cZS-GW-Cs3"/>
+                                    <constraint firstItem="937-0C-xhK" firstAttribute="leading" secondItem="4xR-vM-WG6" secondAttribute="leading" id="dIw-Vm-rHe"/>
+                                    <constraint firstItem="937-0C-xhK" firstAttribute="width" secondItem="4xR-vM-WG6" secondAttribute="width" id="sz0-Vh-wMi"/>
+                                    <constraint firstAttribute="trailing" secondItem="937-0C-xhK" secondAttribute="trailing" id="x7E-5r-VUP"/>
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JRW-0m-oia" customClass="btnBottomUIButton" customModule="AA_tableview_version_1" customModuleProvider="target">
@@ -417,12 +428,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="C4I-6v-rxO"/>
                     <connections>
+                        <outlet property="button" destination="7nP-fC-vtl" id="xCw-U1-o9D"/>
                         <outlet property="tableView" destination="zrM-iw-7fq" id="4ho-nH-fDX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zGg-In-NXE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3663" y="-740"/>
+            <point key="canvasLocation" x="3661.5999999999999" y="-740.7796101949026"/>
         </scene>
         <!--RELATIONSHIP TO CARDMEMBER-->
         <scene sceneID="UNY-Id-9nh">
@@ -1796,7 +1808,7 @@
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationLevel="20" indentationWidth="20" id="MfO-k2-E6N">
+                                    <tableViewCell clipsSubviews="YES" tag="1" contentMode="scaleToFill" selectionStyle="default" indentationLevel="20" indentationWidth="20" id="MfO-k2-E6N">
                                         <rect key="frame" x="0.0" y="50" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MfO-k2-E6N" id="pZt-jG-nzg">
@@ -1817,7 +1829,7 @@
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationLevel="20" indentationWidth="20" id="cw3-Vh-Pdh">
+                                    <tableViewCell clipsSubviews="YES" tag="2" contentMode="scaleToFill" selectionStyle="default" indentationLevel="20" indentationWidth="20" id="cw3-Vh-Pdh">
                                         <rect key="frame" x="0.0" y="100" width="375" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cw3-Vh-Pdh" id="Xiu-zu-FSZ">
@@ -1830,7 +1842,7 @@
                                                     </constraints>
                                                     <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -2534,7 +2546,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="30" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XpT-sK-vJ7">
                                         <subviews>
@@ -2629,6 +2641,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Drz-vf-DTl"/>
+                    <connections>
+                        <outlet property="emailField" destination="TCt-3Y-bGp" id="1HB-xU-j9z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gJl-5W-kaE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2795,7 +2810,7 @@ It is important to update your email address when it changes, so we can notify y
                                         </constraints>
                                         <color key="textColor" red="0.2666666667" green="0.2666666667" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I3g-z7-KTn" customClass="btnBottomUIButton" customModule="AA_tableview_version_1" customModuleProvider="target">
                                         <constraints>
@@ -2849,6 +2864,9 @@ It is important to update your email address when it changes, so we can notify y
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kKb-nh-FqY"/>
+                    <connections>
+                        <outlet property="password" destination="Y1U-XL-0dW" id="pZA-LJ-I2x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0F5-sb-cg9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

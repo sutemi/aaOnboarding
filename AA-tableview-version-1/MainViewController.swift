@@ -29,6 +29,8 @@ class MainViewController: UIViewController, UIPageViewControllerDataSource, UIPa
     }
     
     
+    
+    
     var nextIndex:Int = 0
     
 

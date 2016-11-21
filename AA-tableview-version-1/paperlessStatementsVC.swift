@@ -8,12 +8,20 @@
 
 import UIKit
 
-class paperlessStatementsVC: UIViewController {
+class paperlessStatementsVC: UIViewController, UITextFieldDelegate {
 
+    
+    @IBOutlet weak var emailField: formUITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        emailField.addTarget(self, action: #selector(endEditing), for: UIControlEvents.editingChanged)
+        emailField.delegate = self
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(endEditing)))
+        
         
     }
     
@@ -29,6 +37,21 @@ class paperlessStatementsVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         
     }
+    
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true);
+        return false;
+    }
+
+    
+    
+    
+    func endEditing(_ force: Bool) -> Bool {
+        self.resignFirstResponder()
+        return true
+    }
+    
     
 
     /*
