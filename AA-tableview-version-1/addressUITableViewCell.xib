@@ -35,7 +35,7 @@
                             </label>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="height" constant="60" id="qb1-Km-Z0m"/>
+                            <constraint firstAttribute="height" constant="50" id="qb1-Km-Z0m"/>
                         </constraints>
                     </stackView>
                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Home street address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3PQ-f4-ML5" customClass="formUITextField" customModule="AA_tableview_version_1" customModuleProvider="target">
@@ -98,7 +98,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="1iW-2q-tTm" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="0Zl-8u-vlf"/>
-                    <constraint firstItem="Ofc-t4-gIC" firstAttribute="top" secondItem="f81-vy-895" secondAttribute="bottom" constant="10" id="1r7-33-wtA"/>
+                    <constraint firstItem="Ofc-t4-gIC" firstAttribute="top" secondItem="f81-vy-895" secondAttribute="bottom" id="1r7-33-wtA"/>
                     <constraint firstItem="3PQ-f4-ML5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="6PX-5P-PFn"/>
                     <constraint firstItem="L3J-DX-m0v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="8zN-sZ-Wv7"/>
                     <constraint firstItem="Ofc-t4-gIC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="COV-Or-o0H"/>
