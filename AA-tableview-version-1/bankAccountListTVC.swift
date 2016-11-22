@@ -42,6 +42,9 @@ class bankAccountListTVC: UITableViewController {
 
         navigationController?.setNavigationBarHidden(false, animated: true)
         
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
         
     }
     

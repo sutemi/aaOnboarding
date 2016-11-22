@@ -51,6 +51,11 @@ class paymentAmountsTVC: UITableViewController, UITextFieldDelegate {
 
         navigationController?.setNavigationBarHidden(false, animated: true)
         
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
+        
 //        otherAmountField.keyboardType = UIKeyboardType.numberPad
         
     }

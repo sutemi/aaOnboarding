@@ -30,6 +30,9 @@ class newAccountDetailsVC: UIViewController, UITableViewDataSource, UITableViewD
         
         navigationController?.setNavigationBarHidden(false, animated: true)
         
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
         
         // Navbar
         

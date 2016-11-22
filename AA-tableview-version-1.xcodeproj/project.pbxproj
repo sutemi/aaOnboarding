@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		157606681DE4902D00D792BC /* formUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157606671DE4902D00D792BC /* formUITextField.swift */; };
+		1576066A1DE4903C00D792BC /* primaryEnabledUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157606691DE4903C00D792BC /* primaryEnabledUIButton.swift */; };
 		330632AC1DC3932F004ADEB7 /* AmericanSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 330632A11DC3932F004ADEB7 /* AmericanSans-Bold.ttf */; };
 		330632AD1DC3932F004ADEB7 /* AmericanSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 330632A21DC3932F004ADEB7 /* AmericanSans-BoldItalic.ttf */; };
 		330632AE1DC3932F004ADEB7 /* AmericanSans-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 330632A31DC3932F004ADEB7 /* AmericanSans-Book.ttf */; };
@@ -104,6 +106,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		157606671DE4902D00D792BC /* formUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = formUITextField.swift; path = "../../../Downloads/aaOnboarding-master/AA-tableview-version-1/formUITextField.swift"; sourceTree = "<group>"; };
+		157606691DE4903C00D792BC /* primaryEnabledUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = primaryEnabledUIButton.swift; path = "../../../Downloads/aaOnboarding-master/AA-tableview-version-1/primaryEnabledUIButton.swift"; sourceTree = "<group>"; };
 		330632A11DC3932F004ADEB7 /* AmericanSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AmericanSans-Bold.ttf"; path = "../AmericanSans-Bold.ttf"; sourceTree = "<group>"; };
 		330632A21DC3932F004ADEB7 /* AmericanSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AmericanSans-BoldItalic.ttf"; path = "../AmericanSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		330632A31DC3932F004ADEB7 /* AmericanSans-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "AmericanSans-Book.ttf"; path = "../AmericanSans-Book.ttf"; sourceTree = "<group>"; };
@@ -478,11 +482,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "James Wilson";
 				TargetAttributes = {
 					33C9DDC61DB6597700D29065 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Y34YECGXL4;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -581,6 +586,7 @@
 				33C9DE0B1DB82CE900D29065 /* delayedSuccessScreen.swift in Sources */,
 				33C676B41DDF553F00F71B7C /* UserManager.swift in Sources */,
 				33C9DE321DB960F900D29065 /* nicknameTableViewCell.swift in Sources */,
+				157606681DE4902D00D792BC /* formUITextField.swift in Sources */,
 				330632C71DC3A278004ADEB7 /* splashEightVC.swift in Sources */,
 				33C9DE2E1DB95F6A00D29065 /* typeTableViewCell.swift in Sources */,
 				33C9DDE21DB67DDB00D29065 /* fullNameUITableViewCell.swift in Sources */,
@@ -596,6 +602,7 @@
 				33C9DE091DB828B500D29065 /* btnBottomUIButton.swift in Sources */,
 				335116BA1DB99B68005FD2F4 /* autoFunctions.swift in Sources */,
 				33C9DDCD1DB6597700D29065 /* MainViewController.swift in Sources */,
+				1576066A1DE4903C00D792BC /* primaryEnabledUIButton.swift in Sources */,
 				33DF97AE1DCA5ED600329650 /* maxLengthTextField.swift in Sources */,
 				33C9DDFD1DB79FB800D29065 /* citizenUITableViewCell.swift in Sources */,
 				33C9DE041DB7B02300D29065 /* pillLightUIButton.swift in Sources */,
@@ -657,6 +664,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -707,6 +715,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -736,9 +745,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y34YECGXL4;
 				INFOPLIST_FILE = "AA-tableview-version-1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nwb.AA-tableview-version-1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nwb.AA-tableview-version-1-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -748,9 +758,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y34YECGXL4;
 				INFOPLIST_FILE = "AA-tableview-version-1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.nwb.AA-tableview-version-1";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nwb.AA-tableview-version-1-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

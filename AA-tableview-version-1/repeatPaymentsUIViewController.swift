@@ -52,6 +52,10 @@ class repeatPaymentsUIViewController: UIViewController, UITableViewDataSource, U
         tableView.tableFooterView = UIView()
         
         navigationItem.hidesBackButton = true
+        
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
        
     }
     
@@ -190,7 +194,9 @@ class repeatPaymentsUIViewController: UIViewController, UITableViewDataSource, U
 
     
     override func viewWillDisappear(_ animated: Bool) {
-        navigationItem.backBarButtonItem?.title = ""
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
     }
     
     
