@@ -35,6 +35,8 @@
 		335116BC1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335116BB1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift */; };
 		33552E0C1DE2706400ECB1C8 /* cardDeliveryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33552E0A1DE2706400ECB1C8 /* cardDeliveryTableViewCell.swift */; };
 		33552E0D1DE2706400ECB1C8 /* cardDeliveryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33552E0B1DE2706400ECB1C8 /* cardDeliveryTableViewCell.xib */; };
+		336075451DE490CD00E0FABA /* primaryEnabledUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336075441DE490CD00E0FABA /* primaryEnabledUIButton.swift */; };
+		336075471DE490E700E0FABA /* formUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 336075461DE490E700E0FABA /* formUITextField.swift */; };
 		3363F74B1DBE5E8400F375F3 /* paperlessDisclosuresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F74A1DBE5E8400F375F3 /* paperlessDisclosuresVC.swift */; };
 		3363F74D1DBE7ED600F375F3 /* paperlessStatementsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F74C1DBE7ED600F375F3 /* paperlessStatementsVC.swift */; };
 		3363F74F1DBE8CE200F375F3 /* customNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3363F74E1DBE8CE200F375F3 /* customNavigationBar.swift */; };
@@ -56,10 +58,8 @@
 		33C9DDD01DB6597700D29065 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DDCE1DB6597700D29065 /* Main.storyboard */; };
 		33C9DDD21DB6597700D29065 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DDD11DB6597700D29065 /* Assets.xcassets */; };
 		33C9DDD51DB6597700D29065 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DDD31DB6597700D29065 /* LaunchScreen.storyboard */; };
-		33C9DDDD1DB65CF900D29065 /* primaryEnabledUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDDC1DB65CF900D29065 /* primaryEnabledUIButton.swift */; };
 		33C9DDE21DB67DDB00D29065 /* fullNameUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDE01DB67DDB00D29065 /* fullNameUITableViewCell.swift */; };
 		33C9DDE31DB67DDB00D29065 /* fullNameUITableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DDE11DB67DDB00D29065 /* fullNameUITableViewCell.xib */; };
-		33C9DDE61DB6825B00D29065 /* formUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDE51DB6825B00D29065 /* formUITextField.swift */; };
 		33C9DDEB1DB691C300D29065 /* fullNameUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDEA1DB691C300D29065 /* fullNameUIViewController.swift */; };
 		33C9DDEE1DB6C07C00D29065 /* dobUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C9DDEC1DB6C07C00D29065 /* dobUITableViewCell.swift */; };
 		33C9DDEF1DB6C07C00D29065 /* dobUITableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C9DDED1DB6C07C00D29065 /* dobUITableViewCell.xib */; };
@@ -132,6 +132,8 @@
 		335116BB1DB99BDE005FD2F4 /* UIView+TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+TextFieldDelegate.swift"; sourceTree = "<group>"; };
 		33552E0A1DE2706400ECB1C8 /* cardDeliveryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardDeliveryTableViewCell.swift; sourceTree = "<group>"; };
 		33552E0B1DE2706400ECB1C8 /* cardDeliveryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cardDeliveryTableViewCell.xib; sourceTree = "<group>"; };
+		336075441DE490CD00E0FABA /* primaryEnabledUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = primaryEnabledUIButton.swift; sourceTree = "<group>"; };
+		336075461DE490E700E0FABA /* formUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = formUITextField.swift; sourceTree = "<group>"; };
 		3363F74A1DBE5E8400F375F3 /* paperlessDisclosuresVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paperlessDisclosuresVC.swift; sourceTree = "<group>"; };
 		3363F74C1DBE7ED600F375F3 /* paperlessStatementsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paperlessStatementsVC.swift; sourceTree = "<group>"; };
 		3363F74E1DBE8CE200F375F3 /* customNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customNavigationBar.swift; sourceTree = "<group>"; };
@@ -155,10 +157,8 @@
 		33C9DDD11DB6597700D29065 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33C9DDD41DB6597700D29065 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33C9DDD61DB6597700D29065 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		33C9DDDC1DB65CF900D29065 /* primaryEnabledUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = primaryEnabledUIButton.swift; path = "../../AA-App/AA-App/primaryEnabledUIButton.swift"; sourceTree = "<group>"; };
 		33C9DDE01DB67DDB00D29065 /* fullNameUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fullNameUITableViewCell.swift; sourceTree = "<group>"; };
 		33C9DDE11DB67DDB00D29065 /* fullNameUITableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = fullNameUITableViewCell.xib; sourceTree = "<group>"; };
-		33C9DDE51DB6825B00D29065 /* formUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = formUITextField.swift; path = "../../AA-App/AA-App/formUITextField.swift"; sourceTree = "<group>"; };
 		33C9DDEA1DB691C300D29065 /* fullNameUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fullNameUIViewController.swift; sourceTree = "<group>"; };
 		33C9DDEC1DB6C07C00D29065 /* dobUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dobUITableViewCell.swift; sourceTree = "<group>"; };
 		33C9DDED1DB6C07C00D29065 /* dobUITableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = dobUITableViewCell.xib; sourceTree = "<group>"; };
@@ -342,7 +342,7 @@
 		33C9DDDE1DB65CFF00D29065 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
-				33C9DDDC1DB65CF900D29065 /* primaryEnabledUIButton.swift */,
+				336075441DE490CD00E0FABA /* primaryEnabledUIButton.swift */,
 				33C9DE031DB7B02300D29065 /* pillLightUIButton.swift */,
 				33C9DE081DB828B500D29065 /* btnBottomUIButton.swift */,
 			);
@@ -371,9 +371,9 @@
 		33C9DDE41DB6820B00D29065 /* TextFields */ = {
 			isa = PBXGroup;
 			children = (
+				336075461DE490E700E0FABA /* formUITextField.swift */,
 				33DF97AD1DCA5ED600329650 /* maxLengthTextField.swift */,
 				33DF97AF1DCA5F3100329650 /* allowedCharsTextField.swift */,
-				33C9DDE51DB6825B00D29065 /* formUITextField.swift */,
 			);
 			name = TextFields;
 			sourceTree = "<group>";
@@ -559,6 +559,7 @@
 				33F3EFC71DBA538B00DFCFF6 /* servicingAlertsVC.swift in Sources */,
 				332E6E6D1DE33A0000471A7D /* NotificationController.swift in Sources */,
 				330632BF1DC3A0DA004ADEB7 /* splashFourVC.swift in Sources */,
+				336075451DE490CD00E0FABA /* primaryEnabledUIButton.swift in Sources */,
 				330632C31DC3A1B7004ADEB7 /* splashSixVC.swift in Sources */,
 				33552E0C1DE2706400ECB1C8 /* cardDeliveryTableViewCell.swift in Sources */,
 				3363F75D1DC10C3E00F375F3 /* customColors.swift in Sources */,
@@ -580,7 +581,6 @@
 				33C9DE0B1DB82CE900D29065 /* delayedSuccessScreen.swift in Sources */,
 				33C676B41DDF553F00F71B7C /* UserManager.swift in Sources */,
 				33C9DE321DB960F900D29065 /* nicknameTableViewCell.swift in Sources */,
-				33C9DDDD1DB65CF900D29065 /* primaryEnabledUIButton.swift in Sources */,
 				330632C71DC3A278004ADEB7 /* splashEightVC.swift in Sources */,
 				33C9DE2E1DB95F6A00D29065 /* typeTableViewCell.swift in Sources */,
 				33C9DDE21DB67DDB00D29065 /* fullNameUITableViewCell.swift in Sources */,
@@ -593,7 +593,6 @@
 				33C9DE121DB92EFA00D29065 /* whichAccountTableViewCell.swift in Sources */,
 				3363F74F1DBE8CE200F375F3 /* customNavigationBar.swift in Sources */,
 				3363F7531DBFD62C00F375F3 /* UIView+SuccessScreen.swift in Sources */,
-				33C9DDE61DB6825B00D29065 /* formUITextField.swift in Sources */,
 				33C9DE091DB828B500D29065 /* btnBottomUIButton.swift in Sources */,
 				335116BA1DB99B68005FD2F4 /* autoFunctions.swift in Sources */,
 				33C9DDCD1DB6597700D29065 /* MainViewController.swift in Sources */,
@@ -609,6 +608,7 @@
 				330632BD1DC3A052004ADEB7 /* splashThreeVC.swift in Sources */,
 				33F3EFCB1DBA568600DFCFF6 /* servicingAlertTableViewCell.swift in Sources */,
 				330632B91DC3978C004ADEB7 /* UILabel+LineSpacing.swift in Sources */,
+				336075471DE490E700E0FABA /* formUITextField.swift in Sources */,
 				33C9DE351DB9658000D29065 /* newAcctTypeTVC.swift in Sources */,
 				33C9DDF41DB6EB8200D29065 /* relationshipUITableViewCell.swift in Sources */,
 				330632C91DC77F0F004ADEB7 /* countriesListTVC.swift in Sources */,
